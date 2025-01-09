@@ -118,12 +118,12 @@ If $p$ is a statement, the <strong>negation</strong> of $p$ is "not $p$". It has
 <h3 align="center">
 
 Truth Table for $\neg p$</h3>
-<div align="center" style="overflow-x:auto;">
+<div align="center">
 
-| $p$  | $\neg p$ |
-|:----:|:--------:|
-|  T   |    F     |
-|  F   |    T     |
+| $p$  | $\neg p$     |
+|:----:|:------------:|
+|  T   |    F         |
+|  F   |    T         |
 </div>
 
 If $p$ and $q$ are statement variables, the <strong>conjunction</strong> of $p$ and $q$ is denoted as $p \land q$. It is true when both $p$ and $q$ are true; otherwise, if $p$, $q$, or $p$ and $q$ are false, then $p \land q$ is false
