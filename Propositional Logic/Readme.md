@@ -115,46 +115,83 @@ As in the examples above, compound sentences can be made out of component statem
 
 If $p$ is a statement, the <strong>negation</strong> of $p$ is "not $p$". It has the opposite truth value from $p$. If $p$ is true, $\neg p$ is false; otherwise, if $p$ is false, $\neg p$ is true
 
-<p align="center">
-  <strong>Truth Table for `¬p`</strong>
-</p>
-
-<p align="center">
-  | p   | ¬p  |
-  | --- | --- |
-  | T   | F   |
-  | F   | T   |
-</p>
+<h3 align="center">Truth Table for $\neg p$</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$\neg p$</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+  </tr>
+</table>
 
 If $p$ and $q$ are statement variables, the <strong>conjunction</strong> of $p$ and $q$ is denoted as $p \land q$. It is true when both $p$ and $q$ are true; otherwise, if $p$, $q$, or $p$ and $q$ are false, then $p \land q$ is false
 
-<h3 align="center">
-
-Truth Table for $p \land q$</h3>
-<div align="center">
-
-| $p$  | $q$  | $p \land q$ |
-|:----:|:----:|:-----------:|
-|  T   |  T   |      T      |
-|  T   |  F   |      F      |
-|  F   |  T   |      F      |
-|  F   |  F   |      F      |
-</div>
+<h3 align="center">Truth Table for $p \land q$</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$q$</th>
+    <th>$p \land q$</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+</table>
 
 If $p$ and $q$ are statement variables, the <strong>disjunction</strong> of $p$ and $q$ is denoted as $p \vee q$. It is true when either $p$ is true, $q$ is true, or both $p$ and $q$ are true; it is only false when both $p$ and $q$ are false
 
-<h3 align="center">
-
-Truth Table for $p \lor q$</h3>
-<div align="center">
-
-| $p$  | $q$  | $p \lor q$ |
-|:----:|:----:|:----------:|
-|  T   |  T   |      T     |
-|  T   |  F   |      T     |
-|  F   |  T   |      T     |
-|  F   |  F   |      F     |
-</div>
+<h3 align="center">Truth Table for $p \lor q$</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$q$</th>
+    <th>$p \lor q$</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+</table>
 
 <details>
     <summary>Example problem</summary>
@@ -164,21 +201,81 @@ Construct a truth table for the statement form $(p \land q) \vee \neg r$
   <details>
     <summary>Solution</summary>
 
-<h3 align="center">
-
-Truth Table for $(p \land q) \vee \neg r$</h3>
-<div align="center">
-
-| $p$  | $q$  | $r$  | $p \land q$ | $\neg r$ | $(p \land q) \vee \neg r$ |
-|:----:|:----:|:----:|:-----------:|:--------:|:-------------------------:|
-|  T   |  T   |  T   |      T      |     F    |             T             |
-|  T   |  T   |  F   |      T      |     T    |             T             |
-|  T   |  F   |  T   |      F      |     F    |             F             |
-|  T   |  F   |  F   |      F      |     T    |             T             |
-|  F   |  T   |  T   |      F      |     F    |             F             |
-|  F   |  T   |  F   |      F      |     T    |             T             |
-|  F   |  F   |  T   |      F      |     F    |             F             |
-|  F   |  F   |  F   |      F      |     T    |             T             |
+<h3 align="center">Truth Table for $(p \land q) \vee \neg r$</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$q$</th>
+    <th>$r$</th>
+    <th>$p \land q$</th>
+    <th>$\neg r$</th>
+    <th>$(p \land q) \vee \neg r$</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+</table>
 </details>
 </ul>  
 </details>  
@@ -215,15 +312,24 @@ Construct a truth table to show that the negation of the negation of a statement
   <details>
     <summary>Solution</summary>
 
-<h3 align="center">
-
-Truth Table for $\neg(\neg p)$</h3>
-<div align="center">
-
-| $p$ | $\neg p$  | $\neg(\neg p)$ |
-|:---:|:----:|:----:|
-|  T  |  F   |  T   |
-|  F  |  T   |  F   |
+<h3 align="center">Truth Table for $\neg(\neg p)$</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$\neg p$</th>
+    <th>$\neg(\neg p)$</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+</table>
 </details>
 </ul>  
 </details>  
@@ -236,17 +342,54 @@ Show that the statement forms $\neg(p \land q)$ and $\neg p \land \neg q$ are no
   <details>
     <summary>Solution</summary>
 
-<h3 align="center">
-
-Truth Tables for $\neg(p \land q)$ and $\neg p \land \neg q$</h3>
-<div align="center">
-
-| $p$ | $q$ | $\neg p$ | $\neg q$ | $p \land q$ | $\neg(p \land q)$ | $\neg p \land \neg q$ |
-|:---:|:---:|:----:|:------------:|:-----------:|:-----------------:|:---------------------:|
-|  T  |  T  |  F   |       F      |      T      |         F         |           F           |
-|  T  |  F  |  F   |       T      |      F      |         T         |           F           |
-|  F  |  T  |  T   |       F      |      F      |         T         |           F           |
-|  F  |  F  |  T   |       T      |      F      |         T         |           T           |
+<h3 align="center">Truth Tables for $\neg(p \land q)$ and $\neg p \land \neg q$</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$q$</th>
+    <th>$\neg p$</th>
+    <th>$\neg q$</th>
+    <th>$p \land q$</th>
+    <th>$\neg(p \land q)$</th>
+    <th>$\neg p \land \neg q$</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+</table>
 </details>
 </ul>  
 </details>  
@@ -318,17 +461,27 @@ Show that the statement form $p \vee \neg p$ is a tautology and that the stateme
   <details>
     <summary>Solution</summary>
 
-<h3 align="center">
-
-Truth Tables for $p \vee \neg p$ and $p \land \neg p$</h3>
-<div align="center">
-
-| $p$ | $\neg p$  | $p \vee \neg p$ | $p \land \neg p$ |
-|:---:|:----:|:----:|:----:|
-|  T  |  F   |  T   |  F   |
-|  F  |  T   |  T   |  F   |
-
-</div>
+<h3 align="center">Truth Tables for $p \vee \neg p$ and $p \land \neg p$</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$\neg p$</th>
+    <th>$p \vee \neg p$</th>
+    <th>$p \land \neg p$</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+</table>
 </details>
 </ul>  
 </details>
@@ -346,9 +499,7 @@ Truth Tables for $p \vee \neg p$ and $p \land \neg p$</h3>
             <tbody>
                 <tr>
                     <td>Commutative Laws</td>
-                    <td>
-                    
-$p \land q \equiv q \land p$, $p \lor q \equiv q \lor p$</td>
+                    <td>$p \land q \equiv q \land p$, $p \lor q \equiv q \lor p$</td>
                 </tr>
                 <tr>
                     <td>Associative Laws</td>
