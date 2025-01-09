@@ -499,23 +499,23 @@ Show that the statement form $p \vee \neg p$ is a tautology and that the stateme
             <tbody>
                 <tr>
                     <td>Commutative Laws</td>
-                    <td>$p \land q \equiv q \land p$, $p \lor q \equiv q \lor p$</td>
+                    <td>$p \land q \equiv q \land p$, \quad $p \lor q \equiv q \lor p$</td>
                 </tr>
                 <tr>
                     <td>Associative Laws</td>
-                    <td>$(p \land q) \land r \equiv p \land (q \land r)$, $(p \lor q) \lor r \equiv p \lor (q \lor r)$</td>
+                    <td>$(p \land q) \land r \equiv p \land (q \land r)$, \quad $(p \lor q) \lor r \equiv p \lor (q \lor r)$</td>
                 </tr>
                 <tr>
                     <td>Distributive Laws</td>
-                    <td>$p \land (q \lor r) \equiv (p \land q) \lor (p \land r)$, $p \lor (q \land r) \equiv (p \lor q) \land (p \lor r)$</td>
+                    <td>$p \land (q \lor r) \equiv (p \land q) \lor (p \land r)$, \quad $p \lor (q \land r) \equiv (p \lor q) \land (p \lor r)$</td>
                 </tr>
                 <tr>
                     <td>Identity Laws</td>
-                    <td>$p \land t \equiv p$, $p \lor c \equiv p$</td>
+                    <td>$p \land t \equiv p$, \quad $p \lor c \equiv p$</td>
                 </tr>
                 <tr>
                     <td>Negation Laws</td>
-                    <td>$p \lor \neg p \equiv t$, $p \land \neg p \equiv c$</td>
+                    <td>$p \lor \neg p \equiv t$, \quad $p \land \neg p \equiv c$</td>
                 </tr>
                 <tr>
                     <td>Double Negative Law</td>
@@ -523,25 +523,72 @@ Show that the statement form $p \vee \neg p$ is a tautology and that the stateme
                 </tr>
                 <tr>
                     <td>Idempotent Laws</td>
-                    <td>$p \land p \equiv p$, $p \lor p \equiv p$</td>
+                    <td>$p \land p \equiv p$, \quad $p \lor p \equiv p$</td>
                 </tr>
                 <tr>
                     <td>Universal Bound Laws</td>
-                    <td>$p \lor t \equiv t$, $p \land c \equiv c$</td>
+                    <td>$p \lor t \equiv t$, \quad $p \land c \equiv c$</td>
                 </tr>
                 <tr>
                     <td>De Morgan’s Laws</td>
-                    <td>$\neg (p \land q) \equiv \neg p \lor \neg q$, $\neg (p \lor q) \equiv \neg p \land \neg q$</td>
+                    <td>$\neg (p \land q) \equiv \neg p \lor \neg q$, \quad $\neg (p \lor q) \equiv \neg p \land \neg q$</td>
                 </tr>
                 <tr>
                     <td>Absorption Laws</td>
-                    <td>$p \lor (p \land q) \equiv p$, $p \land (p \lor q) \equiv p$</td>
+                    <td>$p \lor (p \land q) \equiv p$, \quad $p \land (p \lor q) \equiv p$</td>
                 </tr>
                 <tr>
                     <td>Negations of $t$ and $c$</td>
-                    <td>$\neg t \equiv c$, $\neg c \equiv t$</td>
+                    <td>$\neg t \equiv c$, \quad $\neg c \equiv t$</td>
                 </tr>
             </tbody>
         </table>
     </div>
 </body>
+
+<details>
+    <summary>Example problem</summary>
+
+Verify the following logical equivalence: $\neg(\neg p \land q) \land (p \vee q) \equiv p$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$\equiv p \vee \neg q \land (p \vee q) \quad$ De Morgan's Law
+
+$\equiv (p \vee \neg q) \land (p \vee q) \quad$ Distributive Law
+
+$\equiv p \vee (\neg q \vee q) \quad$ Distributive Law
+
+$\equiv p \vee 1 \quad$ Universal Bound's Law
+
+$\equiv p$
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Verify the following logical equivalence: $(p \land \neg q) \vee p \equiv p$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$\equiv p \quad$ Absorption Law
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Verify the following logical equivalence: $\neg((\neg p \land q) \vee (\neg \land \neg q)) \vee (p \land q) \equiv p$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+
+</details>
+</ul>  
+</details>
