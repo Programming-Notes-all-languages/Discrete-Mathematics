@@ -115,7 +115,7 @@ As in the examples above, compound sentences can be made out of component statem
 
 If $p$ is a statement, the <strong>negation</strong> of $p$ is "not $p$". It has the opposite truth value from $p$. If $p$ is true, $\neg p$ is false; otherwise, if $p$ is false, $\neg p$ is true
 
-### Truth Table for `¬p`
+### Truth Table for $¬p$
 
 | p   | ¬p  |
 | --- | --- |
