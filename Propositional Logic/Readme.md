@@ -118,7 +118,7 @@ If $p$ is a statement, the <strong>negation</strong> of $p$ is "not $p$". It has
 <h3 align="center">
 
 Truth Table for $\neg p$</h3>
-<div align="center">
+<div align="center" style="overflow-x:auto;">
 
 | $p$  | $\neg p$ |
 |:----:|:--------:|
