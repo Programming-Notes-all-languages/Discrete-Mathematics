@@ -583,12 +583,244 @@ $\equiv p \quad$ Absorption Law
 <details>
     <summary>Example problem</summary>
 
-Verify the following logical equivalence: $\neg((\neg p \land q) \vee (\neg \land \neg q)) \vee (p \land q) \equiv p$
+Verify the following logical equivalence: $\neg((\neg p \land q) \vee (\neg p \land \neg q)) \vee (p \land q) \equiv p$
 <ul>  
   <details>
     <summary>Solution</summary>
 
+$\equiv \neg(\neg p \land (q \vee \neg q)) \vee (p \land q) \quad$ Distributive Law
 
+$\equiv \neg(\neg p \land t) \vee (p \land q) \quad$ Negation Law
+
+$\equiv \neg(\neg p) \vee (p \land q) \quad$ Identity Law
+
+$\equiv p \vee (p \land q) \quad$ Double Negative Law
+
+$\equiv p \quad$ Absorption Law
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Verify the following logical equivalence: $(p \land (\neg(\neg p \vee q))) \vee (p \land q) \equiv p$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$\equiv (p \land (p \land \neg q)) \vee (p \land q) \quad$ De Morgan's Law
+
+$\equiv (\neg q \land (p \land p)) \vee (p \land q) \quad$ Associative Law
+
+$\equiv (\neg q \land p) \vee (p \land q) \quad$ Idempotent Law
+
+$\equiv p \land (\neg q \vee q) \quad$ Distributive Law
+
+$\equiv p \land t \quad$ Negation Law
+
+$\equiv p \quad$ Identity Law
+</details>
+</ul>  
+</details>
+
+## Conditional Statements
+If $p$ and $q$ are statement variables, the <strong>conditional</strong> of $q$ by $p$ is "if $p$ than $q$" and is denoted $p \rightarrow q$. It is false when $p$ is true and $q$ is false; otherwise, it is true. $p$ is called the <strong>hypotheses</strong> (or <strong>antecedent</strong>) of the conditional and $q$ the <strong>conclusion</strong> (or <strong>consequent</strong>)
+
+A conditional statement that is true by virtue of the fact that its hypothesis is false is called <strong>vacuously true</strong> or <strong>true by default</strong>. This is because the if-then statement will always be true when the hypothesis is true, regardless of what the conclusion is
+
+In expressions that include $\rightarrow$ as well as other logical operators such as $\land$, $\vee$, and $\neg$, the <strong>order of operations</strong> is that $\rightarrow$ is performed last
+
+<details>
+    <summary>Example problem</summary>
+
+Construct a truth table for the statement form $p \vee \neg q \rightarrow \neg p$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<h3 align="center">Truth Table for $p \lor q$</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$q$</th>
+    <th>$\neg q$</th>
+    <th>$p \vee \neg q$</th>
+    <th>$\neg p$</th>
+    <th>$p \vee \neg q \rightarrow p$</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+</table>
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Use truth tables to show the logical equivalence of the statement forms $p \vee q \rightarrow r$ and $(p \rightarrow r) \land (q \rightarrow r)$. Annotate the table with a sentence of explanation
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<h3 align="center">Truth Table for $p \lor q$</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$q$</th>
+    <th>$r$</th>
+    <th>$p \vee q$</th>
+    <th>$p \rightarrow r$</th>
+    <th>$q \rightarrow r$</th>
+    <th>$(p \rightarrow r) \land (q \rightarrow r)$</th>
+    <th>$p \vee q \rightarrow r$</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+</table>
+</details>
+</ul>  
+</details>
+
+### Representation of If-Then as Or
+$$
+p \rightarrow q \equiv \neg p \vee q
+$$
+
+### The Negation of a Conditional Statement
+The negation of "if $p$ then $q$" is logically equivalent to: $p$ and not $q$
+
+This can be restated symbolically as the following:
+
+$$
+\neg(p \rightarrow q) \equiv p \land \neg q
+$$
+
+<details>
+    <summary>Example problem</summary>
+
+Write negations for each of the following statements:
+<ol type="a">
+  <li>If my car is in the repair shop, then I cannot get to class</li>
+  <li>If Sara lives in Athens, then she lives in Greece</li>
+</ol>  
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>My car is in the repair shop and I can get to class</li>
+  <li>Sara lives in Athens and she does not live in Greece</li>
+</ol>  
 </details>
 </ul>  
 </details>
