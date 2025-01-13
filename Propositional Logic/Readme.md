@@ -1349,18 +1349,5 @@ The argument is invalid as the premises when $p$ and $r$ are true and when $q$ i
                 </table>
             </td>
         </tr>
-        <!-- XNOR Gate -->
-        <tr>
-            <td>XNOR</td>
-            <td><img src="Images/Logic Gates/XNOR.png" alt="XNOR Gate Symbol" width="120" height="50"></td>
-            <td>
-                <table>
-                    <tr><td>0</td><td>0</td><td>1</td></tr>
-                    <tr><td>0</td><td>1</td><td>0</td></tr>
-                    <tr><td>1</td><td>0</td><td>0</td></tr>
-                    <tr><td>1</td><td>1</td><td>1</td></tr>
-                </table>
-            </td>
-        </tr>
     </tbody>
 </table>
