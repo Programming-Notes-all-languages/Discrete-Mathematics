@@ -1309,7 +1309,7 @@ The argument is invalid as the premises when $p$ and $r$ are true and when $q$ i
         <!-- NOT Gate -->
         <tr>
             <td>NOT</td>
-            <td><img src="Images/Logic Gates/Not.png" alt="NOT Gate Symbol"></td>
+            <td><img src="Images/Logic Gates/Not.png" alt="NOT Gate Symbol" width="50" height="50"></td>
             <td>
                 <table>
                     <tr><td>0</td><td>1</td></tr>
