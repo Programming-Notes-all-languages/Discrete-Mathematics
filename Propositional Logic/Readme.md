@@ -1289,7 +1289,7 @@ The argument is invalid as the premises when $p$ and $r$ are true and when $q$ i
         <!-- AND Gate -->
         <tr>
             <td>AND</td>
-            <td><img src="Images/Logic Gates/AND.png" alt="AND Gate Symbol" width="120" height="60"></td>
+            <td><img src="Images/Logic Gates/AND.png" alt="AND Gate Symbol" width="120" height="50"></td>
             <td>
                 <table>
                     <tr><td>0</td><td>0</td><td>0</td></tr>
@@ -1302,7 +1302,7 @@ The argument is invalid as the premises when $p$ and $r$ are true and when $q$ i
         <!-- OR Gate -->
         <tr>
             <td>OR</td>
-            <td><img src="Images/Logic Gates/OR.png" alt="OR Gate Symbol" width="120" height="60"></td>
+            <td><img src="Images/Logic Gates/OR.png" alt="OR Gate Symbol" width="120" height="50"></td>
             <td>
                 <table>
                     <tr><td>0</td><td>0</td><td>0</td></tr>
@@ -1315,7 +1315,7 @@ The argument is invalid as the premises when $p$ and $r$ are true and when $q$ i
         <!-- NOT Gate -->
         <tr>
             <td>NOT</td>
-            <td><img src="Images/Logic Gates/NOT.png" alt="NOT Gate Symbol" width="120" height="60"></td>
+            <td><img src="Images/Logic Gates/NOT.png" alt="NOT Gate Symbol" width="120" height="50"></td>
             <td>
                 <table>
                     <tr><td>0</td><td>1</td></tr>
@@ -1326,7 +1326,7 @@ The argument is invalid as the premises when $p$ and $r$ are true and when $q$ i
         <!-- NAND Gate -->
         <tr>
             <td>NAND</td>
-            <td><img src="Images/Logic Gates/NAND.png" alt="NAND Gate Symbol" width="120" height="60"></td>
+            <td><img src="Images/Logic Gates/NAND.png" alt="NAND Gate Symbol" width="120" height="50"></td>
             <td>
                 <table>
                     <tr><td>0</td><td>0</td><td>1</td></tr>
@@ -1339,13 +1339,26 @@ The argument is invalid as the premises when $p$ and $r$ are true and when $q$ i
         <!-- NOR Gate -->
         <tr>
             <td>NOR</td>
-            <td><img src="Images/Logic Gates/NOR.png" alt="NOR Gate Symbol" width="120" height="60"></td>
+            <td><img src="Images/Logic Gates/NOR.png" alt="NOR Gate Symbol" width="120" height="50"></td>
             <td>
                 <table>
                     <tr><td>0</td><td>0</td><td>1</td></tr>
                     <tr><td>0</td><td>1</td><td>0</td></tr>
                     <tr><td>1</td><td>0</td><td>0</td></tr>
                     <tr><td>1</td><td>1</td><td>0</td></tr>
+                </table>
+            </td>
+        </tr>
+        <!-- XNOR Gate -->
+        <tr>
+            <td>XNOR</td>
+            <td><img src="Images/Logic Gates/XNOR.png" alt="XNOR Gate Symbol" width="120" height="50"></td>
+            <td>
+                <table>
+                    <tr><td>0</td><td>0</td><td>1</td></tr>
+                    <tr><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>1</td><td>0</td><td>0</td></tr>
+                    <tr><td>1</td><td>1</td><td>1</td></tr>
                 </table>
             </td>
         </tr>
