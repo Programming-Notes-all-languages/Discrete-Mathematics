@@ -4,6 +4,12 @@
   <li>
     <a href='#logic-form-and-logical-equivalence'>Logic Form and Logical Equivalence</a>
   </li>
+  <li>
+    <a href='#valid-and-invalid-arguments'>Valid and Invalid Arguments</a>
+  </li>
+  <li>
+    <a href='#digital-logic-circuits'>Digital Logic Circuits</a>
+  </li>
 </ol>
 </details>
 
@@ -1283,7 +1289,7 @@ The argument is invalid as the premises when $p$ and $r$ are true and when $q$ i
         <!-- AND Gate -->
         <tr>
             <td>AND</td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/AND_ANSI.svg/120px-AND_ANSI.svg.png" alt="AND Gate Symbol"></td>
+            <td><img src="Images/Logic Gates/AND.png" alt="AND Gate Symbol" width="120" height="60"></td>
             <td>
                 <table>
                     <tr><td>0</td><td>0</td><td>0</td></tr>
@@ -1296,7 +1302,7 @@ The argument is invalid as the premises when $p$ and $r$ are true and when $q$ i
         <!-- OR Gate -->
         <tr>
             <td>OR</td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/OR_ANSI.svg/120px-OR_ANSI.svg.png" alt="OR Gate Symbol"></td>
+            <td><img src="Images/Logic Gates/OR.png" alt="OR Gate Symbol" width="120" height="60"></td>
             <td>
                 <table>
                     <tr><td>0</td><td>0</td><td>0</td></tr>
@@ -1309,7 +1315,7 @@ The argument is invalid as the premises when $p$ and $r$ are true and when $q$ i
         <!-- NOT Gate -->
         <tr>
             <td>NOT</td>
-            <td><img src="Images/Logic Gates/Not.png" alt="NOT Gate Symbol" width="50" height="50"></td>
+            <td><img src="Images/Logic Gates/NOT.png" alt="NOT Gate Symbol" width="120" height="60"></td>
             <td>
                 <table>
                     <tr><td>0</td><td>1</td></tr>
@@ -1317,23 +1323,10 @@ The argument is invalid as the premises when $p$ and $r$ are true and when $q$ i
                 </table>
             </td>
         </tr>
-        <!-- XOR Gate -->
-        <tr>
-            <td>XOR</td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/XOR_ANSI.svg/120px-XOR_ANSI.svg.png" alt="XOR Gate Symbol"></td>
-            <td>
-                <table>
-                    <tr><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>0</td><td>1</td><td>1</td></tr>
-                    <tr><td>1</td><td>0</td><td>1</td></tr>
-                    <tr><td>1</td><td>1</td><td>0</td></tr>
-                </table>
-            </td>
-        </tr>
         <!-- NAND Gate -->
         <tr>
             <td>NAND</td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/NAND_ANSI.svg/120px-NAND_ANSI.svg.png" alt="NAND Gate Symbol"></td>
+            <td><img src="Images/Logic Gates/NAND.png" alt="NAND Gate Symbol" width="120" height="60"></td>
             <td>
                 <table>
                     <tr><td>0</td><td>0</td><td>1</td></tr>
@@ -1346,26 +1339,13 @@ The argument is invalid as the premises when $p$ and $r$ are true and when $q$ i
         <!-- NOR Gate -->
         <tr>
             <td>NOR</td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/NOR_ANSI.svg/120px-NOR_ANSI.svg.png" alt="NOR Gate Symbol"></td>
+            <td><img src="Images/Logic Gates/NOR.png" alt="NOR Gate Symbol" width="120" height="60"></td>
             <td>
                 <table>
                     <tr><td>0</td><td>0</td><td>1</td></tr>
                     <tr><td>0</td><td>1</td><td>0</td></tr>
                     <tr><td>1</td><td>0</td><td>0</td></tr>
                     <tr><td>1</td><td>1</td><td>0</td></tr>
-                </table>
-            </td>
-        </tr>
-        <!-- XNOR Gate -->
-        <tr>
-            <td>XNOR</td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/XNOR_ANSI.svg/120px-XNOR_ANSI.svg.png" alt="XNOR Gate Symbol"></td>
-            <td>
-                <table>
-                    <tr><td>0</td><td>0</td><td>1</td></tr>
-                    <tr><td>0</td><td>1</td><td>0</td></tr>
-                    <tr><td>1</td><td>0</td><td>0</td></tr>
-                    <tr><td>1</td><td>1</td><td>1</td></tr>
                 </table>
             </td>
         </tr>
