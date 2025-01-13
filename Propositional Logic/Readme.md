@@ -8,25 +8,6 @@
 </details>
 
 ## Logic Form and Logical Equivalence
-
-The statement If $p$ or $q$, then $r$ can be written as:
-
-$$
-(p \vee q) \rightarrow r
-$$
-
-The contrapositive of this statement is:
-
-$$
-\neg r \rightarrow (\neg p \land \neg q)
-$$
-
-This means that if $r$ is false, then both $p$ and $q$ must be false
-
-<ul>
-  <li>An example of the above is the following: If the program syntax is faulty of or the program execution results in division by zero, then the computer will generate an error message; therefore, if the computer does not generate an error message, then the program syntax is correct and the program execution does not result in division by zero</li>
-</ul>  
-
 ### Statements
 A <strong>statement</strong> (or <strong>proposition</strong>) is a sentence that is true or false, but not both
 
@@ -797,7 +778,7 @@ p \rightarrow q \equiv \neg p \vee q
 $$
 
 ### The Negation of a Conditional Statement
-The negation of "if $p$ then $q$" is logically equivalent to: $p$ and not $q$
+The negation of "if $p$ then $q$" is logically equivalent to "$p$ and not $q$"
 
 This can be restated symbolically as the following:
 
@@ -824,3 +805,569 @@ Write negations for each of the following statements:
 </details>
 </ul>  
 </details>
+
+### The contrapositive of a Conditional Statement
+
+The <strong>contrapositive</strong> of a conditional statement of the form "if $p$ then $q$" is if $\neg q$ then $\neg p$. Symbolically, the contrapositive of $p \rightarrow q$ is $\neg q \rightarrow \neg p$
+
+### The Converse and Inverse of a Conditional Statement
+Suppose a conditional statement of the form "If $p$ then $q$" is given:
+
+1. The <strong>converse</strong> is "If $q$ then $p$"</li>
+2. The <strong>inverse</strong> is "If $\neg p$ then $\neg q$  
+
+Symbolically,
+the converse of $p \rightarrow q$ is $q \rightarrow p$ and the inverse of $p \rightarrow q$ is $\neg p \rightarrow \neg q$
+
+### Only If and the Biconditional
+Given statement variables $p$ and $q$, the <strong>
+biconditional of $p$ and $q$</strong> is "$p$ if, and only if, $q$" and is denoted $p \leftrightarrow q$. It is true if both $p$ and $q$ have the same truth values and is false if $p$ and $q$ have opposite truth values. The words if and only if are sometimes abbreviated <strong>iff</strong>. Biconditionality indicates logical equivalence
+
+<h3 align="center">
+
+Truth Table for $p \leftrightarrow q$</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$q$</th>
+    <th>$p \vee \neg q \rightarrow p$</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+</table>
+
+#### Order of Operations for Logical Operators
+<ol>
+  <li>
+
+$\neg \quad \quad$ Evaluate negations first</li>
+<li>
+
+$\land, \vee \quad$ Evaluate $\land$ and $\vee$ second. When both are present, parentheses may be needed</li>
+<li>
+
+$\rightarrow$, $\leftrightarrow \quad$ Evaluate $\rightarrow$ and $\leftrightarrow$ third. When both are present, parentheses may be needed</li>
+</ol>
+
+### Necessary and Sufficient Conditions
+If $r$ and $s$ are statements:
+
+<div align="center">
+
+$r$ is a <strong>sufficient condition</strong> for $s \quad$ means $\quad$ "if $r$ then $s$"
+
+$r$ is a <strong>necessary condition</strong> for $s \quad$ means $\quad$ "if not $r$ then not $s$
+</div>
+
+In other words, to say "$r$ is a sufficient condition for $s$ means that the occurrence of $r$ guarantees the occurrence of $s$. However, to say "$r$ is a necessary condition for $s$" means that if $r$ does not occur, then $s$ cannot occur either
+
+<details>
+    <summary>Example problem</summary>
+
+Use truth tables to verify the following logical equivalence: $\neg(p \rightarrow q) \equiv p \land \neg q$. Include a few words of explanation with your answers
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<h3 align="center">
+
+Truth Table for $\neg(p \rightarrow q) \equiv p \land \neg q$</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$q$</th>
+    <th>$\neg q$</th>
+    <th>$p \rightarrow q$</th>
+    <th>$\neg(p \rightarrow q)$</th>
+    <th>$p \land \neg q$</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+</table>
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Construct truth tables for the following statement: $(p \rightarrow (q \rightarrow r)) \leftrightarrow ((p \land q) \rightarrow r)$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<h3 align="center">
+
+Truth Table for $(p \rightarrow (q \rightarrow r)) \leftrightarrow ((p \land q) \rightarrow r)$</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$q$</th>
+    <th>$r$</th>
+    <th>$p \land q$</th>
+    <th>$q \rightarrow r$</th>
+    <th>$p \rightarrow (q \rightarrow r)$</th>
+    <th>$(p \land q) \rightarrow r$</th>
+    <th>$(p \rightarrow (q \rightarrow r)) \leftrightarrow ((p \land q) \rightarrow r)$</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+</table>
+</details>
+</ul>  
+</details>
+
+## Valid and Invalid Arguments
+An <strong>argument</strong> is a sequence of statements, and an <strong>argument form</strong> is a sequence of statement forms. All statements in an argument and all statement forms in an argument form, except for the final one, are called <strong>premises</strong>. The final statement or statement form is called the <strong>conclusion</strong>
+
+To say that an argument is <strong>valid</strong> means that no matter what particular statements are substituted for the statement variables in its premises, if the resulting premises are all true, then the conclusion is also true
+
+#### Testing an Argument Form for Validity
+<ol>
+  <li>Identify the premises and conclusion of the argument form</li>
+  <li>Construct a truth table showing the truth values of all the premises and the conclusion</li>
+  <li>A row of the truth table in which all the premises are true is called a <strong>critical row</strong>. If there is a critical row in which the conclusion is false, then it is possible for an argument of the given form to have true premises and a false conclusion, and so the argument form is invalid. If the conclusion in every critical row is true, then the argument form is valid</li>
+</ol>  
+
+### Modus Ponens and Modus Tollens
+#### Modus Ponens
+Modus Ponens is an argument of the form:
+
+$\quad \quad$ If $p$, then $q$.<br />
+$\quad \quad$ $p$.<br />
+$\quad \quad$ $\therefore q$.
+
+Here is an example of modus ponens:<br />
+$\quad \quad$ If Garrett is the best, then he will earn an A.<br />
+$\quad \quad$ Garrett is the best.<br />
+$\quad \quad$ Therefore, he will earn an A.
+
+#### Modus Tollens
+Modus Tollens is an argument of the form:
+
+$\quad \quad$ If $p$, then $q$.<br />
+$\quad \quad$ $\neg q$.<br />
+$\quad \quad$ $\therefore \neg p$.
+
+Here is an example of modus tollens:<br />
+$\quad \quad$ If Garrett is the best, then he will earn an A.<br />
+$\quad \quad$ Garrett does not earn an A.<br />
+$\quad \quad$ Therefore, Garrett is not the best.<br />
+
+### Additional Valid Argument Forms: Rules of Inference
+A <strong>rule of inference</strong> is a form of argument that is valid
+
+#### Generalization
+Generalization is an argument of the form:
+
+$\quad \quad$ $p$. $\quad \quad \quad \quad$ $q$.<br />
+$\quad \quad$ $\therefore p \vee q \quad \quad$ $\therefore p \vee q$.
+
+Here is an example of generalization:<br />
+$\quad \quad$ $p$: Garrett is a junior.<br />
+$\quad \quad$ $q$: Garrett is a senior.<br />
+$\quad \quad$ Therefore, Garrett is a junior or a senior.<br />
+
+#### Specialization
+Specialization is an argument of the form:
+
+$\quad \quad p \land q.\quad \quad p \land q$.<br />
+$\quad \quad \therefore p$. $\quad \quad$ $\therefore q$.
+
+Here is an example of specialization:<br />
+$\quad \quad$ Garrett knows C++.<br />
+$\quad \quad$ Garrett knows C.<br />
+$\quad \quad$ Therefore, Garrett knows C++.<br />
+
+#### Elimination
+Elimination is an argument of the form:
+
+$\quad \quad$ $p \vee q$.<br />
+$\quad \quad$ $\neg q$.<br />
+$\quad \quad$ $\therefore p$.
+
+Here is an example of elimination:<br />
+$\quad \quad$ Garrett knows C++ or Garrett knows C.<br />
+$\quad \quad$ Garrett does not know C.<br />
+$\quad \quad$ Therefore, Garrett knows C++.<br />
+
+#### Transitivity
+Transitivity is an argument of the form:
+
+$\quad \quad$ $p \rightarrow q$.<br />
+$\quad \quad$ $q \rightarrow r$.<br />
+$\quad \quad$ $\therefore p \rightarrow r$.
+
+Here is an example of transitivity:<br />
+$\quad \quad$ If Garrett is 18, then he was once 17.<br />
+$\quad \quad$ If Garrett is 17, then he was once 16.<br />
+$\quad \quad$ Therefore, if Garrett is 18, then he was once 16.
+
+#### Proof by Division into Cases
+Proof  by division into cases is an argument of the form:<br />
+$\quad \quad$ $p \vee q$.<br />
+$\quad \quad$ $p \rightarrow r$.<br />
+$\quad \quad$ $q \rightarrow r$.<br />
+$\quad \quad$ $\therefore r$.
+
+Here is an example of proof by division into case:<br />
+$\quad \quad$ Garrett is 18 or Garrett is 19.<br />
+$\quad \quad$ If Garrett is 18, then he was once 17.<br />
+$\quad \quad$ If Garrett is 19, then he was once 17.<br />
+$\quad \quad$ Therefore, Garrett was once 17.
+
+#### Contradiction
+Contradiction is an argument of the form:<br />
+$\quad \quad$ $\neg p \rightarrow c$.<br />
+$\quad \quad$ $\therefore p$.
+
+<details>
+    <summary>Example problem</summary>
+
+Use a truth table to determine whether the argument form is valid. Indicate which columns represent the premises and which represent the conclusion, and include a sentence explaining how th truth table supports your answer<br />
+$p \rightarrow q$<br />
+$q \rightarrow p$<br />
+$\therefore p \vee q$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<h3 align="center">
+
+Truth Table for Argument</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$q$</th>
+    <th>$p \rightarrow q$ premises</th>
+    <th>$q \rightarrow p$ premises</th>
+    <th>$p \vee q$ conclusion</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+</table>
+
+The argument is invalid as the premises when $p$ and $q$ are false form a critical row, but the conclusion is false; therefore, the argument is invalid 
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Use a truth table to determine whether the argument form is valid. Indicate which columns represent the premises and which represent the conclusion, and include a sentence explaining how th truth table supports your answer<br />
+$p \rightarrow q \vee r$<br />
+$\neg q \vee \neg r$<br />
+$\therefore \neg p \vee \neg r$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<h3 align="center">
+
+Truth Table for Argument</h3>
+<table align="center">
+  <tr>
+    <th>$p$</th>
+    <th>$q$</th>
+    <th>$r$</th>
+    <th>$\neg q$</th>
+    <th>$\neg r$</th>
+    <th>$q \vee r$</th>
+    <th>$p \rightarrow q \vee r$ premises</th>
+    <th>$\neg q \vee \neg r$ premises</th>
+    <th>$\neg p \vee \neg r$ conclusion</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+  </tr>
+</table>
+
+The argument is invalid as the premises when $p$ and $r$ are true and when $q$ is false, form a critical row, but the conclusion is false; therefore, the argument is invalid 
+</details>
+</ul>  
+</details>
+
+## Digital Logic Circuits
+<table>
+    <thead>
+        <tr>
+            <th>Gate</th>
+            <th>Symbol</th>
+            <th>Truth Table</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- AND Gate -->
+        <tr>
+            <td>AND</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/AND_ANSI.svg/120px-AND_ANSI.svg.png" alt="AND Gate Symbol"></td>
+            <td>
+                <table>
+                    <tr><td>0</td><td>0</td><td>0</td></tr>
+                    <tr><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>1</td><td>0</td><td>0</td></tr>
+                    <tr><td>1</td><td>1</td><td>1</td></tr>
+                </table>
+            </td>
+        </tr>
+        <!-- OR Gate -->
+        <tr>
+            <td>OR</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/OR_ANSI.svg/120px-OR_ANSI.svg.png" alt="OR Gate Symbol"></td>
+            <td>
+                <table>
+                    <tr><td>0</td><td>0</td><td>0</td></tr>
+                    <tr><td>0</td><td>1</td><td>1</td></tr>
+                    <tr><td>1</td><td>0</td><td>1</td></tr>
+                    <tr><td>1</td><td>1</td><td>1</td></tr>
+                </table>
+            </td>
+        </tr>
+        <!-- NOT Gate -->
+        <tr>
+            <td>NOT</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/NOT_ANSI.svg/120px-NOT_ANSI.svg.png" alt="NOT Gate Symbol"></td>
+            <td>
+                <table>
+                    <tr><td>0</td><td>1</td></tr>
+                    <tr><td>1</td><td>0</td></tr>
+                </table>
+            </td>
+        </tr>
+        <!-- XOR Gate -->
+        <tr>
+            <td>XOR</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/XOR_ANSI.svg/120px-XOR_ANSI.svg.png" alt="XOR Gate Symbol"></td>
+            <td>
+                <table>
+                    <tr><td>0</td><td>0</td><td>0</td></tr>
+                    <tr><td>0</td><td>1</td><td>1</td></tr>
+                    <tr><td>1</td><td>0</td><td>1</td></tr>
+                    <tr><td>1</td><td>1</td><td>0</td></tr>
+                </table>
+            </td>
+        </tr>
+        <!-- NAND Gate -->
+        <tr>
+            <td>NAND</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/NAND_ANSI.svg/120px-NAND_ANSI.svg.png" alt="NAND Gate Symbol"></td>
+            <td>
+                <table>
+                    <tr><td>0</td><td>0</td><td>1</td></tr>
+                    <tr><td>0</td><td>1</td><td>1</td></tr>
+                    <tr><td>1</td><td>0</td><td>1</td></tr>
+                    <tr><td>1</td><td>1</td><td>0</td></tr>
+                </table>
+            </td>
+        </tr>
+        <!-- NOR Gate -->
+        <tr>
+            <td>NOR</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/NOR_ANSI.svg/120px-NOR_ANSI.svg.png" alt="NOR Gate Symbol"></td>
+            <td>
+                <table>
+                    <tr><td>0</td><td>0</td><td>1</td></tr>
+                    <tr><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>1</td><td>0</td><td>0</td></tr>
+                    <tr><td>1</td><td>1</td><td>0</td></tr>
+                </table>
+            </td>
+        </tr>
+        <!-- XNOR Gate -->
+        <tr>
+            <td>XNOR</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/XNOR_ANSI.svg/120px-XNOR_ANSI.svg.png" alt="XNOR Gate Symbol"></td>
+            <td>
+                <table>
+                    <tr><td>0</td><td>0</td><td>1</td></tr>
+                    <tr><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>1</td><td>0</td><td>0</td></tr>
+                    <tr><td>1</td><td>1</td><td>1</td></tr>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
