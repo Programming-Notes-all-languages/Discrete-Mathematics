@@ -33,7 +33,7 @@ A <strong>universal conditional statement</strong> is a statement that is both u
 ## The Language of Sets
 A <strong>set</strong> is a well-defined collection of distinct objects known as <strong>members</strong> or <strong>elements</strong>
 
-The notation $x \in A$, read as "$x$ in $A$", indicates that the element $x$ is a member of the set $A$. The notation $x \notin A$ means that $x$ is not in $A$
+The notation $x \in A$, read as $x$ in $A$, indicates that the element $x$ is a member of the set $A$. The notation $x \notin A$ means that $x$ is not in $A$
 
 The <strong>cardinality</strong> of a set $A$, denoted as $|A|$, is the number of elements contained in the set, where writing $|A| = \infty$ denotes that $A$ contains infinitely many elements
 
