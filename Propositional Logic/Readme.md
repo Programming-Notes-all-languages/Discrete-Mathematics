@@ -92,9 +92,12 @@ Symbolically:
 $A$ $\subseteq$ $B$ $\quad$ means that $\quad$ for all elements $x$, if $x$ $\in$ $A$ then $x$ $\in$ $B$ 
 </div>
 
-The phrases <em>$A$ is contained in $B$ and $B$ contains $A$ are alternative ways of saying that $A$ is a subset of $B$</em>
+The phrases <em> $A$ is contained in $B$ and $B$ contains $A$ are alternative ways of saying that $A$ is a subset of $B$ </em>
 
-$A \nsubseteq B \quad$ means that $\quad$ there is at least one element $x$ such that $x \in A$ and $x \notin B$
+<div align="center">
+
+$A$ $\nsubseteq$ $B$ $\quad$ means that $\quad$ there is at least one element $x$ such that $x$ $\in$ $A$ and $x$ $\notin$ $B$
+</div>
 
 If $A$ = &#123;1, 2&#125; and $B$ = &#123;&#123;1, 2&#125;, 3&#125;, then $1 \in A$, $1 \notin B$, $A \in B$, $A \nsubseteq B$
 <ul>
