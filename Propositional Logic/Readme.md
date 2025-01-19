@@ -79,7 +79,7 @@ Let $S$ denote a set and let $P(x)$ be a property that an element $x \in S$ may 
 
 <div align="center">
 
-$A$ = &#123; $x$ $\in$ $S$ $|$ $P(x)$ &#125;
+$A$ = &#123; $x$ $\in$ $S$ $|$ $P$ $($ $x$ $)$ &#125;
 </div>
 
 ### Subsets
