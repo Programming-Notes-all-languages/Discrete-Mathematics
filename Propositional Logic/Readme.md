@@ -89,7 +89,7 @@ Symbolically:
 
 <div align="center">
 
-$A \subseteq B \quad$ means that $\quad$ for all elements $x$, if $x \in A$ then $x \in B$ 
+$A$ $\subseteq$ $B$ $\quad$ means that $\quad$ for all elements $x$, if $x$ $\in$ $A$ then $x$ $\in$ $B$ 
 </div>
 
 The phrases <em>$A$ is contained in $B$ and $B$ contains $A$ are alternative ways of saying that $A$ is a subset of $B$</em>
@@ -124,9 +124,9 @@ If $A$ = &#123;1, 2&#125; and $B$ = &#123;&#123;1, 2&#125;, 3&#125;, then $1 \in
     <summary>Solution</summary>
 <ol type="a">
   <li>Yes, the element 2 is indeed in the set</li>
-  <li>Yes, 3&#125; is a subset of itself because all of the elements in the set, 3, are within itself</li>
-  <li>No, &#123;1, 2&#125;$ is a set and there is no element in &#123;1, 2, 3&#125; that is a set</li>
-  <li>Yes, &#123;2&#125;$ is an element in the set since there an element in the set which contains the &#123;2&#125; set</li>
+  <li>Yes, &#123;3&#125; is a subset of itself because all of the elements in the set, 3, are within itself</li>
+  <li>No, &#123;1, 2&#125; is a set and there is no element in &#123;1, 2, 3&#125; that is a set</li>
+  <li>Yes, &#123;2&#125; is an element in the set since there an element in the set which contains the &#123;2&#125; set</li>
   <li>No, 1 is not an element in the set. An element of the set is &#123;1&#125;, not 1</li>
   <li>Yes, &#123;2&#125; is a subset of the set</li>
   <li>Yes, both elements in this set, &#123;1, 3&#125;, can be found in this set, &#123;1, 2, 3&#125;</li>
@@ -145,7 +145,7 @@ A set $A$ is called an empty set if its cardinality is 0, meaning:
 
 <div align="center">
 
-$A = \emptyset \quad$ if and only if $\quad x \notin A$
+$A$ = $\emptyset$ $\quad$ if and only if $\quad$ $x$ $\notin$ $A$
 </div>
 
 This means that no element $x$ exists such that $x$ is a member of $A$
@@ -154,7 +154,7 @@ The empty set is a subset of every set, including itself:
 
 <div align="center">
 
-$\emptyset \subseteq A \quad$ for any set $\quad A$
+$\emptyset$ $\subseteq$ $A$ $\quad$ for any set $\quad$ $A$
 </div>
 
 ### Equal Sets
@@ -193,14 +193,14 @@ Let $A$ and $B$ be sets. A <strong>relation</strong> from $A$ to $B$ is a subset
 
 <div align="center">
 
-$x R y \quad$ or equivalently $\quad (x, y) \in R$
+$x$ $R$ $y$ $\quad$ or equivalently $\quad$ $($ $x$, $y$ $)$ $\in$ $R$
 </div>
 
 If $x$ is not related to $y$:
 
 <div align="center">
 
-$x \cancel{R} y \quad$ or equivalently $\quad (x, y) \notin R$
+$x$ $\cancel{R}$ $y$ $\quad$ or equivalently $\quad$ $($ $x$, $y$ $)$ $\notin$ $R$
 </div>
 
 The set $A$ is called the <strong>domain</strong> of $R$ and the set of $B$ is called the <strong>co-domain</strong> of $R$
@@ -233,13 +233,13 @@ $R$ = &#123;(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)&#125;
 The notation for a relation $R$ may be written symbolically as follows:
 <div align="center">
 
-$x R y \quad$ means that $\quad (x, y) \in R$
+$x$ $R$ $y$ $\quad$ means that $\quad$ $($ $x$, $y$ $)$ $\in$ $R$
 </div>
 
 The notation $x \cancel{R} y$ means that $x$ is not related to $y$ by $R$:
 <div align="center">
 
-$x \cancel{R} y \quad$ means that $\quad (x, y) \notin R$
+$x$ $\cancel{R}$ $y$ $\quad$ means that $\quad$ $($ $x$, $y$ $)$ $\notin$ $R$
 </div>
 
 <details>
@@ -249,7 +249,7 @@ Let $C = D$ = &#123;-3, -2, -1, 1, 2, 3&#125; and define a relation $S$ from $C$
 
 <div align="center">
 
-For every $(x, y) \in C$ x $D, (x, y) \in S$ means that $1/x - 1/y$ is an integer
+For every $($ $x$, $y$ $)$ $\in$ $C$ x $D$, $($ $x$, $y$ $)$ $\in$ $S$ means that $1$ $/$ $x$ $-$ $1$ $/$ $y$ is an integer
 </div>
 <ol type="a">
   <li>
@@ -292,7 +292,7 @@ Let $G$ = &#123;-2, 0, 2&#125; and $H$ = &#123;4, 6, 8&#125; and define a relati
 
 <div align="center">
 
-For every $(x, y) \in G$ x $H, (x, y) \in V$ means that $(x - y)/ 4$ is an integer
+For every $($ $x$, $y$ $)$ $\in$ $G$ x $H$, $($ $x$, $y$ $)$ $\in$ $V$ means that $($ $x$ $-$ $y$ $)$ $/$ $4$ is an integer
 </div>
 <ol type="a">
   <li>
@@ -335,7 +335,7 @@ Define a relation $S$ from <strong>$R$</strong> to <strong>$R$</strong> as follo
 
 <div align="center">
 
-For every $(x, y) \in $<strong>$R$</strong> x <strong>$R$</strong>$, (x, y) \in S$ means that $x \geq y$
+For every $($ $x$, $y$ $)$ $\in$ <strong>$R$</strong> x <strong>$R$</strong>, $($ $x$, $y$ $)$ $\in$ $S$ means that $x$ $\geq$ $y$
 </div>
 <ol type="a">
   <li>
@@ -369,7 +369,7 @@ Define a relation $R$ from <strong>$R$</strong> to <strong>$R$</strong> as follo
 
 <div align="center">
 
-For every $(x, y) \in $<strong>$R$</strong> x <strong>$R$</strong>$, (x, y) \in S$ means that $y = x$<sup>2</sup>
+For every $($ $x$, $y$ $)$ $\in$ <strong>$R$</strong> x <strong>$R$</strong>, $($ $x$, $y$ $)$ $\in$ $S$ means that $y$ $=$ $x$<sup>2</sup>
 </div>
 <ol type="a">
   <li>
@@ -400,13 +400,10 @@ For every $(x, y) \in $<strong>$R$</strong> x <strong>$R$</strong>$, (x, y) \in 
 
 Let $A$ = &#123;2, 4&#125; and $B$ = &#123;1, 3, 5&#125; and define relations $U$, $V$, and $W$ from $A$ to $B$ as follows:
 
-<div align="center">
-
 For every $(x, y) \in A$ x $B$<br />
 $(x, y) \in U$ means that $y - x > 2$,<br />
 $(x, y) \in V$ means that $y - 1 = x/2$, and<br />
 $W$ = &#123;(2, 5), (4, 1), (2, 3)&#125;
-</div>
 <ul>  
   <details>
     <summary>Solution</summary>
