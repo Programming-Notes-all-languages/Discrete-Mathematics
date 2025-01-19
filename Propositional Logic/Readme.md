@@ -61,7 +61,7 @@ The <strong>cardinality</strong> of a set $A$, denoted as $|A|$, is the number o
 </ul>  
 
 ### Set-Roster Notation
-A set may be specified using <strong>set-roster notation</strong> by writing all of its elements between braces. For example, the set $A$ = &#123; 1, 2, 3&#125; denotes the set whose elements are 1, 3, and 3
+A set may be specified using <strong>set-roster notation</strong> by writing all of its elements between braces. For example, the set $A$ = &#123;1, 2, 3&#125; denotes the set whose elements are 1, 3, and 3
 
 A variation of the notation is sometimes used to describe a very large set, as the set $A$ = &#123;1, 2, 3, ..., 100&#125; refers to the set of all integers from 1 to 100. The symbol ... is called an <strong>ellipsis</strong> and is read "and so forth"
 
@@ -75,11 +75,11 @@ $X$ = &#123;1, 2, 3&#125; $\quad$ $Y$ = &#123;1, 3, 2&#125; $\quad$ $Z$ = &#123;
 Each of the above refers to the same three-element set, since listed order does not distinguish sets, and sets contain distinct objects, as sets allow elements to be listed repeatedly, but that is usually not a common practice
 
 ### Set-Builder Notation
-Let $S$ denote a set and let $P(x)$ be a property that an element $x \in S$ may or may not have> Set $A$ can be introduced as in the following:
+Let $S$ denote a set and let $P(x)$ be a property that an element $x \in S$ may or may not have. Set $A$ can be introduced as in the following:
 
 <div align="center">
 
-$A$ = &#123; $x \in S | P(x)$ &#125;
+$A$ = &#123; $x$ $\in$ $S$ $|$ $P(x)$ &#125;
 </div>
 
 ### Subsets
