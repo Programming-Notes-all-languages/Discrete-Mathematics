@@ -61,7 +61,7 @@ The <strong>cardinality</strong> of a set $A$, denoted as $|A|$, is the number o
 </ul>  
 
 ### Set-Roster Notation
-A set may be specified using <strong>set-roster notation</strong> by writing all of its elements between braces. For example, the set $A = \{1, 2, 3\}$ denotes the set whose elements are 1, 3, and 3
+A set may be specified using <strong>set-roster notation</strong> by writing all of its elements between braces. For example, the set $A = {1, 2, 3}$ denotes the set whose elements are 1, 3, and 3
 
 A variation of the notation is sometimes used to describe a very large set, as the set 
 $A = \{1, 2, 3, ..., 100\}$ refers to the set of all integers from 1 to 100. The symbol ... is called an <strong>ellipsis</strong> and is read "and so forth"
