@@ -69,7 +69,7 @@ $A = \{1, 2, 3, ..., 100\}$ refers to the set of all integers from 1 to 100. The
 Here is an example of using set-roster notation:
 
 $$
-X = {1, 2, 3\} \quad Y = \{1, 3, 2\} \quad Z = \{1, 2, 2, 3\}
+X = ${$1, 2, 3\} \quad Y = \{1, 3, 2\} \quad Z = \{1, 2, 2, 3\}
 $$
 
 Each of the above refers to the same three-element set, since listed order does not distinguish sets, and sets contain distinct objects, as sets allow elements to be listed repeatedly, but that is usually not a common practice
