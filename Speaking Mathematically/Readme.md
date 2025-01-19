@@ -64,22 +64,24 @@ The <strong>cardinality</strong> of a set $A$, denoted as $|A|$, is the number o
 A set may be specified using <strong>set-roster notation</strong> by writing all of its elements between braces. For example, the set $A$ = &#123; 1, 2, 3&#125; denotes the set whose elements are 1, 3, and 3
 
 A variation of the notation is sometimes used to describe a very large set, as the set 
-$A = \{1, 2, 3, ..., 100\}$ refers to the set of all integers from 1 to 100. The symbol ... is called an <strong>ellipsis</strong> and is read "and so forth"
+$A$ = &#123;1, 2, 3, ..., 100&#125; refers to the set of all integers from 1 to 100. The symbol ... is called an <strong>ellipsis</strong> and is read "and so forth"
 
 Here is an example of using set-roster notation:
 
-$$
-X = \{1, 2, 3\} \quad Y = \{1, 3, 2\} \quad Z = \{1, 2, 2, 3\}
-$$
+<div align="center">
+
+$X$ = &#123;1, 2, 3&#125; $\quad Y$ = &#123;1, 3, 2&#125; $\quad Z$ = &#123;1, 2, 2, 3&#125;
+</div>
 
 Each of the above refers to the same three-element set, since listed order does not distinguish sets, and sets contain distinct objects, as sets allow elements to be listed repeatedly, but that is usually not a common practice
 
 ### Set-Builder Notation
 Let $S$ denote a set and let $P(x)$ be a property that an element $x \in S$ may or may not have> Set $A$ can be introduced as in the following:
 
-$$
-A = \{ x \in S | P(x) \}
-$$
+<div align="center">
+
+$A$ = &#123; $x \in S | P(x)$ &#125;
+</div>
 
 ### Subsets
 If $A$ and $B$ are sets, then $A$ is called a <strong>subset</strong> of $B$, written $A \subseteq B$, if, and only if, every element of $A$ is also an element of $B$
@@ -95,9 +97,11 @@ The phrases <em>$A$ is contained in $B$ and $B$ contains $A$ are alternative way
 
 $A \nsubseteq B \quad$ means that $\quad$ there is at least one element $x$ such that $x \in A$ and $x \notin B$
 
-If $A = \{1, 2\}$ and $B = \{\{1, 2\}, 3\}$, then $1 \in A$, $1 \notin B$, $A \in B$, $A \nsubseteq B$
+If $A$ = &#123;1, 2&#125; and $B$ = &#123;&#123;1, 2&#125;, 3&#125;, then $1 \in A$, $1 \notin B$, $A \in B$, $A \nsubseteq B$
 <ul>
-  <li>The cardinality of $B = \{\{1, 2\}, 3\}$ is 2, not 3, since there are two elements of $B$: the set \{1, 2\} and the number 3</li>
+  <li>
+  
+  The cardinality of $B$ = &#123;&#123;1, 2&#125;, 3&#125; is 2, not 3, since there are two elements of $B$: the set &#123;1, 2&#125; and the number 3</li>
   <li>The numbers 1 and 2 are not elements of $B$; instead, they are elements of a set contained in $B$</li>
 </ul>  
 
@@ -105,40 +109,40 @@ If $A = \{1, 2\}$ and $B = \{\{1, 2\}, 3\}$, then $1 \in A$, $1 \notin B$, $A \i
     <summary>Example problem</summary>
 
 <ol type="a">
-  <li>Is $2 \in \{1, 2, 3\}$</li>
-  <li>Is $\{3\} \subseteq \{3\}$</li>
-  <li>Is $\{1, 2\} \in \{1, 2, 3\}$</li>
-  <li>Is $\{2\} \in \{\{1\}, \{2\}, \{3\}}$</li>
-  <li>Is $1 \in \{\{1\}, 2, 3\}$</li>
-  <li>Is $\{2\} \in \{1, 2, 3\}$</li>
-  <li>Is $\{1, 3\} \subseteq \{1, 2, 3\}$</li>
-  <li>Is $2 \in \{\{1\}, \{2\}, \{3\}\}$
-  <li>Is $\{3\} \subseteq \{1, 2, 3\}$</li>
-  <li>Is $2 \in \{\{2\}, 3\}$</li>
+  <li>Is $2 \in$ &#123;1, 2, 3&#125;</li>
+  <li>Is &#123;3&#125; $\subseteq$ &#123;3&#125;</li>
+  <li>Is &#123;1, 2&#125; $\in$ &#123;1, 2, 3&#125;</li>
+  <li>Is &#123;2&#125; $\in$ &#123;&#123;1&#125;, &#123;2&#125;, &#123;3&#125;&#125;</li>
+  <li>Is $1 \in$ &#123;&#123;1&#125;, 2, 3&#125;</li>
+  <li>Is &#123;2&#125; $\in$ &#123;1, 2, 3&#125;</li>
+  <li>Is $&#123;1, 3&#125; \subseteq &#123;1, 2, 3&#125;</li>
+  <li>Is $2 \in$ &#123;&#123;1&#125;, &#123;2&#125;, &#123;3&#125;&#125;</li>
+  <li>Is &#123;3&#125; $\subseteq$ &#123;1, 2, 3&#125;</li>
+  <li>Is $2 \in$ &#123;&#123;2&#125;, 3&#125;</li>
 </ol>  
 <ul>  
   <details>
     <summary>Solution</summary>
 <ol type="a">
   <li>Yes, the element 2 is indeed in the set</li>
-  <li>Yes, $\{3\}$ is a subset of itself because all of the elements in the set, 3, are within itself</li>
-  <li>No, $\{1, 2\}$ is a set and there is no element in $\{1, 2, 3\}$ that is a set</li>
-  <li>Yes, $\{2\}$ is an element in the set since there an element in the set which contains the $\{2\}$ set</li>
-  <li>No, 1 is not an element in the set. An element of the set is $\{1\}$, not 1</li>
-  <li>Yes, $\{2\}$ is a subset of the set</li>
-  <li>Yes, both elements in this set, $\{1, 3\}$, can be found in this set, $\{1, 2, 3\}$</li>
+  <li>Yes, 3&#125; is a subset of itself because all of the elements in the set, 3, are within itself</li>
+  <li>No, &#123;1, 2&#125;$ is a set and there is no element in &#123;1, 2, 3&#125; that is a set</li>
+  <li>Yes, &#123;2&#125;$ is an element in the set since there an element in the set which contains the &#123;2&#125; set</li>
+  <li>No, 1 is not an element in the set. An element of the set is &#123;1&#125;, not 1</li>
+  <li>Yes, &#123;2&#125; is a subset of the set</li>
+  <li>Yes, both elements in this set, &#123;1, 3&#125;, can be found in this set, &#123;1, 2, 3&#125;</li>
   <li>No, 2 is not an element of the set since the elements of the set are other sets</li>
-  <li>Yes, $\{3\}$ is a subset of the set since the set $\{3\}$ is a subset of the larger set, since the large set has an element with the value 3</li>
-  <li>No, 2 is not an element of the set; however, \{2\}$ is an element of the set</li>
+  <li>Yes, &#123;3&#125; is a subset of the set since the set &#123;3&#125; is a subset of the larger set, since the large set has an element with the value 3</li>
+  <li>No, 2 is not an element of the set; however, &#123;2&#125; is an element of the set</li>
 </ol>
 </details>
 </ul>  
 </details>
 
 ### Empty Sets
-An <strong>empty set</strong> is denoted by $\emptyset$ or $\{\}$
+An <strong>empty set</strong> is denoted by $\emptyset$ or &#123;&#125;
 
-A set $A$ is called an mepty set if its cardinality is 0, meaning:
+A set $A$ is called an empty set if its cardinality is 0, meaning:
 
 <div align="center">
 
@@ -169,7 +173,7 @@ Given sets $A$ and $B$, the <strong>Cartesian product of $A$ and $B$</strong> de
 <details>
     <summary>Example problem</summary>
 
-Let $A = \{1, 2, 3\} and B = \{u, v\}$
+Let $A$ = &#123;1, 2, 3&#125; and $B$ = &#123;u, v&#125;
 <ol type="a">
   <li>Find $A$ x $B$</li> 
   <li>Find $B$ x $B$</li>
@@ -178,8 +182,8 @@ Let $A = \{1, 2, 3\} and B = \{u, v\}$
   <details>
     <summary>Solution</summary>
 <ol type="a">
-  <li>$A$ x $B$ = $\{(1, u), (2, u), (3, u), (1, v), (2, v), (3, v)\}$</li>
-  <li>$B$ x $B$ = $\{(u, u), (v, u), (v, u), (v, v)\}$</li>
+  <li>$A$ x $B$ = &#123;(1, u), (2, u), (3, u), (1, v), (2, v), (3, v)&#125;</li>
+  <li>$B$ x $B$ = &#123;(u, u), (v, u), (v, u), (v, v)&#125;</li>
 </ol>  
 </details>
 </ul>  
@@ -207,7 +211,7 @@ A relation is a <strong>function</strong> from $A$ to $B$ if every element of $A
 <details>
     <summary>Example problem</summary>
 
-Let $A = \{0, 1, 2\}$ and $B = \{1, 2, 3\}$ and let's say that an element $x$ in $A$ is related to an element $y$ in $B$ if, and only if, $x$ is less than $y$. Use the notation $x R y$ as a shorthand for the sentence $x$ is related to $y$
+Let $A$ = &#123;0, 1, 2&#125; and $B$ = &#123;1, 2, 3&#125; and let's say that an element $x$ in $A$ is related to an element $y$ in $B$ if, and only if, $x$ is less than $y$. Use the notation $x R y$ as a shorthand for the sentence $x$ is related to $y$
 <ul>  
   <details>
     <summary>Solution</summary>
@@ -222,7 +226,7 @@ Let $A = \{0, 1, 2\}$ and $B = \{1, 2, 3\}$ and let's say that an element $x$ in
 2 $\cancel{R}$ 2 $\quad$ since $\quad$ 2 $\cancel{<}$ 2<br />
 2 $R$ 3 $\quad$ since $\quad$ 2 < 3<br /><br />
 
-$R = \{(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)\}$
+$R$ = &#123;(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)&#125;
 </details>
 </ul>  
 </details>
@@ -242,7 +246,7 @@ $x \cancel{R} y \quad$ means that $\quad (x, y) \notin R$
 <details>
     <summary>Example problem</summary>
 
-Let $C = D = \{-3, -2, -1, 1, 2, 3\}$ and define a relation $S$ from $C$ to $D$ as follows
+Let $C = D$ = &#123;-3, -2, -1, 1, 2, 3&#125; and define a relation $S$ from $C$ to $D$ as follows
 
 <div align="center">
 
@@ -272,11 +276,11 @@ For every $(x, y) \in C$ x $D, (x, y) \in S$ means that $1/x - 1/y$ is an intege
   $1/3 + 1/3 = 2/3$, which is not an integer. So $(3, -3) \in S$</li>
   <li>
   
-  $S = \{(-3, -3), (-2, -2), (-2, 2), (-1, -1), (-1, 1), (1, -1). (1, 1), (2, -2), (2, 2), (3, 3)\}$</li>
+  $S$ = &#123;(-3, -3), (-2, -2), (-2, 2), (-1, -1), (-1, 1), (1, -1). (1, 1), (2, -2), (2, 2), (3, 3&#125;</li>
   <li>
 
-  domain of $S = \{-3, -2, -1, 1, 2, 3\}$<br />
-  co-domain of $S = \{-3, -2, -1, 1, 2, 3\}$</li>
+  domain of $S$ = &#123;-3, -2, -1, 1, 2, 3&#125;<br />
+  co-domain of $S$ = &#123;-3, -2, -1, 1, 2, 3&#125;</li>
 </ol>  
 </details>
 </ul>  
@@ -285,7 +289,7 @@ For every $(x, y) \in C$ x $D, (x, y) \in S$ means that $1/x - 1/y$ is an intege
 <details>
     <summary>Example problem</summary>
 
-Let $G = \{-2, 0, 2\}$ and $H = \{4, 6, 8\}$ and define a relation $V$ from $G$ to $H$ as follows
+Let $G$ = &#123;-2, 0, 2&#125; and $H$ = &#123;4, 6, 8&#125; and define a relation $V$ from $G$ to $H$ as follows
 
 <div align="center">
 
@@ -315,11 +319,11 @@ For every $(x, y) \in G$ x $H, (x, y) \in V$ means that $(x - y)/ 4$ is an integ
   $(2 - 4) / 4 = -2/4$, which is not an integer. So $(2, 4) \notin V$</li>
   <li>
   
-  $V = \{(-2, 6), (0, 4), (0, 8), (2, 6)\}$</li>
+  $V$ = &#123;(-2, 6), (0, 4), (0, 8), (2, 6)&#125;</li>
   <li>
 
-  domain of $V = \{-2, 0, 2\}$<br />
-  co-domain of $V = \{4, 6, 8\}$</li>
+  domain of $V$ = &#123;-2, 0, 2&#125;<br />
+  co-domain of $V$ = &#123;4, 6, 8&#125;</li>
 </ol>  
 </details>
 </ul>  
@@ -395,21 +399,21 @@ For every $(x, y) \in $<strong>$R$</strong> x <strong>$R$</strong>$, (x, y) \in 
 <details>
     <summary>Example problem</summary>
 
-Let $A = \{2, 4\}$ and $B = \{1, 3, 5\}$ and define relations $U$, $V$, and $W$ from $A$ to $B$ as follows:
+Let $A$ = &#123;2, 4&#125; and $B$ = &#123;1, 3, 5&#125; and define relations $U$, $V$, and $W$ from $A$ to $B$ as follows:
 
 <div align="center">
 
 For every $(x, y) \in A$ x $B$<br />
 $(x, y) \in U$ means that $y - x > 2$,<br />
 $(x, y) \in V$ means that $y - 1 = x/2$, and<br />
-$W = \{(2, 5), (4, 1), (2, 3)\}$
+$W$ = &#123;(2, 5), (4, 1), (2, 3)&#125;
 </div>
 <ul>  
   <details>
     <summary>Solution</summary>
 
-$U = \{(2, 5)\}$
-$V = \{(4, 3)\}$
+$U$ = &#123;(2, 5)&#125;
+$V$ = &#123;(4, 3)&#125;
 </details>
 </ul>  
 </details>
