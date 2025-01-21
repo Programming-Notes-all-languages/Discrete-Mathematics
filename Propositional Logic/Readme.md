@@ -1069,7 +1069,7 @@ Modus Ponens is an argument of the form:
 
 $\quad \quad$ If $p$, then $q$.<br />
 $\quad \quad$ $p$.<br />
-$\quad \quad$ $\therefore q$.
+$\quad \quad \therefore q$.
 
 Here is an example of modus ponens:<br />
 $\quad \quad$ If Garrett is the best, then he will earn an A.<br />
@@ -1081,7 +1081,7 @@ Modus Tollens is an argument of the form:
 
 $\quad \quad$ If $p$, then $q$.<br />
 $\quad \quad$ $\neg q$.<br />
-$\quad \quad$ $\therefore \neg p$.
+$\quad \quad \therefore \neg p$.
 
 Here is an example of modus tollens:<br />
 $\quad \quad$ If Garrett is the best, then he will earn an A.<br />
@@ -1095,7 +1095,7 @@ A <strong>rule of inference</strong> is a form of argument that is valid
 Generalization is an argument of the form:
 
 $\quad \quad$ $p$. $\quad \quad \quad \quad$ $q$.<br />
-$\quad \quad$ $\therefore p \vee q \quad \quad$ $\therefore p \vee q$.
+$\quad \quad \therefore p \vee q \quad \quad \therefore p \vee q$.
 
 Here is an example of generalization:<br />
 $\quad \quad$ $p$: Garrett is a junior.<br />
@@ -1130,7 +1130,7 @@ Transitivity is an argument of the form:
 
 $\quad \quad$ $p \rightarrow q$.<br />
 $\quad \quad$ $q \rightarrow r$.<br />
-$\quad \quad$ $\therefore p \rightarrow r$.
+$\quad \quad \therefore p \rightarrow r$.
 
 Here is an example of transitivity:<br />
 $\quad \quad$ If Garrett is 18, then he was once 17.<br />
@@ -1142,7 +1142,7 @@ Proof  by division into cases is an argument of the form:<br />
 $\quad \quad$ $p \vee q$.<br />
 $\quad \quad$ $p \rightarrow r$.<br />
 $\quad \quad$ $q \rightarrow r$.<br />
-$\quad \quad$ $\therefore r$.
+$\quad \quad \therefore r$.
 
 Here is an example of proof by division into case:<br />
 $\quad \quad$ Garrett is 18 or Garrett is 19.<br />
@@ -1153,7 +1153,7 @@ $\quad \quad$ Therefore, Garrett was once 17.
 #### Contradiction
 Contradiction is an argument of the form:<br />
 $\quad \quad$ $\neg p \rightarrow c$.<br />
-$\quad \quad$ $\therefore p$.
+$\quad \quad \therefore p$.
 
 <details>
     <summary>Example problem</summary>
@@ -1563,15 +1563,15 @@ where each $n$ is an integer and each $d$ is one of the binary digits (or bits) 
 #### Binary Notation for Integers from 1 to 9
 Here is the derivation of binary notation for the integers from 1 to 9:
 
-$\quad $ 1<sub>10</sub> = 1<sub>2</sub><br />
-$\quad $ 2<sub>10</sub> = 10<sub>2</sub><br />
-$\quad $ 3<sub>10</sub> = 11<sub>2</sub><br />
-$\quad $ 4<sub>10</sub> = 100<sub>2</sub><br />
-$\quad $ 5<sub>10</sub> = 101<sub>2</sub><br />
-$\quad $ 6<sub>10</sub> = 101<sub>2</sub><br />
-$\quad $ 7<sub>10</sub> = 111<sub>2</sub><br />
-$\quad $ 8<sub>10</sub> = 1000<sub>2</sub><br />
-$\quad $ 9<sub>10</sub> = 1001<sub>2</sub><br />
+$\quad$ 1<sub>10</sub> = 1<sub>2</sub><br />
+$\quad$ 2<sub>10</sub> = 10<sub>2</sub><br />
+$\quad$ 3<sub>10</sub> = 11<sub>2</sub><br />
+$\quad$ 4<sub>10</sub> = 100<sub>2</sub><br />
+$\quad$ 5<sub>10</sub> = 101<sub>2</sub><br />
+$\quad$ 6<sub>10</sub> = 101<sub>2</sub><br />
+$\quad$ 7<sub>10</sub> = 111<sub>2</sub><br />
+$\quad$ 8<sub>10</sub> = 1000<sub>2</sub><br />
+$\quad$ 9<sub>10</sub> = 1001<sub>2</sub><br />
 
 <details>
     <summary>Example problem</summary>
