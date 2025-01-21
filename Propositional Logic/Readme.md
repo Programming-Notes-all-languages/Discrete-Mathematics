@@ -77,7 +77,7 @@ The notation for inequalities involves $and$ and $or$ statements. For instance, 
 <div align="center">
 
 $x$ $\leq$ $a$ $\quad$ means $\quad$ $x$ $<$ $a$ or $x$ $=$ $a$<br />
-$a$ $\leq$ $x$ $\leq$ $b$ $\quad$ means $\quad$ $a$$\leq$ $x$ and $x$ $\leq$ $b$
+$a$ $\leq$ $x$ $\leq$ $b$ $\quad$ means $\quad$ $a$ $\leq$ $x$ and $x$ $\leq$ $b$
 </div>
 
 <details>
@@ -880,9 +880,9 @@ If $r$ and $s$ are statements:
 
 <div align="center">
 
-$r$ is a <strong>sufficient condition</strong> for $s \quad$ means $\quad$ "if $r$ then $s$"
+$r$ is a <strong>sufficient condition</strong> for $s$ $\quad$ means $\quad$ "if $r$ then $s$"
 
-$r$ is a <strong>necessary condition</strong> for $s \quad$ means $\quad$ "if not $r$ then not $s$
+$r$ is a <strong>necessary condition</strong> for $s$ $\quad$ means $\quad$ "if not $r$ then not $s$
 </div>
 
 In other words, to say "$r$ is a sufficient condition for $s$ means that the occurrence of $r$ guarantees the occurrence of $s$. However, to say "$r$ is a necessary condition for $s$" means that if $r$ does not occur, then $s$ cannot occur either
