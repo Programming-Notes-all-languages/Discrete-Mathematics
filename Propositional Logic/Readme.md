@@ -58,7 +58,7 @@ neither $p$ nor $q$ $\quad$ means $\quad$ $\neg$ $p$ and $\neg$ $q$
 
 <details>
     <summary>Example problem</summary>
-Write each of the following sentences symbolically, letting h = "It is hot" and s = "It is sunny".<br />
+Write each of the following sentences symbolically, letting $h$ = "It is hot" and $s$ = "It is sunny".<br />
 a) It is not hot but it is sunny<br />
 b) It is neither hot nor sunny
 <ul>  
@@ -77,14 +77,14 @@ The notation for inequalities involves $and$ and $or$ statements. For instance, 
 <div align="center">
 
 $x$ $\leq$ $a$ $\quad$ means $\quad$ $x$ $<$ $a$ or $x$ $=$ $a$<br />
-$a$ $\leq$ $x$ $\leq$ $b$ $\quad$ means $\quad$ $a$ $\leq$ $x$ and $x$ $\leq$ $b$
+$a$ $\leq$ $x$ $\leq$ $b$ $\quad$ means $\quad$ $a$$\leq$ $x$ and $x$ $\leq$ $b$
 </div>
 
 <details>
     <summary>Example problem</summary>
 
-Suppose $x$ is a particular real number. Let $p$, $q$, and $r$ symbolize "0 < $x$", "$x$ < 3", and "$x$ = 3", respectively. Write the following inequalities symbolically:<br />
-a) $x \leq $ 3<br />
+Suppose $x$ is a particular real number. Let $p$, $q$, and $r$ symbolize 0 < $x$, $x$ < 3, and $x$ = 3, respectively. Write the following inequalities symbolically:<br />
+a) $x \leq$ 3<br />
 b) 0 < $x$ < 3<br />
 c)0 < $x \leq$ 3
 <ul>  
