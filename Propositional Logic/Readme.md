@@ -785,15 +785,6 @@ $$
 p \rightarrow q \equiv \neg p \vee q
 $$
 
-### The Negation of a Conditional Statement
-The negation of "if $p$ then $q$" is logically equivalent to "$p$ and not $q$"
-
-This can be restated symbolically as the following:
-
-$$
-\neg(p \rightarrow q) \equiv p \land \neg q
-$$
-
 <details>
     <summary>Example problem</summary>
 
@@ -814,19 +805,6 @@ Write negations for each of the following statements:
 </ul>  
 </details>
 
-### The Contrapositive of a Conditional Statement
-
-The <strong>contrapositive</strong> of a conditional statement of the form "if $p$ then $q$" is if $\neg q$ then $\neg p$. Symbolically, the contrapositive of $p \rightarrow q$ is $\neg q \rightarrow \neg p$
-
-### The Converse and Inverse of a Conditional Statement
-Suppose a conditional statement of the form "If $p$ then $q$" is given:
-
-1. The <strong>converse</strong> is "If $q$ then $p$"</li>
-2. The <strong>inverse</strong> is "If $\neg p$ then $\neg q$  
-
-Symbolically,
-the converse of $p \rightarrow q$ is $q \rightarrow p$ and the inverse of $p \rightarrow q$ is $\neg p \rightarrow \neg q$
-
 ### Only If and the Biconditional
 Given statement variables $p$ and $q$, the <strong>
 biconditional of $p$ and $q$</strong> is "$p$ if, and only if, $q$" and is denoted $p \leftrightarrow q$. It is true if both $p$ and $q$ have the same truth values and is false if $p$ and $q$ have opposite truth values. The words if and only if are sometimes abbreviated <strong>iff</strong>. Biconditionality indicates logical equivalence
@@ -843,24 +821,26 @@ Truth Table for $p$ $\leftrightarrow$ $q$</h3>
   <tr>
     <td>T</td>
     <td>T</td>
-    <td>F</td>
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>F</td>
     <td>T</td>
   </tr>
   <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
     <td>F</td>
     <td>T</td>
-    <td>T</td>
+    <td>F</td>
   </tr>
   <tr>
     <td>F</td>
     <td>F</td>
-    <td>F</td>
+    <td>T</td>
   </tr>
 </table>
+
+In logical terms, $p \leftrightarrow p$ is equivalent to $(p \rightarrow q) \land (q \rightarrow p)$. This written as two conditional statements as if $p$, then $q$ and if $q$, then $p$
 
 #### Order of Operations for Logical Operators
 <ol>
@@ -880,12 +860,12 @@ If $r$ and $s$ are statements:
 
 <div align="center">
 
-$r$ is a <strong>sufficient condition</strong> for $s$ $\quad$ means $\quad$ "if $r$ then $s$"
+$r$ is a <strong>sufficient condition</strong> for $s$ $\quad$ means $\quad$ $r$ $\rightarrow$ $s$
 
-$r$ is a <strong>necessary condition</strong> for $s$ $\quad$ means $\quad$ "if not $r$ then not $s$
+$r$ is a <strong>necessary condition</strong> for $s$ $\quad$ means $\quad$ $s$ $\rightarrow$ $r$
+
+$r$ is a necessary and sufficient condition for $s$ $\quad$ means $\quad$ $r$ $\leftrightarrow$ $s$ 
 </div>
-
-In other words, to say "$r$ is a sufficient condition for $s$ means that the occurrence of $r$ guarantees the occurrence of $s$. However, to say "$r$ is a necessary condition for $s$" means that if $r$ does not occur, then $s$ cannot occur either
 
 <details>
     <summary>Example problem</summary>
@@ -1063,6 +1043,49 @@ To say that an argument is <strong>valid</strong> means that no matter what part
   <li>A row of the truth table in which all the premises are true is called a <strong>critical row</strong>. If there is a critical row in which the conclusion is false, then it is possible for an argument of the given form to have true premises and a false conclusion, and so the argument form is invalid. If the conclusion in every critical row is true, then the argument form is valid</li>
 </ol>  
 
+<details>
+    <summary>Example problem</summary>
+
+Is the following argument form valid or invalid:<br />
+$\quad q$<br />
+$\quad \therefore p \vee q$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+<table>
+  <tr>
+    <th>$p$</th>
+    <th>$q$</th>
+    <th>$p \vee q$</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>  
+  </tr>  
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>  
+  </tr>  
+  <tr>
+    <td>F</td>
+    <td>T</td>
+    <td>T</td>  
+  </tr>  
+  <tr>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>  
+  </tr>  
+</table>
+The column of the argument that represents the premise is: $q$<br />
+The column of the argument that represents the conclusion is: $p \vee q$<br />
+The argument is valid because all truth table rows that have true premises have true conclusions
+</details>
+</ul>  
+</details>
+
 ### Modus Ponens and Modus Tollens
 #### Modus Ponens
 Modus Ponens is an argument of the form:
@@ -1088,6 +1111,27 @@ $\quad \quad$ If Garrett is the best, then he will earn an A.<br />
 $\quad \quad$ Garrett does not earn an A.<br />
 $\quad \quad$ Therefore, Garrett is not the best.<br />
 
+<details>
+    <summary>Example problem</summary>
+
+Consider the following arguments:<br />
+$\quad$ If there are as many rational numbers as there are irrational numbers, then the set of all irrational numbers is infinite.<br />
+$\quad$ The set of all irrational numbers is infinite.<br />
+$\quad \therefore$ There are as many rational numbers as there are irrational numbers.
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+The argument is of the following form:<br />
+$\quad p \rightarrow q$<br />
+$\quad q$<br />
+$\quad \therefore p$<br />
+
+The argument is invalid because the consequent being true does not mean that the antecedent is true
+</details>
+</ul>  
+</details>
+
 ### Additional Valid Argument Forms: Rules of Inference
 A <strong>rule of inference</strong> is a form of argument that is valid
 
@@ -1112,6 +1156,25 @@ Here is an example of specialization:<br />
 $\quad \quad$ Garrett knows C++.<br />
 $\quad \quad$ Garrett knows C.<br />
 $\quad \quad$ Therefore, Garrett knows C++.<br />
+
+<details>
+    <summary>Example problem</summary>
+
+Consider the following arguments:<br />
+$\quad$ Sandra knows Java and Sandra knows C++.<br />
+$\quad \therefore$ Sandra knows C++.
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+The argument is of the following form:<br />
+$\quad p \land q$<br />
+$\quad \therefore q$<br />
+
+The argument is valid because one of the elements in the premise is true. If the conjunction of two elements is true, then both elements are true
+</details>
+</ul>  
+</details>
 
 #### Elimination
 Elimination is an argument of the form:
@@ -1154,6 +1217,81 @@ $\quad \quad$ Therefore, Garrett was once 17.
 Contradiction is an argument of the form:<br />
 $\quad \quad$ $\neg p \rightarrow c$.<br />
 $\quad \quad \therefore p$.
+
+### Contrapositive
+The <strong>contrapositive</strong> of the statement $p \rightarrow q$ is $\neg q \rightarrow \neg p$
+
+<div align="center">
+
+$\neg$ $q$ $\rightarrow$ $\neg$ $p$ $\equiv$ $\neg$ $p$ $\vee$ $q$
+</div>
+
+<details>
+    <summary>Example problem</summary>
+
+What is the contrapositive of the statement: If $x$ is nonnegative, then $x$ is positive or $x$ is 0
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+If $x$ is not positive and $x$ is not zero, then $x$ is not nonnegative<br />
+If $x$ is not nonnegative or $x$ is positive or $x$ is zero
+</details>
+</ul>  
+</details>
+
+### Converse
+The <strong>converse</strong> of the statement $p \rightarrow q$ is $q \rightarrow p$
+
+<details>
+    <summary>Example problem</summary>
+
+What is the converse of the statement: If $x$ is nonnegative, then $x$ is positive or $x$ is 0
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+If $x$ is positive or $x$ is zero, then $x$ is nonnegative
+</details>
+</ul>  
+</details>
+
+### Inverse
+The <strong>inverse</strong> of the statement $p \rightarrow q$ is $\neg p \rightarrow \neg q$
+
+<details>
+    <summary>Example problem</summary>
+
+What is the inverse of the statement: If $x$ is nonnegative, then $x$ is positive or $x$ is 0
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+If $x$ is not nonnegative, then $x$ is not positive and $x$ is not zero
+</details>
+</ul>  
+</details>
+
+### Negation
+The <strong>negation</strong> of the statement $p \rightarrow q$ is $\neg(p \rightarrow q)$
+
+<div align="center">
+
+$\neg$ $($ $p$ $\rightarrow$ $q$ $)$ $\equiv$ $p$ $\land$ $\neg$ $q$
+</div>
+
+<details>
+    <summary>Example problem</summary>
+
+What is the negation of the statement: If $x$ is nonnegative, then $x$ is positive or $x$ is 0
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+If $x$ is nonnegative and $x$ is not positive and $x$ is not zero
+</details>
+</ul>  
+</details>
 
 <details>
     <summary>Example problem</summary>
