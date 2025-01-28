@@ -30,13 +30,13 @@ A <strong>statement</strong> (or <strong>proposition</strong>) is a sentence tha
 
 ### Compound Statements
 The <strong>negation of 
-$p$</strong> is given by the following statement: $\neg p$. This $\neg$ symbol denotes $not$, meaning that $\neg p$ means "not $p$"
+$p$</strong> is given by the following statement: $\neg p$. This $\neg$ symbol denotes $not$, meaning that $\neg p$ means not $p$
 
 The <strong>
-conjunction of $p$ and $q$</strong> is given by the following statement: $p \land q$. This $\land$ symbol is read as "$p$ and $q$"
+conjunction of $p$ and $q$</strong> is given by the following statement: $p \land q$. This $\land$ symbol is read as $p$ and $q$
 
 The <strong>disjunction of 
-$p$ and $q$</strong> is given by the following statement: $p \vee q$. This $\vee$ symbol is read as "$p$ or $q$".
+$p$ and $q$</strong> is given by the following statement: $p \vee q$. This $\vee$ symbol is read as $p$ or $q$.
 
 In more complex statements, such as compound statements, there is an <strong>order of operations</strong> that specifies which parts of an expression are evaluated first
 
@@ -807,7 +807,7 @@ Write negations for each of the following statements:
 
 ### Only If and the Biconditional
 Given statement variables $p$ and $q$, the <strong>
-biconditional of $p$ and $q$</strong> is "$p$ if, and only if, $q$" and is denoted $p \leftrightarrow q$. It is true if both $p$ and $q$ have the same truth values and is false if $p$ and $q$ have opposite truth values. The words if and only if are sometimes abbreviated <strong>iff</strong>. Biconditionality indicates logical equivalence
+biconditional of $p$ and $q$</strong> is $p$ if, and only if, $q$ and is denoted $p \leftrightarrow q$. It is true if both $p$ and $q$ have the same truth values and is false if $p$ and $q$ have opposite truth values. The words if and only if are sometimes abbreviated <strong>iff</strong>. Biconditionality indicates logical equivalence
 
 <h3 align="center">
 
