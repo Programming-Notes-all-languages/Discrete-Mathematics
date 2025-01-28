@@ -242,7 +242,7 @@ $x$ $R$ $y$ $\quad$ means that $\quad$ $($ $x$, $y$ $)$ $\in$ $R$
 The notation $x \cancel{R} y$ means that $x$ is not related to $y$ by $R$:
 <div align="center">
 
-$x$ $\cancel{R}$ $y$ $\quad$ means that $\quad$ $($ $x$, $y$ $)$ $\notin$ $R$
+$x \cancel{R} y$ $\quad$ means that $\quad$ $($ $x$, $y$ $)$ $\notin$ $R$
 </div>
 
 <details>
