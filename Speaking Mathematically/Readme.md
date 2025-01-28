@@ -203,7 +203,7 @@ If $x$ is not related to $y$:
 
 <div align="center">
 
-$x$ $\cancel{R}$ $y$ $\quad$ or equivalently $\quad$ $($ $x$, $y$ $)$ $\notin$ $R$
+$x \cancel{R} y$ $\quad$ or equivalently $\quad$ $($ $x$, $y$ $)$ $\notin$ $R$
 </div>
 
 The set $A$ is called the <strong>domain</strong> of $R$ and the set of $B$ is called the <strong>co-domain</strong> of $R$
