@@ -613,6 +613,29 @@ $\equiv p \quad$ Identity Law
 </ul>  
 </details>
 
+<details>
+    <summary>Example problem</summary>
+
+Use algebra to verify that $p \vee q \rightarrow r \equiv \neg(p \vee q) \vee r$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$\equiv (p \vee q) \rightarrow r$
+
+$\equiv \neg(p \vee q) \vee r$
+</details>
+</ul>  
+</details>
+
+### Exclusive Or
+The <strong>exclusive or</strong> $p \oplus q$ is true whenever exactly one of $p$ and $q$ are true, but not both or neither. It is an easy exercise to confirm that
+
+<div align="center">
+
+$p$ $\oplus$ $q$ $\equiv$ $($ $p$ $\vee$ $q$ $)$ $\land$ $\neg$ $($ $p$ $\land$ $q$ $)$
+</div>
+
 ## Conditional Statements
 If $p$ and $q$ are statement variables, the <strong>conditional</strong> of $q$ by $p$ is "if $p$ than $q$" and is denoted $p \rightarrow q$. It is false when $p$ is true and $q$ is false; otherwise, it is true. $p$ is called the <strong>hypotheses</strong> (or <strong>antecedent</strong>) of the conditional and $q$ the <strong>conclusion</strong> (or <strong>consequent</strong>)
 
@@ -1079,6 +1102,9 @@ $\quad \therefore p \vee q$
     <td>F</td>  
   </tr>  
 </table>
+
+Note that since ($P$<sub>1</sub>) $\rightarrow C$ is a tautology as every critical row has a true conclusion, the argument is therefore valid
+
 The column of the argument that represents the premise is: $q$<br />
 The column of the argument that represents the conclusion is: $p \vee q$<br />
 The argument is valid because all truth table rows that have true premises have true conclusions
@@ -1176,6 +1202,17 @@ The argument is valid because one of the elements in the premise is true. If the
 </ul>  
 </details>
 
+#### Conjunction
+Conjunction is an argument of the form:<br />
+$\quad \quad p$<br />
+$\quad \quad q$<br />
+$\quad \quad \therefore p \land q$<br />
+
+Here is an example of conjunction:<br />
+$\quad \quad$ Garrett knows English.<br />
+$\quad \quad$ Garrett knows Spanish<br />
+$\quad \quad \therefore$ Therefore, Garrett knows English and Spanish.
+
 #### Elimination
 Elimination is an argument of the form:
 
@@ -1212,6 +1249,36 @@ $\quad \quad$ Garrett is 18 or Garrett is 19.<br />
 $\quad \quad$ If Garrett is 18, then he was once 17.<br />
 $\quad \quad$ If Garrett is 19, then he was once 17.<br />
 $\quad \quad$ Therefore, Garrett was once 17.
+
+#### Contradiction
+Contradiction is an argument of the form:<br />
+$\quad \quad$ $\neg p \rightarrow c$<br />
+$\quad \quad \therefore p$
+
+### Logical Fallacies
+A <strong>fallacy</strong> is an error in reasoning that results in a faulty argument
+
+#### Converse Error
+$p \rightarrow q$<br />
+$q$<br />
+$\therefore p$
+
+#### Inverse Error
+$p \rightarrow q$<br />
+$\neg p$<br />
+$\therefore \neg q$
+
+#### False Exclusion
+$p \vee q$<br />
+$p$<br />
+$\therefore \neg q$
+
+#### Other Fallacies
+$p \vee q$<br />
+$\therefore p$<br /><br />
+
+$p$<br />
+$\therefore p \land q$
 
 #### Contradiction
 Contradiction is an argument of the form:<br />
@@ -1416,95 +1483,30 @@ The argument is invalid as the premises when $p$ and $r$ are true and when $q$ i
 </ul>  
 </details>
 
-## Digital Logic Circuits
-<table>
-    <thead>
-        <tr>
-            <th>Gate</th>
-            <th>Symbol</th>
-            <th>Truth Table</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!-- AND Gate -->
-        <tr>
-            <td>AND</td>
-            <td><img src="Images/Logic Gates/AND.png" alt="AND Gate Symbol" width="120" height="60"></td>
-            <td>
-                <table>
-                    <tr><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>0</td><td>1</td><td>0</td></tr>
-                    <tr><td>1</td><td>0</td><td>0</td></tr>
-                    <tr><td>1</td><td>1</td><td>1</td></tr>
-                </table>
-            </td>
-        </tr>
-        <!-- OR Gate -->
-        <tr>
-            <td>OR</td>
-            <td><img src="Images/Logic Gates/OR.png" alt="OR Gate Symbol" width="120" height="60"></td>
-            <td>
-                <table>
-                    <tr><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>0</td><td>1</td><td>1</td></tr>
-                    <tr><td>1</td><td>0</td><td>1</td></tr>
-                    <tr><td>1</td><td>1</td><td>1</td></tr>
-                </table>
-            </td>
-        </tr>
-        <!-- NOT Gate -->
-        <tr>
-            <td>NOT</td>
-            <td><img src="Images/Logic Gates/NOT.png" alt="NOT Gate Symbol" width="120" height="60"></td>
-            <td>
-                <table>
-                    <tr><td>0</td><td>1</td></tr>
-                    <tr><td>1</td><td>0</td></tr>
-                </table>
-            </td>
-        </tr>
-        <!-- NAND Gate -->
-        <tr>
-            <td>NAND</td>
-            <td><img src="Images/Logic Gates/NAND.png" alt="NAND Gate Symbol" width="120" height="60"></td>
-            <td>
-                <table>
-                    <tr><td>0</td><td>0</td><td>1</td></tr>
-                    <tr><td>0</td><td>1</td><td>1</td></tr>
-                    <tr><td>1</td><td>0</td><td>1</td></tr>
-                    <tr><td>1</td><td>1</td><td>0</td></tr>
-                </table>
-            </td>
-        </tr>
-        <!-- NOR Gate -->
-        <tr>
-            <td>NOR</td>
-            <td><img src="Images/Logic Gates/NOR.png" alt="NOR Gate Symbol" width="120" height="60"></td>
-            <td>
-                <table>
-                    <tr><td>0</td><td>0</td><td>1</td></tr>
-                    <tr><td>0</td><td>1</td><td>0</td></tr>
-                    <tr><td>1</td><td>0</td><td>0</td></tr>
-                    <tr><td>1</td><td>1</td><td>0</td></tr>
-                </table>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
 <details>
     <summary>Example problem</summary>
 
-Indicate the output of the circuits shown below for the given input signals
-<img src="Images/Example Problems/Problem 1.png" alt="Problem 1">
+Prove whether the following statement is a tautology:
+
+<div align="center">
+
+($p$ $\rightarrow$ $q$) $\land$ ($q$ $\rightarrow$ $r$) $\rightarrow$ ($p$ $\rightarrow$ $r$)
+</div>
 <ul>  
   <details>
     <summary>Solution</summary>
 
-<ol type="a">
-  <li>R = 1</li>
-  <li>S = 0</li>
-</ol>  
+$(\neg p \vee q) \land (\neg q \vee r) \rightarrow (\neg p \vee r)$<br />
+$\neg[(\neg p \vee q) \land (\neg q \vee r)] \vee (\neg p \vee r)$<br />
+$\neg(\neg p \vee q) \vee \neg(\neg q \vee r) \vee (\neg p \vee r) \quad$ De Morgan's Law<br />
+$(p \land \neg q) \vee (q \land \neg r) \vee (\neg p \vee r) \quad $ De Morgan's Law<br /><br />
+If $p$ is false, $(\neg p \vee r)$ is true no matter what $r$ is<br /><br />
+Now, if $p$ is true:<br />
+$\quad$ If $r$ is true, the expression $\neg p \vee r$ evaluates to true and the statement is true<br />
+$\quad$ If $r$ is false:<br />
+$\quad \quad$ If $q$ is true, the expression $q \land \neg r$ evaluates to true and the statement is true<br />
+$\quad \quad$ If $q$ is false, the expression $p \land \neg q$ evaluates to true and the statement is true<br /><br />
+In every possible case the expression evaluates to true, regardless of the truth values of $p$, $q$, and $r$; therefore, the statement above is a tautology
 </details>
 </ul>  
 </details>
@@ -1512,43 +1514,33 @@ Indicate the output of the circuits shown below for the given input signals
 <details>
     <summary>Example problem</summary>
 
-Construct the input/output table for the following circuit
-<img src="Images/Example Problems/Problem 2.png" alt="Problem 2">
+Prove whether the following statement is a tautology:
+
+<div align="center">
+
+$[(p \land q) \vee (\neg p \land r)] \rightarrow [(p \vee r) \land (q \vee r)]$
+</div>
 <ul>  
   <details>
     <summary>Solution</summary>
 
-<table>
-    <thead>
-        <tr>
-            <th>$P$</th>
-            <th>$Q$</th>
-            <th>$R$</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-        </tr>
-    </tbody>
-</table>
+$\neg[(p \land q) \vee (\neg p \land r)] \vee [(p \vee r) \land (q \vee r)] \quad$ De Morgan's Law<br />
+$[\neg(p \land q) \land \neg(\neg p \land r)] \vee [(p \vee r) \land (q \vee r)] \quad$ De Morgan's Law<br />
+$(\neg p \vee \neg q) \land ( p \vee \neg r) \vee (p \vee r) \land (q \vee r) \quad$ De Morgan's Law<br />
+$(\neg p \vee \neg q) \land ( p \vee \neg r) \vee r \vee (p \land q) \quad$ Distributive Law<br /><br />
+Now, if $p$ is true:<br />
+$\quad$ If $q$ is true, then the expression $p \land q$ evaluates to true and the statement is true<br />
+$\quad$ If $q$ is false:<br />
+$\quad \quad$ If $r$ is true, the expression $r$ evaluates to true and the statement is true<br />
+$\quad \quad$ If $r$ is false, the expression $(\neg p \vee \neg q) \land ( p \vee \neg r)$ evaluates to true and the statement is true<br /><br />
+Now, if $p$ is false:<br />
+$\quad$ If $q$ is true:<br />
+$\quad \quad$ If $r$ is true, the expression $r$ evaluates to true and the statement is true<br />
+$\quad \quad$ If $r$ is false, the expression $(\neg p \vee \neg q) \land (p \vee \neg r)$ evaluates to true and the statement is true<br />
+$\quad$ If $q$ is false:
+$\quad \quad$ If $r$ is true, the expression $r$ evaluates to true and the statement is true<br />
+$\quad \quad$ If $r$ is false, the expression $(\neg p \vee \neg q) \land (p \vee \neg r)$ evaluates to true and the statement is true<br /><br />
+For every combination of $p$, $q$, and $r$, the expression evaluates to true; therefore, the statement is a tautology
 </details>
 </ul>  
 </details>
@@ -1556,212 +1548,25 @@ Construct the input/output table for the following circuit
 <details>
     <summary>Example problem</summary>
 
-Indicate the output of the circuits shown below for the given input signals
-<img src="Images/Example Problems/Problem 3.png" alt="Problem 3">
+Prove whether the following statement is a tautology:
+
+<div align="center">
+
+$((p \rightarrow q) \land p) \rightarrow q$
+</div>
 <ul>  
   <details>
     <summary>Solution</summary>
 
-<ol type="a">
-  <li>$(P \vee Q) \land \neg(P \land Q)$</li>
-  <li>$(P \land Q) \land \neg R$</li>
-</ol>  
+$\neg ((p \rightarrow q) \land p) \vee q \quad$ De Morgan's Law<br />
+$(\neg(p \rightarrow q) \vee \neg p) \vee q \quad$ De Morgan's Law<br />
+$(\neg(\neg p \vee q) \vee \neg p) \vee q \quad$<br />
+$((p \land \neg q) \vee \neg p) \vee q \quad$ De Morgan's Law<br /><br />
+If $p$ is true:<br />
+$\quad$ If $q$ is true, the expression $q$ evaluates to true and the statement is true<br />
+$\quad$ If $q$ is false, the expression $(p \land \neg q)$ evaluates to true and the statement is true<br /><br />
+If $p$ is false, the expression $\neg p$ evaluates to true and the statement is true<br /><br />
+Since the statement evaluates to true for all combinations of $p$ and $q$, the statement is a tautology
 </details>
 </ul>  
 </details>
-
-<details>
-    <summary>Example problem</summary>
-
-Construct circuits for the following Boolean expressions:
-<ol type="a">
-  <li>$(\neg P \land Q) \vee \neg Q$</li>
-  <li>$((P \land Q) \land (R \land S)) \land T$</li>
-</ol>  
-<ul>  
-  <details>
-    <summary>Solution</summary>
-
-<ol>
-  <li><img src="Images/Example Problems/Problem 4a.png" alt="Problem 4a"></li>
-  <li><img src="Images/Example Problems/Problem 4b.png" alt="Problem 4b"></li>
-</ol>
-</details>
-</ul>  
-</details>
-
-<details>
-    <summary>Example problem</summary>
-
-Design a circuit for the following input/output table:
-<table>
-    <thead>
-        <tr>
-            <th>$P$</th>
-            <th>$Q$</th>
-            <th>$R$</th>
-            <th>$S$</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>0</td>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-    </tbody>
-</table>
-<ul>  
-  <details>
-    <summary>Solution</summary>
-
-$(P \land Q \land R) \vee (P \land \neg Q \land R) \vee (P \land \neg Q \land \neg R)$
-</details>
-</ul>  
-</details>
-
-Two digital logic circuits are <strong>equivalent</strong> if, and only if, their input/output tables are identical
-
-<details>
-    <summary>Example problem</summary>
-
-Show that $((P \land \neg Q) \vee (P \land Q)) \land Q$ and $P \land Q$ are logically equivalent using boolean algebra
-<ul>  
-  <details>
-    <summary>Solution</summary>
-
-$\equiv ((P \land \neg Q) \vee (P \land Q)) \land Q$
-
-$\equiv (P \land (Q \vee \neg Q)) \land Q \quad$ Distributive Property 
-
-$\equiv (P \land t) \land Q \quad$ Negation Law
-
-$\equiv P \land Q \quad$ Identity Law
-</details>
-</ul>  
-</details>
-
-It can be shown that any Boolean expression is equivalent to one written entirely with Sheffer strokes or entirely with Peirce arrows
-The output of the nand gate with two inputs, $P$ and $Q$, has an output that can be represented by the following: $R = P \mid Q$
-The output of the nor gate with two inputs, $P$ and $Q$, has an output that can be represented by the following: $R = P \downarrow Q$
-
-## Number Systems and and Circuits for Addition
-### Binary Representation of numbers
-Any integer can be represented uniquely as a sum of products of the form
-
-$$
-d \times 2^n
-$$
-
-where each $n$ is an integer and each $d$ is one of the binary digits (or bits) 0 or 1
-
-#### Binary Notation for Integers from 1 to 9
-Here is the derivation of binary notation for the integers from 1 to 9:
-
-$\quad$ 1<sub>10</sub> = 1<sub>2</sub><br />
-$\quad$ 2<sub>10</sub> = 10<sub>2</sub><br />
-$\quad$ 3<sub>10</sub> = 11<sub>2</sub><br />
-$\quad$ 4<sub>10</sub> = 100<sub>2</sub><br />
-$\quad$ 5<sub>10</sub> = 101<sub>2</sub><br />
-$\quad$ 6<sub>10</sub> = 101<sub>2</sub><br />
-$\quad$ 7<sub>10</sub> = 111<sub>2</sub><br />
-$\quad$ 8<sub>10</sub> = 1000<sub>2</sub><br />
-$\quad$ 9<sub>10</sub> = 1001<sub>2</sub><br />
-
-<details>
-    <summary>Example problem</summary>
-
-Represent 110101<sub>2</sub> in decimal notation 
-<ul>  
-  <details>
-    <summary>Solution</summary>
-
-2<sup>5</sup> + 2<sup>4</sup> + 2<sup>2</sup> + 2<sup>0</sup> = 53<sub>10</sub>
-</details>
-</ul>  
-</details>
-
-<details>
-    <summary>Example problem</summary>
-
-Add 1101<sub>2</sub> and 111<sub>2</sub> using binary notation
-<ul>  
-  <details>
-    <summary>Solution</summary>
-<pre>
- 1111  <- carry row
-  1101
-+  111
-------
- 10100<sub>2</sub> 
-</pre>
-</details>
-</ul>  
-</details>
-
-<details>
-    <summary>Example problem</summary>
-
-Subtract 1011<sub>2</sub> from 11000<sub>2</sub> using binary notation
-<ul>  
-  <details>
-    <summary>Solution</summary>
-<pre>
-  1<s>1</s><s>1</s>1
-  1111 <- borrow row
- <s>1</s><s>1</s>000 
-  1011
--  
-------
-  1101<sub>2</sub> 
-</pre>
-</details>
-</ul>  
-</details>
-
-Consider a circuit design to produce the sum of two binary digits $P$ and $Q$. Both $P$ and $Q$ can be either 0 or 1. If follows that the circuit to be designed must have two outputs_one for the left binary digit (this is called the <strong>carry</strong>) and one for the right binary digit (this is called the <strong>sum</strong>)
-
-A circuit to add two binary digits $P$ and $Q$ can be constructed, which is called a <strong>half-adder</strong>
