@@ -31,7 +31,7 @@ If $P(x)$ is a predicate and $x$ has the domain $D$, the <strong>truth set</stro
 
 <div align="center">
 
-$\{$ $x$ $\in$ $D$ $|$ $P$ $($ $x$ $)$ $\}$
+&#123; $x$ $\in$ $D$ $|$ $P$ $($ $x$ $)$&#125;
 </div>
 
 <details>
@@ -53,10 +53,10 @@ Let $Q(n)$ be the predicate $n$ is a factor of 8. Find the truth set of $Q(n)$ i
 <ol type="a">
   <li>
   
-The truth set is $\{1, 2, 4, 8\}$</li>
+The truth set is &#123;$1, 2, 4, 8$&#125;</li>
 <li>
 
-The truth set is $\{1, 2, 4, 8, -1, -2, -4, -8\}$</li>
+The truth set is &#123;$1, 2, 4, 8, -1, -2, -4, -8$&#125;</li>
 </ol>
 </details>
 </ul>  
@@ -126,10 +126,10 @@ Find the truth set of each predicate
 <ol type="a">
   <li>
   
-  $\{-8, -4, -2, -1, 1, 2, 4, 8\}$</li>
+  &#123;$-8, -4, -2, -1, 1, 2, 4, 8$&#125;</li>
   <li>
 
-  $\{1, 2, 4, 8\}$</li>
+  &#123;$1, 2, 4, 8$&#125;</li>
   <li>
 
   $1 \leq x$<sup>2</sup> is true when $x \geq 1$ or when $x \leq -1$<br />
@@ -137,7 +137,7 @@ Find the truth set of each predicate
   $[-2, -1]$ or $[1, 2]$ </li>
   <li>
 
-  $\{-2, -1, 1, 2\}$</li>
+  &#123;$-2, -1, 1, 2$&#125;</li>
 </details>
 </ul>  
 </details>
@@ -160,7 +160,9 @@ Let $Q(x)$ be a predicate and $D$ the domain of $x$. A <strong>universal stateme
     <summary>Example problem</summary>
 
 <ol type="a">
-  <li>Let $D = \{1, 2, 3, 4, 5\}$, and consider the statement
+  <li>
+  
+  Let $D =$ &#123; $1, 2, 3, 4, 5$ &#125;, and consider the statement
 
 <div align="center">
 
@@ -223,7 +225,7 @@ $\exists$ $m$ $\in$ $\mathbb{Z}$<sup>+</sup> such that $m$<sup>2</sup> $=$ $m$
   Show that this statement is true</li>
   <li>
 
-  Let $E= \{ 5, 6, 7, 8\}$ and consider the statement
+  Let $E = $ &#123; $5, 6, 7, 8$ &#125; and consider the statement
 
 <div align="center">
 
@@ -288,7 +290,7 @@ The negation of $\forall x P(x)$ is $\exists x \neg P(x)$
 
 <div align="center">
 
-$\neg(\forall x P(x)) \equiv \exists x \neg P(x)$</div>
+$\neg$ $($ $\forall$ $x$ $P$ $($ $x$ $)$ $)$ $\equiv$ $\exists$ $x$ $\neg$ $P$ $($ $x$ $)$</div>
 
 Symbolically, $\quad \neg (\forall x \in D, P(x)) \equiv \exists x \in D$ such that $\neg P(x)$
 
@@ -343,7 +345,7 @@ The negation of $\neg(\exists x \in D, P(x))$ is  $\forall x \in D, \neg P(x)$
 
 <div align="center">
 
-$\neg(\exists x \in D, P(x)) \equiv \forall x \in D, \neg P(x)$</div>
+$\neg$ $($ $\exists$ $x$ $\in$ $D$, $P$ $($ $x$ $)$ $)$ $\equiv$ $\forall$ $x$ $\in$ $D$, $\neg$ $P$ $($ $x$ $)$</div>
 
 Symbolically, $\quad \neg(\exists x \in D$ such that $P(x)) \equiv \forall x \in D, \neg P(x)$
 
@@ -374,7 +376,7 @@ $\forall$ $a$ $\in$ $\mathbb{Z}$ $,$ $($ $a$ $-$ $1$ $)$ $/$ $a$ is not an integ
 </details>
 
 ### The Relation among $\forall$, $\exists$, $\land$, and $\vee$
-If $Q(x)$ is a predicate and the domain $D$ if $x$ is the set $\{x$<sub>1</sub>$, x$<sub>2</sub>$, ...x$<sub>n</sub>$\}$, then the statements
+If $Q(x)$ is a predicate and the domain $D$ if $x$ is the set &#123;$x$<sub>1</sub>$, x$<sub>2</sub>$, ...x$<sub>n</sub>&#125;, then the statements
 
 <div align="center">
 
