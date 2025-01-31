@@ -10,12 +10,6 @@
   <li>
     <a href='#valid-and-invalid-arguments'>Valid and Invalid Arguments</a>
   </li>
-  <li>
-    <a href='#digital-logic-circuits'>Digital Logic Circuits</a>
-  </li>
-  <li>
-    <a href='#number-systems-and-circuits-for-addition'>Number Systems and Circuits for Addition</a>
-  </li>
 </ol>
 </details>
 
