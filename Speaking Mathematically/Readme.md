@@ -185,7 +185,7 @@ Let $A$ = &#123;1, 2, 3&#125; and $B$ = &#123;u, v&#125;
     <summary>Solution</summary>
 <ol type="a">
   <li>$A$ x $B$ = &#123;(1, u), (2, u), (3, u), (1, v), (2, v), (3, v)&#125;</li>
-  <li>$B$ x $B$ = &#123;(u, u), (v, u), (v, u), (v, v)&#125;</li>
+  <li>$B$ x $B$ = &#123;(u, u), (u, v), (v, u), (v, v)&#125;</li>
 </ol>  
 </details>
 </ul>  
