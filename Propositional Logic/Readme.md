@@ -971,7 +971,7 @@ Truth Table for $(p \rightarrow (q \rightarrow r)) \leftrightarrow ((p \land q) 
     <td>T</td>
     <td>T</td>
     <td>T</td>
-    <td>F</td>
+    <td>T</td>
   </tr>
   <tr>
     <td>T</td>
@@ -981,7 +981,7 @@ Truth Table for $(p \rightarrow (q \rightarrow r)) \leftrightarrow ((p \land q) 
     <td>F</td>
     <td>F</td>
     <td>F</td>
-    <td>F</td>
+    <td>T</td>
   </tr>
   <tr>
     <td>T</td>
@@ -991,7 +991,7 @@ Truth Table for $(p \rightarrow (q \rightarrow r)) \leftrightarrow ((p \land q) 
     <td>T</td>
     <td>T</td>
     <td>T</td>
-    <td>F</td>
+    <td>T</td>
   </tr>
   <tr>
     <td>T</td>
@@ -1001,7 +1001,7 @@ Truth Table for $(p \rightarrow (q \rightarrow r)) \leftrightarrow ((p \land q) 
     <td>F</td>
     <td>F</td>
     <td>F</td>
-    <td>F</td>
+    <td>T</td>
   </tr>
   <tr>
     <td>F</td>
@@ -1011,7 +1011,7 @@ Truth Table for $(p \rightarrow (q \rightarrow r)) \leftrightarrow ((p \land q) 
     <td>T</td>
     <td>T</td>
     <td>T</td>
-    <td>F</td>
+    <td>T</td>
   </tr>
   <tr>
     <td>F</td>
@@ -1021,7 +1021,7 @@ Truth Table for $(p \rightarrow (q \rightarrow r)) \leftrightarrow ((p \land q) 
     <td>F</td>
     <td>T</td>
     <td>T</td>
-    <td>F</td>
+    <td>T</td>
   </tr>
   <tr>
     <td>F</td>
@@ -1031,7 +1031,7 @@ Truth Table for $(p \rightarrow (q \rightarrow r)) \leftrightarrow ((p \land q) 
     <td>T</td>
     <td>T</td>
     <td>T</td>
-    <td>F</td>
+    <td>T</td>
   </tr>
   <tr>
     <td>F</td>
@@ -1041,7 +1041,7 @@ Truth Table for $(p \rightarrow (q \rightarrow r)) \leftrightarrow ((p \land q) 
     <td>T</td>
     <td>T</td>
     <td>T</td>
-    <td>F</td>
+    <td>T</td>
   </tr>
 </table>
 </details>
@@ -1210,9 +1210,9 @@ $\quad \quad \therefore$ Therefore, Garrett knows English and Spanish.
 #### Elimination
 Elimination is an argument of the form:
 
-$\quad \quad$ $p \vee q$.<br />
-$\quad \quad$ $\neg q$.<br />
-$\quad \quad$ $\therefore p$.
+$\quad \quad$ $p \vee q$ $\quad \quad p \vee q$<br />
+$\quad \quad$ $\neg q. \quad \quad \quad \neg p.$<br />
+$\quad \quad$ $\therefore p. \quad \quad \quad q.$<br />
 
 Here is an example of elimination:<br />
 $\quad \quad$ Garrett knows C++ or Garrett knows C.<br />
@@ -1247,7 +1247,244 @@ $\quad \quad$ Therefore, Garrett was once 17.
 #### Contradiction
 Contradiction is an argument of the form:<br />
 $\quad \quad$ $\neg p \rightarrow c$<br />
-$\quad \quad \therefore p$
+$\quad \quad \therefore p.$
+
+<details>
+    <summary>Example problem</summary>
+
+Given the following statements:<br />
+<ol>
+  <li>
+
+  $(A \rightarrow B)$ If I finish my assignment $(A)$, then I will go to the library $(B)$</li>
+  <li>
+
+  $(B \rightarrow C)$ If I go to the library $(B)$, then I will borrow a book $(C)$</li>
+  <li>
+
+  $(\neg C)$ I did not borrow a book</li>
+  <li>
+  
+  $(D \vee A)$ I watched a movie $(D)$ or I finished my assignment $(A)$</li>
+  <li>
+
+  $(D \vee E)$ If I watched a movie $(D)$, then I had popcorn $(E)$</li>
+</ol>
+Questions:<br />
+<ol>
+  <li>
+
+  Did I finish my assignment $(A)$?</li>
+  <li>
+
+  Did I go to the library $(B)$?</li>
+  <li>
+
+  Did I watch a movie $(D)$</li>
+  <li>
+
+  Can we conclude that I had popcorn $(E)$</li>
+</ol>    
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$C$ is false<br />
+$B$ must be false because since $C$ is false, then to make the statement true, $B$ must be false. This statement is vacuously true because of Modus Tollens<br />
+$A$ must be false because since $B$ is false, then to make the statement true, $A$ must be false. This statement is vacuously true because of Modus Tollens<br />
+Since $A$ is false, $D$ must be true by elimination<br />
+$E$ must be true because if $D$ is true, then $E$ must be true to make the statement true according to Modus Ponens
+
+<ol>
+  <li>
+  
+  $A$: the assignment was not finished</li>
+  <li>
+
+  $B$: did not go to the library</li>
+  <li>
+
+  $D$: the movie was watched</li>
+  <li>
+
+  $E$: there was popcorn</li>
+</ol>  
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Given the following statements:<br />
+<ol>
+  <li>
+
+  $(X \rightarrow Y)$ If the box is in the attic $(X)$, then the ladder is in the hallway $(Y)$</li>
+  <li>
+
+  $(Y \rightarrow Z)$ If the ladder is in the hallway $(Y)$, then the door to the attic is unlocked $(Z)$</li>
+  <li>
+
+  $(Z \rightarrow W)$ If the attic door is unlocked $(Z)$, then I checked the attic $(W)$</li>
+  <li>
+  
+  $\neg W$ I did not check the attic</li>
+  <li>
+
+  $(P \vee X)$ The box is in the basement $(P)$ or the box is in the attic $(X)$</li>
+  <li>
+
+  $(P \rightarrow Q)$ If the box is in the basement $(P)$, then the basement light is on $(Q)$</li>
+  <li>
+
+  $(\neg Q)$ The basement light is not on</li>
+</ol>
+
+Questions:<br />
+<ol>
+  <li>
+
+  Is the box in the attic $(X)$?</li>
+  <li>
+
+  Is the ladder in the hallway $(Y)$?</li>
+  <li>
+
+  Is the attic door unlocked $(Z)$?</li>
+  <li>
+  
+  Did I check the attic $(W)$?</li>
+  <li>
+
+  Is the box in the basement $(P)$?</li>
+  <li>
+</ol> 
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$W$ is false<br />
+$Z$ if false because in order for the statement to be true, $Z$ must be false according to Modus Tollens. This statement is vacuously true<br />
+$Y$ is false because in order for the statement to be true, $Y$ must be false according to Modus Tollens. THis statement is vacuously true<br />
+$X$ is false because in order for the statement to be true, $X$ must be false according to Modus Tollens. This statement is vacuously true<br />
+$P$ must be true because according to elimination, since $X$ is false, then $P$ must be true<br />
+$P$ again must be true because since $Q$ is false, then $P$ must be true<br />
+$Q$ is false<br />
+
+
+<ol>
+  <li>
+  
+  $X$: the box is not in the attic</li>
+  <li>
+
+  $Y$: the ladder is not in the hallway</li>
+  <li>
+
+  $Z$: the attic door is locked</li>
+  <li>
+
+  $W$: the attic was not checked</li>
+  <li>
+
+  $P$: the box is in the basement</li>
+</ol>  
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+On an island, three people are met: $A$, $B$, and $C$. They make these statements:
+<ul>
+  <li>
+  
+  $A$ says: $B$ and $C$ are of the same type</li>
+  <li>
+
+  $B$ says: $A$ is a knight</li>
+  <li>
+
+  $C$ says: $B$ is a knave</li>
+</ul>
+
+What can be concluded about $A$, $B$, $C$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$A$ has to be a knave because $B$ and $C$ cannot be of the same type. $B$ says $A$ is telling the truth and $C$ says $B$ is lying<br />
+$C$ is the knight because $B$ says $A$ is a knight, which is false; therefore, $C$ is a knight and $A$ and $B$ are knaves
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+On an island, three people are met: $A$, $B$, $C$, and $D$. They make these statements:
+<ul>
+  <li>
+  
+  $A$ says: $B$ is a knave and $C$ is a knight</li>
+  <li>
+
+  $B$ says: $A$ is a knight or $D$ is a knave</li>
+  <li>
+
+  $C$ says: $D$ and I are of opposite types</li>
+  <li>
+
+  $D$ says: $C$ is a knave</li>
+</ul>
+
+What can be concluded about $A$, $B$, $C$, and $D$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$D$ is a knave<br />
+$C$ is a knight<br />
+$B$ is a knight<br />
+$A$ is a knave<br />
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+On an island, three people are met: $A$, $B$, $C$, $D$, and $E$. They make these statements:
+<ul>
+  <li>
+  
+  $A$ says: $B$ is a knight and $C$ is a knave</li>
+  <li>
+
+  $B$ says: $C$ and $D$ are of the same type</li>
+  <li>
+
+  $C$ says: $A$ and $E$ are of opposite types</li>
+  <li>
+
+  $D$ says: $B$ is a knight or $A$ is a knave</li>
+  <li>
+
+  $E$ says: $C$ and $D$ are of different types</li>
+</ul>
+
+What can be concluded about $A$, $B$, $C$, $D$, $E$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+Either $B$ is true or $E$ is true, both cannot be true<br />
+If $B$ is the knave, then $C$ and $D$ are not of the same type and $E$ is true. This means $A$ is false. $D$ must be a knight. $C$ must be a knave
+</details>
+</ul>  
+</details>
 
 ### Logical Fallacies
 A <strong>fallacy</strong> is an error in reasoning that results in a faulty argument
