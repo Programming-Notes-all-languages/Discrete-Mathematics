@@ -1053,6 +1053,30 @@ An <strong>argument</strong> is a sequence of statements, and an <strong>argumen
 
 To say that an argument is <strong>valid</strong> means that no matter what particular statements are substituted for the statement variables in its premises, if the resulting premises are all true, then the conclusion is also true
 
+<details>
+    <summary>Example problem</summary>
+
+Lefty, a leader of the underworld, was killed by one of his own band of four henchmen. Detective Sharp interviewed the men and determined that all were lying except for one. He deduced who killed Lefty on the basis of the following statements:<br />
+$\quad$ A. Socko: Sharky killed Lefty<br />
+$\quad$ B. Fats: Muscles did not kill Lefty<br />
+$\quad$ C. Sharky: Muscles was shooting craps with Socko when Lefty was knocked off<br />
+$\quad$ D. Muscles: Sharky did not kill Lefty<br />
+
+Who did kill Lefty?
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+Either A is true or D is true. Sharky either killed or did not kill Lefty. Assuming the Muscles was telling the truth and that Muscles killed Lefty:
+<ul>
+  <li>A is lie because it contradicts the truth, D</li>
+  <li>B is a lie because Muscles did kill Lefty</li>
+  <li>C is a lie because Muscles killed Lefty</li>
+  <li>D is the truth because Sharky did not kill Lefty, Muscles did</li>
+</details>
+</ul>  
+</details>
+
 #### Testing an Argument Form for Validity
 <ol>
   <li>Identify the premises and conclusion of the argument form</li>
@@ -1248,6 +1272,87 @@ $\quad \quad$ Therefore, Garrett was once 17.
 Contradiction is an argument of the form:<br />
 $\quad \quad$ $\neg p \rightarrow c$<br />
 $\quad \quad \therefore p.$
+
+<details>
+    <summary>Example problem</summary>
+
+Consider the following set of premises and conclusions. Assume all variables are statement variables<br /><br />
+Premises:<br />
+1. $x \vee y$<br />
+2. $y \rightarrow z$<br />
+3. $\neg z$<br />
+4. $\neg x \rightarrow w$<br />
+
+Conclusion: $w$<br /><br />
+Deduce the conclusion from the premises by applying valid argument forms
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$y \rightarrow z$ 2<br />
+$\neg z$ 3<br />
+$\therefore \neg y$ by Modus Tollens<br />
+$x \vee y$ 1<br />
+$\therefore x$ by elimination<br />
+$\neg x \rightarrow w$ 4<br />
+$\neg x \rightarrow w \equiv (\neg x \land \neg w)' \equiv x \vee w$<br />
+$\therefore w$
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Consider the following set of premises and conclusions. Assume all variables are statement variables<br /><br />
+Premises:<br />
+1. $p \vee q$<br />
+2. $q \rightarrow r$<br />
+3. $\neg p$<br />
+4. $r \rightarrow s$<br />
+
+Conclusion: $s$<br /><br />
+Deduce the conclusion from the premises by applying valid argument forms
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$q \rightarrow r$ 2<br />
+$r \rightarrow s$ 4<br />
+$\therefore s$
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Consider the following set of premises and conclusions. Assume all variables are statement variables<br /><br />
+Premises:<br />
+1. $m \vee n$<br />
+2. $n \rightarrow (o \vee p)$<br />
+3. $o \rightarrow q$<br />
+4. $\neg q$<br />
+5. $\neg m$<br />
+
+Conclusion: $p$<br /><br />
+Deduce the conclusion from the premises by applying valid argument forms
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$o \rightarrow q$ 3<br />
+$\neg q$ 4<br />
+$\therefore \neg o$ by Modus Tollens<br />
+$m \vee n$ 1<br />
+$\neg m$ 5<br />
+$\therefore n$ by elimination<br />
+$n \rightarrow (o \vee p)$ 2<br />
+Since $n$ is true and $o$ is false, to make premise 2 true, $p$ must be true as T $\rightarrow$ T is true<br /> 
+$\therefore p$
+</details>
+</ul>  
+</details>
 
 <details>
     <summary>Example problem</summary>
