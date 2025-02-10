@@ -50,14 +50,26 @@ A <strong>set</strong> is a well-defined collection of distinct objects known as
 
 The notation $x \in A$, read as $x$ in $A$, indicates that the element $x$ is a member of the set $A$. The notation $x \notin A$ means that $x$ is not in $A$
 
+A <strong>proper subset</strong> is a set that contains some but not all elements of another set. For instance, $A \subset B$ means that $A$ is a subset that contains some but not all elements of $B$
+
 The <strong>cardinality</strong> of a set $A$, denoted as $|A|$, is the number of elements contained in the set, where writing $|A| = \infty$ denotes that $A$ contains infinitely many elements
 
 <ul>
-  <li>$\mathbb{R}$ is the set of all <strong>real numbers</strong>. Real numbers are all the numbers that can be found on the number line</li>
-  <li>$\mathbb{C}$ is the set of all <strong>complex numbers</strong>. Complex numbers consist of a real part and an imaginary part</li>
-  <li>$\mathbb{Z}$ is the set of all <strong>integers</strong>. Integers are any positive or negative whole numbers</li>
-  <li>$\mathbb{Q}$ is the set of all <strong>rational numbers</strong>. A rational number is any real number that is an integer or is a fraction</li>
-  <li>$\mathbb{N}$ is the set of all <strong>natural numbers</strong>. A natural number is any integer greater than zero</li>
+  <li>
+  
+  $\mathbb{R}$ is the set of all <strong>real numbers</strong>. Real numbers are all the numbers that can be found on the number line</li>
+  <li>
+  
+  $\mathbb{C}$ is the set of all <strong>complex numbers</strong>. Complex numbers consist of a real part and an imaginary part</li>
+  <li>
+  
+  $\mathbb{Z}$ is the set of all <strong>integers</strong>. Integers are any positive or negative whole numbers</li>
+  <li>
+  
+  $\mathbb{Q}$ is the set of all <strong>rational numbers</strong>. A rational number is any real number that is an integer or is a fraction</li>
+  <li>
+  
+  $\mathbb{N}$ is the set of all <strong>natural numbers</strong>. A natural number is any integer greater than zero</li>
 </ul>  
 
 ### Set-Roster Notation
@@ -213,6 +225,39 @@ A relation is a <strong>function</strong> from $A$ to $B$ if every element of $A
 <details>
     <summary>Example problem</summary>
 
+Let $A$ = {$-3, 0, 3$} and $B$ = {$t, u, v, w$}. Define a function $F$: $A \rightarrow B$ by the following arrow diagram
+
+<ol type="a">
+  <li>
+  
+  What are the domain and co-domain of $F$?</li>
+  <li>
+
+  What is $F(-3), F(0), F(3)$?
+</ol>
+
+<img src="Images/Example Problems/Problem 1.png" alt="Problem 1">
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>
+  
+  Domain of $F = ${$-3, 0, 3$}<br />
+  Co-domain of $F = ${$t, u, v, w$}</li>
+  <li>
+
+  $F(-3) = u$<br />
+  $F(0) = w$<br />
+  $F(3) = u$</li>
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
 Let $A$ = &#123;0, 1, 2&#125; and $B$ = &#123;1, 2, 3&#125; and let's say that an element $x$ in $A$ is related to an element $y$ in $B$ if, and only if, $x$ is less than $y$. Use the notation $x R y$ as a shorthand for the sentence $x$ is related to $y$
 <ul>  
   <details>
@@ -272,8 +317,8 @@ For every $($ $x$, $y$ $)$ $\in$ $C$ x $D$, $($ $x$, $y$ $)$ $\in$ $S$ means tha
 <ol type="a">
   <li>
   
-  $1/2 - 1/2 = 0$, which is an integer. So $2 R 2$<br />
-  $-1/2 + 1/2 = 0$, which is an integer. So $-1 R -1$<br />
+  $1/2 - 1/2 = 0$, which is an integer. So $2 S 2$<br />
+  $-1/2 + 1/2 = 0$, which is an integer. So $-1 S -1$<br />
   $1/3 - 1/3 = 0$, which is an integer. So $(3, 3) \in S$<br />
   $1/3 + 1/3 = 2/3$, which is not an integer. So $(3, -3) \in S$</li>
   <li>
@@ -340,27 +385,19 @@ Define a relation $S$ from <strong>$R$</strong> to <strong>$R$</strong> as follo
 
 For every $($ $x$, $y$ $)$ $\in$ <strong>$R$</strong> x <strong>$R$</strong>, $($ $x$, $y$ $)$ $\in$ $S$ means that $x$ $\geq$ $y$
 </div>
-<ol type="a">
-  <li>
-  
-  Is $(9, 8) \in S$<br />
+
+Is $(9, 8) \in S$<br />
   Is $(9, 9) \in S$<br />
   Is $9 S 10$<br />
   Is $(-1) S (-2)$</li>
-  <li>Write $S$ as a set of ordered pairs</li>
-</ol>
 <ul>  
   <details>
     <summary>Solution</summary>
 
-<ol type="a">
-  <li>
-  
-  $9 \geq 8$, so $(9, 8) \in S$<br />
+$9 \geq 8$, so $(9, 8) \in S$<br />
   $9 \geq 9$, so $(9, 9) \in S$<br />
   $9 \cancel{\geq} 8$, so $9 \cancel{S} 10$<br />
-  $-1 \geq -2$, so $(-1) S (-2)$</li>
-</ol>  
+  $-1 \geq -2$, so $(-1) S (-2)$
 </details>
 </ul>  
 </details>
