@@ -1055,7 +1055,7 @@ An <strong>argument</strong> is a sequence of statements, and an <strong>argumen
 
 To say that an argument is <strong>valid</strong> means that no matter what particular statements are substituted for the statement variables in its premises, if the resulting premises are all true, then the conclusion is also true
 
-An argument is valid if $(P$<sub>0</sub>$ + P$<sub>1</sub>$ + P$<sub>2</sub>$ \rightarrow C)$ is a tautology
+An argument is valid if $(P$ <sub>0</sub> $ + P$ <sub>1</sub> $ + P$ <sub>2</sub> $ \rightarrow C)$ is a tautology
 
 An argument can be valid and if it is valid, it can potentially be sound<br />
 <ul>
