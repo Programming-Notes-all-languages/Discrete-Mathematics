@@ -4,6 +4,12 @@
   <li>
     <a href='#predicates-and-quantified-statements'>Predicates and Quantified Statements</a>
   </li>
+  <li>
+    <a href='#statements-with-multiple-quantifiers'>Statements with Multiple Quantifiers</a>
+  </li>
+  <li>
+    <a href='#mathematical-induction'>Mathematical Induction</a>
+  </li>
 </ol>
 </details>
 
@@ -11,6 +17,8 @@
 A <strong>predicate</strong>is a sentence that contains a finite number of variables and becomes a statement when specific values are substituted for the variables
 
 The <strong>domain</strong> of a predicate variable is the set of all values that may be substituted in place of the variable
+
+A <strong>truth set</strong> refers to the set of all values for which a given predicate or mathematical statement is true
 
 <details>
     <summary>Example problem</summary>
@@ -200,6 +208,43 @@ $\forall$ $x$ $\in$ $\mathbb{R}$, $x$<sup>2</sup> $\geq$ $x$
 </ul>  
 </details>
 
+Let $P(x)$ and $Q(x)$ be predicates with common domain $D$
+<ul>
+  <li>
+  
+  The notation $P(x) \Rightarrow Q(x)$ means that every element in the truth set of $P(x)$ is in the truth set of $Q(x)$</li>
+  <li>
+
+  The notation $P(x) \Leftrightarrow Q(x)$ means that $P(x)$ and $Q(x)$ have identical sets</li>
+</ul>
+
+<details>
+    <summary>Example problem</summary>
+
+Let:<br />
+<ul>
+  <li>
+  
+  $D(n): n$ is a perfect square<br /></li>
+  <li>
+
+  $E(n) : n$ is divisible by 4<br /></li>
+  <li>
+
+  $F(n) : n$ is an even number<br /></li>
+</ul>
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$E(n) \Rightarrow F(n)$<br />
+</details>
+</ul>  
+</details>
+
+The statement $\forall x \in U,$ if $P(x)$ then $Q(x)$ is equivalent to $\forall x \in D, Q(x)$ which is also equivalent to $\forall x,$ if $x$ is in $D$ then $Q(x)$
+
 ### The Existential Quantifier: $\exists$
 The symbol $\exists$ denotes there exists and is called the <strong>existential quantifier</strong>
 
@@ -245,6 +290,33 @@ $\exists$ $m$ $\in$ $E$ such that $m$<sup>2</sup> $=$ $m$
   
   For $m = 5, 6, 7, 8$, none of these integers squared equal the integer itself</li>
 </ol>  
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Consider the predicate $m$<sup>2</sup> $= m$ with some domain $D$<br />
+<ol type="a">
+  <li>
+  
+  For $D = \mathbb{Z}$<sup>+</sup>, is the existential statement true?</li>
+  <li>
+  
+  For $D = \{5, 6, 7, 8\}$, is the existential statement true?</li>
+</ol>
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>
+  
+  For $D = \mathbb{Z}$<sup>+</sup>, the truth set is {1} which means the statement is true</li>
+  <li>
+
+  For $D$, the truth set is empty since there is no value in $D$ where the square of $x$ is equal to $x$</li>
 </details>
 </ul>  
 </details>
@@ -355,7 +427,8 @@ Symbolically, $\quad \neg(\exists x \in D$ such that $P(x)) \equiv \forall x \in
 Consider the following statement
 <div align="center">
 
-$\forall$ $a$ $\in$ $\mathbb{Z}$ $,$ $($ $a$ $-$ $1$ $)$ $/$ $a$ is not an integer</div>
+$\forall$ $a$ $\in$ $\mathbb{Z}$ $,$ $($ $a$ $-$ $1$ $)$ $/$ $a$ is not an integer
+</div>
 
 <ol type="a">
   <li>Write the negation of the statement above</li>
@@ -371,6 +444,24 @@ $\forall$ $a$ $\in$ $\mathbb{Z}$ $,$ $($ $a$ $-$ $1$ $)$ $/$ $a$ is not an integ
   <li>There is an integer $a$ such that $($ $a$ $-$ $1$ $)$ $/$ $a$ is an integer</li>
   <li>1</li>
 <ol>  
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Negate the following statement: $[\exists L: \forall e, \exists s, \forall t, 0 < |x - t| < s \rightarrow |f(t) - L| < e]$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$\neg[\exists L: \forall e, \exists s, \forall t, 0 < |x - t| < s \rightarrow |f(t) - L| < e]$<br />
+$\forall L, \neg[\forall e, \exists s, \forall t, 0 < |x - t| < s \rightarrow |f(t) - L| < e]$<br />
+$\forall L, \exists e, \neg[\exists s, \forall t, 0 < |x - t| < s \rightarrow |f(t) - L| < e]$<br />
+$\forall L, \exists e, \forall s, \neg[\forall t, 0 < |x - t| < s \rightarrow |f(t) - L| < e]$<br />
+$\forall L, \exists e, \forall s, \exists t, \neg[0 < |x - t| < s \rightarrow |f(t) - L| < e]$<br />
+$\forall L, \exists e, \forall s, \exists t, [0 < |x - t| < s \land |f(t) - L| \geq e]$<br />
 </details>
 </ul>  
 </details>
@@ -487,3 +578,270 @@ $\forall$ integer $d$, if $6$ $/$ $d$ is an integer, then $d$ $=$ $3$</div>
   <li>
 
   $\forall x, r(x)$ <strong>only if</strong> $s(x)$ means $\forall x,$ if $\neg s(x)$ then $\neg r(x)$ or equivalently $\forall x,$ if $r(x)$ then $s(x)$</li>
+</ul>
+
+## Statements with Multiple Quantifiers
+### Translating from Informal to Formal Language
+The <strong>reciprocal</strong> of a real number $a$ is a real number $b$ such that $ab = 1$
+
+<details>
+    <summary>Example problem</summary>
+
+Rewrite the following statements formally using quantifiers and variables:<br />
+
+<ol type="a">
+  <li>Every nonzero real number has a reciprocal</li>
+  <li>There is a real number with no reciprocal</li>
+</ol>  
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>
+  
+  $\forall$ nonzero real numbers $c$, there exists a real number $b$ such that $cb = 1$</li>
+  <li>
+
+  $\exists$ a real number such $c$ such that $\forall$ real numbers $d$, $cd \cancel{=} 1$</li>
+</ol>  
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Negate the following statement: $[\exists L: \forall e, \exists s, \forall t, 0 < |x - t| < s \rightarrow |f(t) - L| < e]$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$\neg[\exists L: \forall e, \exists s, \forall t, 0 < |x - t| < s \rightarrow |f(t) - L| < e]$<br />
+$\forall L, \neg[\forall e, \exists s, \forall t, 0 < |x - t| < s \rightarrow |f(t) - L| < e]$<br />
+$\forall L, \exists e, \neg[\exists s, \forall t, 0 < |x - t| < s \rightarrow |f(t) - L| < e]$<br />
+$\forall L, \exists e, \forall s, \neg[\forall t, 0 < |x - t| < s \rightarrow |f(t) - L| < e]$<br />
+$\forall L, \exists e, \forall s, \exists t, \neg[0 < |x - t| < s \rightarrow |f(t) - L| < e]$<br />
+$\forall L, \exists e, \forall s, \exists t, [0 < |x - t| < s \land |f(t) - L| \geq e]$<br />
+</details>
+</ul>  
+</details>
+
+## Arguments with Quantified Statements
+### Universal Modus Ponens
+$\forall x$, if $P(x)$ then $Q(x)$<br />
+$P(a)$ for a particular $a$<br />
+$\therefore Q(a)$
+
+<details>
+    <summary>Example problem</summary>
+
+Rewrite the following argument using quantifiers, variables, and predicate symbols. Is the argument valid:<br />
+$\quad$ If an integer is even, then its square is even<br />
+$\quad$ $k$ is a particular integer that is even<br />
+$\quad$ $\therefore k$<sup>2</sup> is even
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+The argument is valid as it has the form of universal modus ponens:<br />
+$\quad$ $\forall x$ if $P(x)$ then $Q(x)$<br />
+$\quad$ $P(x)$<br />
+$\quad$ $\therefore Q(x)$
+</details>
+</ul>  
+</details>
+
+### Universal Modus Tollens
+$\forall x$, if $P(x)$ then $Q(x)$<br />
+$\neg Q(a)$, for a particular $a$<br />
+$\therefore \neg P(a)$
+
+<details>
+    <summary>Example problem</summary>
+
+Rewrite the following argument using quantifiers, variables, and predicate symbols. Write the major premise in conditional form. Is the argument valid. Also,, use diagrams to show the validity of the syllogism<br />
+$\quad$ All human beings are mortal<br />
+$\quad$ $k$ Zeus is not mortal<br />
+$\quad$ $\therefore$ Zeus is not human
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+The argument is valid as it has the form of universal modus tollens:<br />
+$\quad$ $\forall x$ if $P(x)$ then $Q(x)$<br />
+$\quad$ $\neg Q(a)$<br />
+$\quad$ $\neg P(a)$<br />
+
+The major premise can be written as: if $\forall x$, if $x$ is a human then $x$ is mortal<br />
+
+<img src="Images/Example Problems/Problem 1A.png" alt="Problem 1">
+</details>
+</ul>  
+</details>
+
+### Transitivity
+$\forall x, P(x) \rightarrow Q(x)$<br />
+$\forall x, Q(x) \rightarrow R(x)$<br />
+$\therefore \forall x, P(x) \rightarrow R(x)$
+
+<details>
+    <summary>Example problem</summary>
+
+Consider the following argument:<br />
+$\quad$ All discrete mathematics students can tell a valid argument from an invalid one<br />
+$\quad$ All thoughtful people can tell a valid argument from an invalid one<br />
+$\quad$ All discrete mathematics students are thoughtful<br />
+
+Is the argument valid or invalid? Also, let $D$ be the set of all discrete mathematics students, $T$ be the set of all thoughtful people, and $V$ be the set of all people who can tell a valid from an invalid argument. Draw a diagram for the argument above
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+The argument is invalid<br />
+<img src="Images/Example Problems/Problem 2A.png" alt="Problem 2">
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Consider the following argument:<br />
+$\quad$ All polynomial functions are differentiable<br />
+$\quad$ All differentiable functions are continuous<br />
+$\quad$ All polynomial functions are continuous<br />
+
+Is the argument valid or invalid? Also, let $P$ be the set of all polynomial functions, $D$ be the set of differentiable functions, and $C$ be the set of all continuous functions. Draw a diagram for the argument above
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+The argument is valid<br />
+<img src="Images/Example Problems/Problem 3A.png" alt="Problem 3">
+</details>
+</ul>  
+</details>
+
+## Mathematical Induction
+Proof by mathematical induction stages:<br />
+<ul>
+  <li>Base case: verify that the first proposition is true</li>
+  <li>
+  
+  Inductive step: if the base case is true, then argue that $P(n$<sub>0</sub>$ + 1)$</li>
+  <li>
+  
+  Inductive hypotheses: verify $P(n$<sub>0</sub>$ + 1)$</li>
+  <li>
+
+  Inductive conclusion: $P(n$<sub>0</sub>$ + 1)$</li>
+  <li>
+
+  Invoke the PMI: by the Principle of Mathematical Induction, $P(n)$ for all $n > n$<sub>0</sub></li>
+</ul>  
+
+<details>
+    <summary>Example problem</summary>
+
+Show that the sum of the first $n$ odd positive integers equals $n$<sup>2</sup>
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+&nbsp;&nbsp;&nbsp;$n$<br />
+&nbsp;&nbsp;$\sum$ $(2i - 1) = n$<sup>2</sup><br />
+$i = 1$<br /><br />
+LHS = 1 &nbsp;&nbsp;&nbsp; RHS = 1<br /><br />
+$n = k$<br /><br />
+&nbsp;&nbsp;&nbsp;$k$<br />
+&nbsp;&nbsp;$\sum$ $(2i - 1) = k$<sup>2</sup><br />
+$i = 1$<br /><br />
+$k = k + 1$<br /><br />
+$k + 1$<br />
+&nbsp;&nbsp;$\sum$ $(2i - 1) = (k + 1)$<sup>2</sup><br />
+$i = 1$<br /><br />
+$k + 1$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$k$<br />
+&nbsp;&nbsp;$\sum (2i - 1) = \sum (2i - 1) = k$<sup>2</sup>$ + 2(k + 1) - 1$<br />
+$i = 1$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$i = 1$<br /><br />
+
+$(2(k + 1) - 1) + k$<sup>2</sup> $ = k$<sup>2</sup> $+ 2k + 1 = (k + 1)$<sup>2</sup><br /><br />
+$\therefore P(n$<sub>0</sub> $+ 1)$ is true<br />
+$\therefore$ by PMI, $P(n$<sub>0</sub> $+ 1)$ is true for the first $n$ positive integers
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Prove that for all $n \geq 1$:
+
+<div align="center">
+
+$1 + 2 + 3 + ... + n = (n(n + 1)) / 2$
+</div>
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+For $n = 1$:<br />
+
+$\quad$ LHS = 1 $\quad$ RHS = 1<br />
+
+$n = k$<br />
+
+$1 + 2 + 3 + ... + k = (k(k + 1)) / 2$<br />
+
+$n = k + 1$<br />
+
+$k + k + 1 = 0.5(k + 1)(k + 2)$<br />
+
+$0.5(k(k + 1)) + k + 1 = 0.5(k$<sup>2</sup>$ + 3n + 2)$<br />
+
+$0.5(k$<sup>2</sup> $ + k) + k + 1 = 0.5(k$<sup>2</sup>$ + 3n + 2)$<br />
+
+$0.5k$<sup>2</sup>$ + 1.5k + 1 = 0.5k$<sup>2</sup>$ + 1.5k + 1$<br />
+
+$\therefore P(k$<sub>0</sub> $+ 1)$ is true<br />
+$\therefore$ by PMI, $P(n$<sub>0</sub> $+ 1)$ is true for all $n \geq 1$
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Prove that for all $n \geq 1$:
+
+<div align="center">
+
+$1 + 6 + 11 + 16 + ... + (5n - 4) = 0.5n(5n - 3)$
+</div>
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+For $n = 1$:<br />
+
+$\quad$ LHS = 1 $\quad$ RHS = 1<br />
+
+$n = k$<br />
+
+$1 + 6 + 11 + 16 + ... + (5k - 4) = 0.5k(5k - 3)$<br />
+
+$n = k + 1$<br />
+
+$0.5k(5k - 3) + 5(k + 1) - 4 = 0.5(k + 1)(5(k + 1) - 3)$<br />
+
+$2.5k$<sup>2</sup>$ - 1.5k + 5k + 5 - 4 = (0.5k + 0.5)(5k + 5 - 3)$<br />
+
+$2.5k$<sup>2</sup>$ + 3.5k + 1 = (0.5k + 0.5)(5k + 2)$<br />
+
+$2.5k$<sup>2</sup>$ + 3.5k + 1 = 2.5k$<sup>2</sup>$ + 3.5k + 1$
+
+$\therefore P(k$<sub>0</sub> $+ 1)$ is true<br />
+$\therefore$ by PMI, $P(n$<sub>0</sub> $+ 1)$ is true for all $n \geq 1$
+</details>
+</ul>  
+</details>
