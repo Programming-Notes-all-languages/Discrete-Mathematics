@@ -22,6 +22,8 @@ A <strong>statement</strong> (or <strong>proposition</strong>) is a sentence tha
   <li>On the other hand, "x + y > 0" is not a statement because this expression without further context cannot be evaluated to true or false without knowing what the values of x and y are. For some values of x and y can make this expression true, for other values, the expression can be false; therefore, this expression is not a statement</li>
 </ul>  
 
+The relation between equals and equivalence is that equals refer to sameness in value. Equivalence, however, denotes things that are not identical but have a similar or equal effect or value
+
 ### Compound Statements
 The <strong>negation of 
 $p$</strong> is given by the following statement: $\neg p$. This $\neg$ symbol denotes $not$, meaning that $\neg p$ means not $p$
@@ -627,7 +629,7 @@ The <strong>exclusive or</strong> $p \oplus q$ is true whenever exactly one of $
 
 <div align="center">
 
-$p$ $\oplus$ $q$ $\equiv$ $($ $p$ $\vee$ $q$ $)$ $\land$ $\neg$ $($ $p$ $\land$ $q$ $)$
+$p$ $\oplus$ $q$ $\equiv$ $($ $p$ $\land$ $\neg$ $q$ $)$ $\vee$ $($ $\neg$ $p$ $\land$ $q$ $)$
 </div>
 
 ## Conditional Statements
@@ -1053,6 +1055,40 @@ An <strong>argument</strong> is a sequence of statements, and an <strong>argumen
 
 To say that an argument is <strong>valid</strong> means that no matter what particular statements are substituted for the statement variables in its premises, if the resulting premises are all true, then the conclusion is also true
 
+An argument is valid if $(P$<sub>0</sub>$ + P$<sub>1</sub>$ + P$<sub>2</sub>$ \rightarrow C)$ is a tautology
+
+An argument can be valid and if it is valid, it can potentially be sound<br />
+<ul>
+  <li>An argument is valid if its structure guarantees that if the premises are true, then the conclusion must be true</li>
+  <li>An argument is sound if it is valid and its premises are actually true</li>
+</ul>  
+
+<details>
+    <summary>Example problem</summary>
+
+Complete the following argument to make it valid in a nontrivial way:
+<ul>
+  <li>If an algorithm is inefficient, then it takes too long to run</li>
+  <li>If an algorithm takes too long to run, then it is not practical for large datasets</li>
+  <li>
+
+  $\therefore$</li>
+</ul>
+
+Assuming that the major (first) premise is true, what must necessarily be true for the argument to be sound?<br />
+
+This argument form used is an example of what?
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+If an algorithm is inefficient, then it is not practical for large datasets<br />
+
+This argument is an example of transitivity
+</details>
+</ul>  
+</details>
+
 <details>
     <summary>Example problem</summary>
 
@@ -1073,6 +1109,44 @@ Either A is true or D is true. Sharky either killed or did not kill Lefty. Assum
   <li>B is a lie because Muscles did kill Lefty</li>
   <li>C is a lie because Muscles killed Lefty</li>
   <li>D is the truth because Sharky did not kill Lefty, Muscles did</li>
+</ul>  
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Suppose the it is true that: You'll build it, but they won't come<<br >
+Which of the following are then false? Select all that apply<br />
+<ul>
+  <li>If you build it, they will come</li>
+  <li>If they come, you will build it</li>
+  <li>If you won't build it, they won't come</li>
+  <li>You won't build it, or they'll come</li>
+  <li>If they won't come, you won't build it</li>
+</ul>
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+The statement is $B \land \neg C$ is true when $B$ is true and when $C$ is false<br />
+<ul>
+  <li>
+
+  $B \rightarrow C$: If $B$ is true and $C$ is false, this statement is false</li>
+  <li>
+
+  $C \rightarrow B$: If $B$ is true and $C$ is false, this statement is true</li>
+  <li>
+
+  $\neg B \rightarrow \neg C$: If $B$ is true and $C$ is false, this statement true</li>
+  <li>
+
+  $\neg B \vee C$: If $B$ is true and $C$ is false, this statement is false</li>
+  <li>
+
+  $\neg 
 </details>
 </ul>  
 </details>
@@ -1629,6 +1703,8 @@ The <strong>contrapositive</strong> of the statement $p \rightarrow q$ is $\neg 
 $\neg$ $q$ $\rightarrow$ $\neg$ $p$ $\equiv$ $\neg$ $p$ $\vee$ $q$
 </div>
 
+The contrapositive of a statement is equivalent to the original statement
+
 <details>
     <summary>Example problem</summary>
 
@@ -1646,6 +1722,7 @@ If $x$ is not nonnegative or $x$ is positive or $x$ is zero
 ### Converse
 The <strong>converse</strong> of the statement $p \rightarrow q$ is $q \rightarrow p$
 
+The converse of a statement is not equivalent to the original statement
 <details>
     <summary>Example problem</summary>
 
@@ -1662,6 +1739,7 @@ If $x$ is positive or $x$ is zero, then $x$ is nonnegative
 ### Inverse
 The <strong>inverse</strong> of the statement $p \rightarrow q$ is $\neg p \rightarrow \neg q$
 
+The inverse of a statement is not equivalent to the original statement
 <details>
     <summary>Example problem</summary>
 
@@ -1682,6 +1760,8 @@ The <strong>negation</strong> of the statement $p \rightarrow q$ is $\neg(p \rig
 
 $\neg$ $($ $p$ $\rightarrow$ $q$ $)$ $\equiv$ $p$ $\land$ $\neg$ $q$
 </div>
+
+The negation of a statement is not equivalent to the orginal statement 
 
 <details>
     <summary>Example problem</summary>
