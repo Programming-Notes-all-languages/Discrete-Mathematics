@@ -235,10 +235,10 @@ Let $B$<sub>i</sub> $ = \{x \in \mathbb{R} | 0 \leq x \leq i\}$ for each integer
 <strong>Venn diagrams</strong> are used to present relation among sets
 
 If $A \subseteq B$, then
-<img width=500px, height=300px, src="Images/Diagrams/Diagram 1.png" alt="Diagram 1">
+<img width=500px, height=200px, src="Images/Diagrams/Diagram 1.png" alt="Diagram 1">
 
 If $A \cancel{\subseteq} B$, then
-<img width=500px, height=300px, src="Images/Diagrams/Diagram 2.png" alt="Diagram 2">
+<img width=500px, height=200px, src="Images/Diagrams/Diagram 2.png" alt="Diagram 2">
 
 ### Set Operations
 The set of interest is called the <strong>universal set</strong> or <strong>universe</strong> often set as $U$
