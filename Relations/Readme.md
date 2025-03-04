@@ -284,8 +284,8 @@ State explicitly which ordered pairs are in $R$ and $R$<sup>-1</sup>, and draw a
   <details>
     <summary>Solution</summary>
 
-$R =$ &#123;$(2, 2), (2, 6), (2, 8), (3, 6), (4, 8)$ &#123;<br />
-$R$<sup>-1</sup> $ = (2, 2), (6, 2), (8, 2), (6, 3), (8, 4)$
+$R = {(2, 2), (2, 6), (2, 8), (3, 6), (4, 8)}$<br />
+$R$ <sup>-1</sup> $ = (2, 2), (6, 2), (8, 2), (6, 3), (8, 4)$
 
 <img src="Images/Example Problems/Problem 2A.png" alt="Problem 2A">
 </details>
