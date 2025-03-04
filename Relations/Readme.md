@@ -284,7 +284,7 @@ State explicitly which ordered pairs are in $R$ and $R$<sup>-1</sup>, and draw a
   <details>
     <summary>Solution</summary>
 
-$R =\{(2, 2), (2, 6), (2, 8), (3, 6), (4, 8)\}$<br />
+$R =$ &#123;$(2, 2), (2, 6), (2, 8), (3, 6), (4, 8)$ &#123;<br />
 $R$<sup>-1</sup> $ = (2, 2), (6, 2), (8, 2), (6, 3), (8, 4)$
 
 <img src="Images/Example Problems/Problem 2A.png" alt="Problem 2A">
@@ -329,7 +329,7 @@ Now considering what is means for a relation not to have one of the properties d
 <details>
     <summary>Example problem</summary>
 
-Let $A = \{0, 1, 2, 3\}$, and define a relation $R$<sub>2</sub> on $A$ as follows: $R$<sub>2</sub> $ = \{(0, 0), (0, 1), (1, 1), (1, 2), (2, 2), (2, 3)\}$
+Let $A = {0, 1, 2, 3}$, and define a relation $R$<sub>2</sub> on $A$ as follows: $R$<sub>2</sub> $ = \{(0, 0), (0, 1), (1, 1), (1, 2), (2, 2), (2, 3)\}$
 
 <ol type="a">
   <li>
