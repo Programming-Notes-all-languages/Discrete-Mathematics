@@ -10,6 +10,12 @@
   <li>
     <a href='#equivalence-relations'>Equivalence Relations</a>
   </li>
+  <li>
+    <a href='#modular-arithmetic'>Modular Arithmetic</a>
+  </li>
+  <li>
+    <a href='#rsa-cryptography'>RSA Cryptography</a>
+  </li>
 </ol>
 </details>
 
@@ -284,8 +290,8 @@ State explicitly which ordered pairs are in $R$ and $R$<sup>-1</sup>, and draw a
   <details>
     <summary>Solution</summary>
 
-$R = {(2, 2), (2, 6), (2, 8), (3, 6), (4, 8)}$<br />
-$R$ <sup>-1</sup> $ = (2, 2), (6, 2), (8, 2), (6, 3), (8, 4)$
+$R$ = {(2, 2), (2, 6), (2, 8), (3, 6), (4, 8)}<br />
+$R$ <sup>-1</sup> = (2, 2), (6, 2), (8, 2), (6, 3), (8, 4)
 
 <img src="Images/Example Problems/Problem 2A.png" alt="Problem 2A">
 </details>
@@ -329,7 +335,7 @@ Now considering what is means for a relation not to have one of the properties d
 <details>
     <summary>Example problem</summary>
 
-Let $A = {0, 1, 2, 3}$, and define a relation $R$<sub>2</sub> on $A$ as follows: $R$<sub>2</sub> $ = \{(0, 0), (0, 1), (1, 1), (1, 2), (2, 2), (2, 3)\}$
+Let $A$ = {0, 1, 2, 3}, and define a relation $R$<sub>2</sub> on $A$ as follows: $R$<sub>2</sub> = {(0, 0), (0, 1), (1, 1), (1, 2), (2, 2), (2, 3)}$
 
 <ol type="a">
   <li>
@@ -496,7 +502,7 @@ For every $m$, $n$ $\in$ $\mathbb{Z}$, $m$ $P$ $n$ $\iff$ $\exists$ a prime numb
 <details>
     <summary>Example problem</summary>
 
-Let $X = \{a, b, c\}$ and let $\mathcal{P}{X}$ be the power set of $X$. Define a relation $N$ on $\mathcal{P}{X}$ as follows
+Let $X$ = {a, b, c} and let $\mathcal{P}{X}$ be the power set of $X$. Define a relation $N$ on $\mathcal{P}{X}$ as follows
 
 <div align="center">
 
@@ -527,7 +533,7 @@ For every $A$, $B$ $\in$ $\mathcal{P}(X)$, $A$ $N$ $B$ $\iff$ the number of elem
   $N$ is symmetric because if the number of elements in $B$ does not equal the number of elements in $A$, then the number of elements in $A$ does not equal the number of elements in $B$</li>
   <li> 
 
-  $N$ is not transitive because lets say $A = \{1, 2, 3, 4, 5\}, B = \{3, 4, 5\},$ amd $C = \{3, 4, 5, 6, 7\}$. The number of elements in $A$ does not equal the number of elements in $B$; the number of elements in $B$ does not equal the number of elements $C$; however, the number of elements in $A$ equals the number of elements in $C$</li>
+  $N$ is not transitive because lets say $A$ = {1, 2, 3, 4, 5}, $B $= {3, 4, 5}, amd $C$ = {3, 4, 5, 6, 7}. The number of elements in $A$ does not equal the number of elements in $B$; the number of elements in $B$ does not equal the number of elements $C$; however, the number of elements in $A$ equals the number of elements in $C$</li>
 </ol>
 </details>
 </ul>  
@@ -582,7 +588,7 @@ Suppose $A$ is a set and $R$ is an equivalence relation on $A$. For each element
 <details>
     <summary>Example problem</summary>
 
-Let $A = \{a, b, c, d\}$ and define a relation $R$ on $A$ as follows:
+Let $A$ = {$a, b, c, d$} and define a relation $R$ on $A$ as follows:
 
 <div align="center">
 
@@ -618,20 +624,20 @@ It is a fact that $R$ is an equivalence relation on $A$. Use set-roster notation
 <ol type="a">
   <li>
 
-  $[a] = \{a\}$</li>
+  $[a]$ = {$a$}</li>
   <li>
 
-  $[b] = \{b, d\}$</li>
+  $[b]$ = {$b, d$}</li>
   <li> 
 
-  $[c] = \{c\}$</li>
+  $[c]$ = {$c$}</li>
   <li>
 
-  $[d] = \{b, d\}$</li>
+  $[d]$ = {$b, d$}</li>
   <li>There are 3 distinct equivalence classes</li>
   <li>
 
-  The three distinct equivalence classes of $R$ are: $\{a\}, \{c\}, \{b, d\}$</li>
+  The three distinct equivalence classes of $R$ are: {$a$}, {$c$}, {$b, d$}$</li>
 </ol>
 </details>
 </ul>  
@@ -640,11 +646,11 @@ It is a fact that $R$ is an equivalence relation on $A$. Use set-roster notation
 <details>
     <summary>Example problem</summary>
 
-Let $A = \{1, 2, 3, 4, ..., 18\}$ and define a relation $R$ on $A$ as follows:
+Let $A$ = {1, 2, 3, 4, ..., 18} and define a relation $R$ on $A$ as follows:
 
 <div align="center">
 
-FOr all $x$, $y$ $\in$ $A$, $x$ $R$ $y$ $\iff$ $4$ $|$ $($ $x$ $-$ $y$ $)$
+For all $x$, $y$ $\in$ $A$, $x$ $R$ $y$ $\iff$ $4$ $|$ $($ $x$ $-$ $y$ $)$
 </div>
 
 It is a fact that $R$ is an equivalence relation on $A$. Use set-roster notation to write the equivalence classes of $R$
@@ -676,25 +682,32 @@ It is a fact that $R$ is an equivalence relation on $A$. Use set-roster notation
   <details>
     <summary>Solution</summary>
 
-$R = \{(17, 1), (13, 1), (9, 1), (5, 1), (1, 1), (18, 2), (14, 2), (10, 2), (6, 2), (2, 2), (15, 3), (11, 3), (7, 3), (3, 3), (16, 4), (12, 4), (8, 4), (4, 4), (17, 5), (13, 5), (9, 5), (5, 5), (1, 5)\}$
+The following numbers all have remainder 1 mod 4: 1, 5, 9, 13, 17<br />
+The following numbers all have remainder 2 mod 4: 2, 6, 10, 14, 18<br />
+The following numbers all have remainder 3 mod 4: 3, 7, 11, 15<br />
+The following numbers all have remainder 0 mod 4:
+4, 8, 12, 16<br />
 
 <ol type="a">
   <li>
 
-  $[1] = \{17, 13, 9, 5, 1\}$</li>
+  $[1] =$ {17, 13, 9, 5, 1}</li>
   <li>
 
-  $[b] = \{18, 14, 10, 6, 2\}$</li>
+  $[2] =$ {18, 14, 10, 6, 2}</li>
   <li> 
 
-  $[c] = \{15, 11, 7, 3\}$</li>
+  $[3] =$ {15, 11, 7, 3}</li>
   <li>
 
-  $[d] = \{17, 13, 9, 5, 1\}$</li>
+  $[4] =$ {17, 13, 9, 5, 1}</li>
+  <li>
+
+  $[5] =$ {16, 12, 8, 4}</li>
   <li>There are 4 distinct equivalence classes</li>
   <li>
 
-  The four distinct equivalence classes of $R$ are: $\{17, 13, 9, 5, 1\}, \{18, 14, 10, 6, 2\}, \{15, 11, 7, 3\}, \{16, 12, 8, 4\}$</li>
+  The four distinct equivalence classes of $R$ are: {17, 13, 9, 5, 1}, {18, 14, 10, 6, 2}, {15, 11, 7, 3}, {16, 12, 8, 4}</li>
 </ol>
 </details>
 </ul>  
@@ -703,11 +716,11 @@ $R = \{(17, 1), (13, 1), (9, 1), (5, 1), (1, 1), (18, 2), (14, 2), (10, 2), (6, 
 <details>
     <summary>Example problem</summary>
 
-Let $A = \{-2, -1, 0, 1, 2, 3, 4, 5, 6, 7\}$ and define a relation $R$ on $A$ as follows:
+Let $A =$ {-2, -1, 0, 1, 2, 3, 4, 5, 6, 7} and define a relation $R$ on $A$ as follows:
 
 <div align="center">
 
-FOr all $x$, $y$ $\in$ $A$, $x$ $R$ $y$ $\iff$ $3$ $|$ $($ $x$ $-$ $y$ $)$
+For all $x$, $y$ $\in$ $A$, $x$ $R$ $y$ $\iff$ $3$ $|$ $($ $x$ $-$ $y$ $)$
 </div>
 
 It is a fact that $R$ is an equivalence relation on $A$. Use set-roster notation to write the equivalence classes of $R$
@@ -736,26 +749,450 @@ It is a fact that $R$ is an equivalence relation on $A$. Use set-roster notation
   <details>
     <summary>Solution</summary>
 
-$R = \{(6, 0), (3, 0), (0, 0), (7, 1), (4, 1), (1, 1), (-2, 1)\}$
+The following numbers all have remainder 1 mod 3: 
+7, 4, 1, -2<br />
+The following numbers all have remainder 2 mod 3:
+5, 2, -1<br />
+The following numbers all have remainder 0 mod 3:
+6, 3, 0<br />
 
 <ol type="a">
   <li>
 
-  $[0] = \{6, 3, 0\}$</li>
+  $[0] =$ {6, 3, 0}</li>
   <li>
 
-  $[1] = \{7, 4, 1, -2\}$</li>
+  $[1] =$ {7, 4, 1, -2}</li>
   <li> 
 
-  $[2] = \{15, 11, 7, 3\}$</li>
+  $[2] =$ {5, 2, -1}</li>
   <li>
 
-  $[3] = \{17, 13, 9, 5, 1\}$</li>
-  <li>There are 4 distinct equivalence classes</li>
+  $[3] =$ {6, 3, 0}</li>
+  <li>There are 3 distinct equivalence classes</li>
   <li>
 
-  The four distinct equivalence classes of $R$ are: $\{17, 13, 9, 5, 1\}, \{18, 14, 10, 6, 2\}, \{15, 11, 7, 3\}, \{16, 12, 8, 4\}$</li>
+  The four distinct equivalence classes of $R$ are: {6, 3, 0}, {7, 4, 1, -2}, {5, 2, -1}</li>
 </ol>
 </details>
 </ul>  
 </details>
+
+<details>
+    <summary>Example problem</summary>
+
+Let $X$ be the set of nonempty sets of {-1, 0, 1} and define a relation $R$ on $X$ as follows:
+
+<div align="center">
+
+For all sets $s$ and $t$ in $X$, $s$ $R$ $t$ $\iff$ the sum of the elements in $s$ equals the sum of the elements in $t$
+</div>
+
+It is a fact that $R$ is an equivalence relation on $X$
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$R = $ {{-1}, {0}, {1}, {-1, 0}, {-1, 1}, {0, 1}, {-1, 0, 1}}<br />
+
+The distinct elements are: {{-1}, {-1, 0}}, {{0}, {-1, 1}}, {{-1, 0, 1}, {0, 1}}
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Let $A$ = {-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4} and define a relation $R$ on $A$ as follows:
+
+<div align="center">
+
+For all $m$, $n$ $\in$ $A$, $m$ $R$ $n$ $\iff$ $3$ $|$ $($ $m$ <sup>2</sup> $-$ $n$ <sup>2</sup> $)$
+</div>
+
+It is a fact that $R$ is an equivalence relation on $A$
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$m$<sup>2</sup> - $n$<sup>2</sup> = ($m$ + $n$)($m$ - $n$)<br />
+
+For $R$ to hold, $m$<sup>2</sup> - $n$<sup>2</sup> must be divisible by 3. This means that $m$<sup>2</sup> and $n$<sup>2</sup> must have the same remainder when divided by 3
+
+The following numbers all have remainder 1 mod 3: -5, -4, -2, -1, 1, 2, 4<br />
+
+The following numbers all have remainder 0 mod 3: -6, -3, 0, 3 
+
+The distinct elements are: {-6, -3, 0, 3}, {-5, -4, -2, -1, 1, 2, 4}
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Let $A$ equal the set of all strings of 0's, 1's, and 2's that have length 4 and for which the usm of the characters in the string is less than or equal to 2. Define a relation $R$ on $A$ as follows:
+
+<div align="center">
+
+For all $s$, $t$ $\in$ $A$, $s$ $R$ $t$ $\iff$ the sum of the characters of $s$ equals the sum of the characters of $t$
+</div>
+
+It is a fact that $R$ is an equivalence relation on $A$
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+0 = (0000),
+1 = (1000), (0100), (0010), (0001), 
+2 = (1100), (1010), (1001), (0110), (0101), (0011),(2000), (0200), (0020), (0002)
+
+$R =$ {(0000, 0000), (1000,)}
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Let $A$ = {-2, -1, 0, 1, 2, 3, 4, 5, 6} and define a relation $R$ on $A$ as follows:
+
+<div align="center">
+
+For all $m$, $n$ $\in$ $A$, $m$ $R$ $n$ $\iff$ $5$ $|$ $($ $m$ <sup>2</sup> $-$ $n$ <sup>2</sup> $)$
+</div>
+
+It is a fact that $R$ is an equivalence relation on $A$
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+The following numbers all have remainder 1 mod 5: -1, 1, 4, 6<br />
+
+The following numbers all have remainder 4 mod 5: -2, 2, 3<br />
+
+The following numbers all have remainder 0 mod 5:
+0, 5<br />
+
+The distinct elements are: {-1, 1, 4, 6}, {-2, 2, 3}, {0, 5}
+</details>
+</ul>  
+</details>
+
+## Modular Arithmetic
+### Cryptography
+To encrypt a message, use the following formula:
+
+<div align="center">
+
+$C$ $=$ $($ $M$ $+$ $3$ $)$ mod 26
+</div>
+
+To decrypt a message, use the following formula: 
+
+<div align="center">
+
+$M$ $=$ $($ $C$ $-$  $3$ $)$ mod 26
+</div>
+
+<details>
+    <summary>Example problem</summary>
+
+<ol type="a">
+  <li>Use the Caesar cipher to encrypt the message AN APPLE A DAY</li>
+  <li>Use the Caeser cipher to decrypt the message NHHSV WIKH GRFWRU DZDB</li>
+</ol>
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>AN: DQ<br />
+  APPLE: DSSOH<br />
+  A: D<br />
+  DAY: GDB
+  </li>
+  <li>NHHSV: KEEPS<br />
+  WKH: THE<br />
+  GRFWRU: DOCTOR<br />
+  DZDB: AWAY</li>
+</ol>  
+</details>
+</ul>  
+</details>
+
+### Properties of Congruence Modulo n
+Let $a, b,$ and $n$ be any integers and suppose $n > 1$. The following statements are all equivalent    
+
+<details>
+    <summary>Example problem</summary>
+
+Find the following using modular arithmetic:
+<ol type="a">
+  <li>17<sup>2</sup> mod 55</li>
+  <li>17<sup>4</sup> mod 55</li>
+  <li>17<sup>8</sup> mod 55</li>
+  <li>17<sup>16</sup> mod 55</li>
+</ol>
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>
+  
+  17<sup>2</sup> = 289<br />
+  289 mod 55 = 14<br />
+  17<sup>2</sup> $\equiv$ 14 (mod 55)</li>
+  <li>
+  
+  17<sup>4</sup> = 14<sup>2</sup> (mod 55)<br />
+  14<sup>2</sup> = 196<br />
+  196 mod 55 = 31<br />
+  17<sup>4</sup> $\equiv$ 31 (mod 55)</li>
+  <li>
+
+  17<sup>8</sup> = 31<sup>2</sup> (mod 55)<br />
+  31<sup>2</sup> = 961<br />
+  961 mod 55 = 26<br />
+  17<sup>8</sup> $\equiv$ 26 (mod 55)</li>
+  <li>
+
+  17<sup>16</sup> = 26<sup>2</sup> (mod 55)<br />
+  26<sup>2</sup> = 676<br />
+  676 mod 55 = 16<br />
+  17<sup>16</sup> $\equiv$ 16 (mod 55)</li>
+</ol>  
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Find 18<sup>27</sup> mod 50 
+<ol type="a">
+  <li>18<sup>1</sup> mod 50</li>
+  <li>18<sup>2</sup> mod 50</li>
+  <li>18<sup>4</sup> mod 50</li>
+  <li>18<sup>8</sup> mod 50</li>
+  <li>18<sup>16</sup> mod 50</li>
+  <li>18<sup>27</sup> mod 50</li>
+</ol>
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>
+  
+  18<sup>1</sup> = 18<br />
+  18 mod 50 = 18<br />
+  18<sup>1</sup> $\equiv$ 18 (mod 50)</li>
+  <li>
+  
+  18<sup>2</sup> = 18<sup>2 (mod 50)<br />
+  18<sup>2</sup> = 324<br />
+  324 mod 50 = 24<br />
+  18<sup>2</sup> $\equiv$ 24 (mod 50)</li>
+  <li>
+
+  18<sup>4</sup> = 24<sup>2</sup> (mod 50)<br />
+  24<sup>2</sup> = 576<br />
+  576 mod 50 = 26<br />
+  18<sup>4</sup> $\equiv$ 26 (mod 50)</li>
+  <li>
+
+  18<sup>8</sup> = 26<sup>2</sup> (mod 50)<br />
+  26<sup>2</sup> = 676<br />
+  676 mod 50 = 26<br />
+  18<sup>8</sup> $\equiv$ 26 (mod 50)</li>
+  <li>
+
+  18<sup>16</sup> = 26<sup>2</sup> (mod 50)<br />
+  26<sup>2</sup> = 676<br />
+  676 mod 50 = 26<br />
+  18<sup>16</sup> $\equiv$ 26 (mod 59)</li>
+  <li>
+
+  Since 27 = 16 + 8 + 2 + 1,<br />
+  18<sup>27</sup> mod 50 = (18<sup>16</sup> + 18<sup>8</sup> + 18<sup>2</sup> + 18<sup>1</sup>) mod 50<br />
+  ((18<sup>16</sup> mod 50) * (18<sup>8</sup> mod 50) * (18<sup>2</sup> mod 50) * (18<sup>1</sup> mod 50) mod 50)<br />
+  (18 * 24 * 26 * 26 * 26) mod 50 = 32
+</ol>  
+</details>
+</ul>  
+</details>
+
+## RSA Cryptography
+### Encrypting a Message Using RSA Cryptography
+
+<div align="center">
+
+$C$ $=$ $M$ <sup>$e$</sup> mod $p$ $q$
+</div>
+
+<details>
+    <summary>Example problem</summary>
+
+Bob wants to send Alice the message "DOG" which he plans to encrypt using Alice's RSA cypher with public key ($p$ $q$, $e$) = (55, 3). To encrypt the message, he encodes one letter at a time using $A$ = 01, $B$ = 02, $C$ = 03, ..., $Z$ = 26
+
+What is the fully encrypted message that Alice receives?
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$C$ = 4<sup>3</sup> mod 55 = 09<br />
+$C$ = 15<sup>3</sup> mod 55 = 20<br />
+$C$ = 7<sup>3</sup> mod 55 = 13
+</details>
+</ul>  
+</details>
+
+### Decrypting a Message Using RSA Cryptography
+
+<div align="center">
+
+$C$ $=$ $M$ <sup>$e$</sup> mod $p$ $q$
+</div>
+
+<details>
+    <summary>Example problem</summary>
+
+Alice received the following ciphertext from Bob "08 14 08". Bob has encrypted it using the RSA cypher with Alice's public key ($p$ $q$, $e$) = (55, 3). To encrypt the message, he encodes one letter at a time using $A$ = 01, $B$ = 02, $C$ = 03, ..., $Z$ = 26
+
+What is Bob's message after Alice finishes decrypting it?
+
+To decrypt Bob's message, Alice uses the decryption formula<br />
+$M$ = $C$<sup>27</sup> mod 55<br />
+where $M$ is the code for the letter of the message, $C$ is the encrypted version of the letter, ($p$ $q$) = (55, 3) is the public key and ($p$ $q$, $e$) = (55, 27) is the private key
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+8<sup>27 = 8<sup>16</sup> + 8<sup>8</sup> + 8<sup>2</sup> + 8<sup>1</sup><br />
+8 mod 55 = 8<br />
+8<sup>2</sup> mod 55 = 9<br />
+8<sup>4</sup> mod 55 = 26<br />
+8<sup>8</sup> mod 55 = 16<br />
+8<sup>16</sup> mod 55 = 36<br />
+8<sup>27</sup> = ((8<sup>16</sup> mod 55) * (8<sup>8</sup> mod 55) * (8<sup>2</sup> mod 55) * (8<sup>1</sup> mod 55)) = (8 * 9 * 16 * 36) mod 55 = 2<br />
+
+14<sup>27 = 14<sup>16</sup> + 14<sup>8</sup> + 14<sup>2</sup> + 14<sup>1</sup><br />
+14 mod 55 = 14<br />
+14<sup>2</sup> mod 55 = 31<br />
+14<sup>4</sup> mod 55 = 26<br />
+14<sup>8</sup> mod 55 = 16<br />
+14<sup>16</sup> mod 55 = 36<br />
+14<sup>27</sup> = ((14<sup>16</sup> mod 55) * (14<sup>8</sup> mod 55) * (14<sup>2</sup> mod 55) * (14<sup>1</sup> mod 55)) = (14 * 31 * 16 * 36) mod 55 = 9<br />
+
+The message decrypted is: BIB
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Alice received the following ciphertext from Bob "12 15 15 26". Bob has encrypted it using the RSA cypher with Alice's public key ($p$ $q$, $e$) = (55, 3). To encrypt the message, he encodes one letter at a time using $A$ = 01, $B$ = 02, $C$ = 03, ..., $Z$ = 26
+
+What is Bob's message after Alice finishes decrypting it?
+
+To decrypt Bob's message, Alice uses the decryption formula<br />
+$M$ = $C$<sup>27</sup> mod 55<br />
+where $M$ is the code for the letter of the message, $C$ is the encrypted version of the letter, ($p$ $q$) = (55, 3) is the public key and ($p$ $q$) = (55, 27) is the private key
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+812<sup>27 = 12<sup>16</sup> + 12<sup>8</sup> + 12<sup>2</sup> + 12<sup>1</sup><br />
+12 mod 55 = 12<br />
+12<sup>2</sup> mod 55 = 34<br />
+12<sup>4</sup> mod 55 = 1<br />
+12<sup>8</sup> mod 55 = 1<br />
+12<sup>16</sup> mod 55 = 1<br />
+12<sup>27</sup> = ((12<sup>16</sup> mod 55) * (12<sup>8</sup> mod 55) * (12<sup>2</sup> mod 55) * (12<sup>1</sup> mod 55)) = (12 * 34 * 1 * 1) mod 55 = 23<br />
+
+Using the same method as above, the second and the third letter of the message are: 5, 5, and 16 which correspond to the letters E, E, and Q
+
+The message decrypted is: WEEP
+</details>
+</ul>  
+</details>
+
+## Extended Euclidean Algorithm
+<details>
+    <summary>Example problem</summary>
+
+Use the extended Euclidean algorithm to find the greatest common divisor of 10,184 and 1,311 and express it as a linear combination of 10,184 and 1,311
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+Find d = gcd(1311, 10184)<br />
+10184 = 1311 * 7 + 1007<br />
+1311 = 1007 * 1 + 304<br />
+1007 = 304 * 3 + 95<br />
+304 = 95 * 3 + 19<br />
+95 = 19 * 5 + 0<br />
+gcd(1311, 10184) = 19<br />
+
+Find integers $s$ and $t$ so that d = 10184s + 1311t<br />
+19 = 10184s + 1311t<br />
+19 = 304 - 95 * 3<br />
+19 = (1311 - 1007) - 3(1007 - 304 * 3)<br />
+19 = 1311 - (10184 - 1311 * 7) - 3(10184 - 1311 * 7 - 3(1311 - 1007))<br />
+19 = 1311 - 10184 + 7(1311) - 3(10184 - 7(1311) - 3(1311 - 10184 + 7(1311)))<br />
+19 = 8(1311) - 10184 - 3(10184) + 21(1311) + 9(1311) - 9(10184) + 63(1311)<br />
+19 = -13(10184) + 101(1311)<br />
+s = -13, t = 101
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Use the extended Euclidean algorithm to find the greatest common divisor of 2,652 and 1,001
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+d = gcd(2652, 1001)<br />
+2652 = 1001 * 2 + 650<br />
+1001 = 650 * 1 + 351<br />
+650 = 351 * 1 + 299<br />
+351 = 299 * 1 + 52<br />
+299 = 52 * 5 + 39<br />
+52 = 39 * 1 + 13<br />
+39 = 13 * 3 + 0<br />
+d = 13<br />
+
+Now to find $s$ and $t$:<br />
+13 = 2652s + 1001t<br />
+13 = 52 - 39<br />
+13 = (351 - 299) - (299 - 52 * 5)<br />
+13 = (1001 - 650) - (650 - 351) - (650 - 351 - 5(351 - 299))<br />
+13 = (1001 - 2652 - 2(1001)) - (2652 - 2(1001) - (1001 - 650)) - (2652 - 2(1001) - (1001 - 650) - 5(1001 - 650) - (650 - 351))<br />
+13 = (1001 - 2652 - 2(1001)) - 2652 + 2(1001) - 1001 + (2652 - 2(1001)) - 2652 + 2(1001) + (1001 - (2652 - 2(1001))) + 5(1001 - 2652 - 2(1001)) + (2652 - 2(1001) - (1001 - 650))<br />
+13 = 0(1001) - 2(2652) + 2652 - 2(1001) - 2652 + 2(1001) + 1001 - 2652 + 2(1001) + 5(1001) - 5(2652) - 10(1001) + 2652 - 2(1001) - 1001 + (2652 - 2(1001))<br />
+$s$ = -20, $t$ = 53
+</details>
+</ul>  
+</details>
+
+660 = 47 * 14 + 2
+47 = 2 * 23 + 1
+2 = 1 * 2 + 0
