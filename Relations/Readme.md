@@ -20,6 +20,73 @@
 </details>
 
 ## Relations on Sets
+<details>
+    <summary>Example problem</summary>
+
+Suppose that $A \subset B$ and $C \subset D$ where $|A| = 4, |B| = 7, |C| = 12, |D| = 17$. Determine $|B x D - A x C|$
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$|B x D - A x C|$ = 7 * 17 - 4 * 12 = 71
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Consider the following sets:<br />
+<ul>
+  <li>
+
+  $M$ is the set of all medical practitioners at a local hospital and $|M| = 324$</li>
+  <li>
+
+  $P$ is the set of all patients visiting the hospital in a given week and $|P| = 12314$</li>
+  <li>
+
+  $D$ is the set of all days of the seven day week</li>
+</ul>
+
+<ul type="a">
+  <li>
+  
+  Determine precisely $|M x P x D|$</li>
+  <li>
+
+  Let $R$ be the ternary relation on $M x P x D$ where practitioner $m \in M$ was seen by patient $p \in P$ on day $d \in D$ and suppose that
+    <ul>
+      <li>Ann saw 49 distinct patients this week</li>
+      <li>Bob saw 67 distinct patients this week</li>
+      <li>Cyd saw 81 distinct patients this week</li>
+      <li>Dan saw 92 distinct patients this week</li>
+      <li>Each patient was seen exactly twice this week, and by the same practitioner each time</li>
+    </ul>
+
+  Determine the cardinality of the following set:
+
+<div align="center">
+
+$X$ $=$ {($m$, $p$, $d$) $\in$ $R$ $:$ $m$ is either Ann, Bob, or Dan}<br />
+
+| $X$ | =
+</div>
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ul type="a">
+  <li>
+
+  $|M x P x D| = 324 * 12314 * 7 = 27898488$</li>
+  <li>
+
+  $|X| = 49 * 2 + 67 * 2 + 92 * 2 = 416$</li>
+</details>
+</ul>  
+</details>
+
 Let $A$ and $B$ be sets. A <strong>relation</strong> from $A$ to $B$ is a subset $R$ of $A$ x $B$. if $x \in A$ is related to $y \in B$:
 
 <div align="center">
@@ -716,6 +783,28 @@ The following numbers all have remainder 0 mod 4:
 <details>
     <summary>Example problem</summary>
 
+Let $A$ = {1, 2, 3, 4, ..., 18} and define a relation $R$ on $A$ as follows:
+
+<div align="center">
+
+For all $x$, $y$ $\in$ $A$, $x$ $R$ $y$ $\iff$ $4$ $|$ $($ $x$ $-$ $y$ $)$
+</div>
+
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+
+
+
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
 Let $A =$ {-2, -1, 0, 1, 2, 3, 4, 5, 6, 7} and define a relation $R$ on $A$ as follows:
 
 <div align="center">
@@ -879,6 +968,33 @@ The following numbers all have remainder 0 mod 5:
 0, 5<br />
 
 The distinct elements are: {-1, 1, 4, 6}, {-2, 2, 3}, {0, 5}
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Let $S$ = {1, 2, 3, ..., 30}, the set of integers from 1 to 30. Let $R$ be the relation on $S$ where $x R y$ whenever $x - y$ is a multiple of 9. Then, for each $x \in S$, define $[x]$ = {$y \in S : x R y$}
+<ol type="a">
+  <li>
+  
+  Is R an equivalence relation on $S$?</li>
+  <li>
+
+  Determine the size of the largest set $[x]$:</li>
+  <li>
+
+  Determine the size of the smallest set $[x]$:</li>
+  <li>
+
+  Determine the number of distinct sets $[x]$:</li>
+</ol>  
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<img src="Images/Example Problems/Problem 8A.png" alt="Problem 8A">
 </details>
 </ul>  
 </details>
