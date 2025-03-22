@@ -4,6 +4,9 @@
   <li>
     <a href='#definitions-and-the-element-method-of-proof'>Definitions and the Element Method of Proof</a>
   </li>
+  <li>
+    <a href='#properties-of-sets'>Properties of Sets</a>
+  </li>
 </ol>
 </details>
 
@@ -240,6 +243,63 @@ If $A \subseteq B$, then
 If $A \cancel{\subseteq} B$, then
 <img width=500px, height=200px, src="Images/Diagrams/Diagram 2.png" alt="Diagram 2">
 
+<details>
+    <summary>Example problem</summary>
+
+$U = ${$a, b, c, d, e, f, g, h, i, j$}<br />
+$C = ${$d, e, g, i$}<br />
+$Y =${$b, c, d, g, h, i$}<br />
+$Z =${$a, b, e, h, i$}<br />
+
+where $U$ is the universal set containing $X$, $Y$, and $Z$<br />
+
+Determine the elements of
+
+<div align="center">
+
+$($ $X$ $-$ $($ $Z$ $\land$ $Y$ $)$ $)$<sup>C</sup>
+</div>
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<img width=500px, height=200px, src="Images/Example Problems/Diagram 3A.png" alt="Diagram 3A">
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Select two of the following sets that are disjoin:<br />
+$A \vee B$<sup>C</sup><br />
+$A$<sup>C</sup> $\vee B$<br />
+$A \land B$<sup>C</sup><br />
+$A$
+</div>
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<img width=500px, height=200px, src="Images/Example Problems/Diagram 4A.png" alt="Diagram 4A">
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+Use a Venn diagram which regions correspond to the sets $C \land (B \vee A)$ and $B \vee (C \land A)$
+</div>
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<img width=500px, height=200px, src="Images/Example Problems/Diagram 5A.png" alt="Diagram 5A">
+</details>
+</ul>  
+</details>
+
 ### Set Operations
 The set of interest is called the <strong>universal set</strong> or <strong>universe</strong> often set as $U$
 
@@ -354,8 +414,49 @@ Let $A = \{1, 3, 5, 7, 9\}$, $B = \{3, 6, 9\}$, and $C = \{2, 4, 6, 8\}$. Find e
 </ul>  
 </details>
 
+<details>
+    <summary>Example problem</summary>
+
+Select all statements below which are generally true for sets $A$, $B$, and $C$:<br />
+<ul>
+  <li>
+  
+  If $A \subset B$ and $B \land C = \empty$ then $C \land A = \empty$</li>
+  <li>
+
+  $(C \vee A)$<sup>C</sup> $- B = (A \vee B \vee C)<sup>C</sup></li>
+  <li>
+
+  If $A$<sup>C</sup> $\subset B$<sup>C</sup> then $B \subset A$</li>
+  <li>  
+
+  <li>
+
+  $A - C = (A - B) \vee (B - C)$</li>
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<img src="Images/Example Problems/Problem 6A.png" alt="Problem 6A">
+</details>
+</ul>  
+</details>
+
 ### Partitions of Sets
 Two sets $A$ and $B$ are said to be <strong>disjoint</strong> if $A \cap B = \emptyset$ and if and only if, they have no elements in common
+
+<details>
+    <summary>Example problem</summary>
+
+Express the complement of (-3, 9) $\land$ [-5, 4]
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<img src="Images/Example Problems/Problem 7A.png" alt="Problem 7A">
+</details>
+</ul>  
+</details>
 
 Sets $A$<sub>1</sub>, $A$<sub>2</sub>, and $A$<sub>3</sub> are <strong>mutually disjoint</strong> if, and only if, no two sets $A$<sub>i</sub> and $A$<sub>j</sub> with distinct subscripts have any elements in common
 
@@ -585,6 +686,27 @@ For all sets $A$ and $B$ in $\mathcal{P}(X)$,<br />$A J B \iff A \cap B \cancel{
   <li>Yes</li>
   <li>Yes</li> 
 </ol>
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+For the relations below on the given sets, indicate which property or properties that each has on the given sets. Note that for a set $X$, $\mathcal{P}(X)$ denotes the power set of $X$
+
+<ol type="a">
+  <li>
+
+  The relation $R$ on $\mathbb{R}$ where $x R Y$ when $X$<sup>2</sup> = $y$<sup>2</sup></li>
+  <li>
+
+  
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+
 </details>
 </ul>  
 </details>
