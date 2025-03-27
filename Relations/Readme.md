@@ -1247,6 +1247,8 @@ The message decrypted is: WEEP
 </details>
 
 ## Extended Euclidean Algorithm
+The extended Euclidean Algorithm is used the find the greatest common divisor of two numbers. It works by dividing the larger number by the smaller number and replacing the larger one with the remainder until the remainder is zero
+
 <details>
     <summary>Example problem</summary>
 
@@ -1305,6 +1307,107 @@ Now to find $s$ and $t$:<br />
 13 = (1001 - 2652 - 2(1001)) - 2652 + 2(1001) - 1001 + (2652 - 2(1001)) - 2652 + 2(1001) + (1001 - (2652 - 2(1001))) + 5(1001 - 2652 - 2(1001)) + (2652 - 2(1001) - (1001 - 650))<br />
 13 = 0(1001) - 2(2652) + 2652 - 2(1001) - 2652 + 2(1001) + 1001 - 2652 + 2(1001) + 5(1001) - 5(2652) - 10(1001) + 2652 - 2(1001) - 1001 + (2652 - 2(1001))<br />
 $s$ = -20, $t$ = 53
+</details>
+</ul>  
+</details>
+
+### Euler's  Theorem
+Euler's Theorem states that if $a$ and $n$ are coprime, then
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>a</mi>
+    <mi>&#966;(n)</mi> <!-- Euler's Totient Function -->
+  </msup>
+  <mo>&#8776;</mo> <!-- Equivalent sign (≡) -->
+  <mn>1(mod </mn>
+  <mo>&#8290; </mo> <!-- Modulo symbol -->
+  <mi> n)</mi>
+</math>  
+
+<details>
+    <summary>Example problem</summary>
+
+Compute each of the following:<br />
+<ol type="a">
+  <li>(42)(84) mod 91</li>
+  <li>&#966;(91)</li>
+  <li>(84)(88)(42) mod 91</li>
+  <li>17<sup>17</sup> mod 91</li>
+</ol>
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$C$ = 4<sup>3</sup> mod 55 = 09<br />
+$C$ = 15<sup>3</sup> mod 55 = 20<br />
+$C$ = 7<sup>3</sup> mod 55 = 13
+</details>
+</ul>  
+</details>
+
+### Modular Inverses
+To find the modular inverse, use the Extended Euclidean algorithm. The modular inverse of let's say 5 modulo 17 is the x in 5x + 17y = gcd
+
+<details>
+    <summary>Example problem</summary>
+
+Compute the modular inverse of 9 modulo 26
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<code>
+9x + 26y = d
+26 = 9(2) + 8
+9 = 8(1) + 1
+8 = 1(8) + 0
+gcd(9, 26) = 1
+
+1 - 9 - 8
+1 - 9 - (26 - 9(2))
+1 = 9(3) + 26(-1)
+
+x = 3
+</code>
+</details>
+</ul>  
+</details>
+
+## Antisymmetric and Partial Order
+### Antisymmetric
+A relation is antisymmetric if no pair within the relation is symmetric to another pair within the same relation
+
+### Partial Order
+A partial order is a relation that is also the following: antisymmetric, reflexive, and transitive
+
+<details>
+    <summary>Example problem</summary>
+
+Compute each of the following:<br />
+<ol type="a">
+  <li>
+  
+  Is $R$ = {(0, 0), (0, 2), (1, 0), (1, 3), (2, 2), (3, 0), (3, 1)} antisymmetric</li>
+  <li>
+
+  Is $R$ = {(0, 1), (0, 2), (1, 1), (1, 2), (2, 3), (2, 2), (3, 2)}</li>
+</ol>
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>
+
+  $R$ is not antisymmetric because (1, 3) is an element of the relation along with (3, 1)</li>
+  <li>
+
+  $R$ is not antisymmetric because (2, 3) is an element of the relation along with (3, 2)</li>
+</ol>
 </details>
 </ul>  
 </details>
