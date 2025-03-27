@@ -16,6 +16,12 @@
   <li>
     <a href='#rsa-cryptography'>RSA Cryptography</a>
   </li>
+  <li>
+    <a href='#extended-euclidean-algorithm'>Extended Euclidean Algorithm</a>
+  </li>
+  <li>
+    <a href='#asymmetric-and-partial-order'>Asymmetric and Partial Order</a>
+  </li>
 </ol>
 </details>
 
@@ -776,28 +782,6 @@ The following numbers all have remainder 0 mod 4:
 
   The four distinct equivalence classes of $R$ are: {17, 13, 9, 5, 1}, {18, 14, 10, 6, 2}, {15, 11, 7, 3}, {16, 12, 8, 4}</li>
 </ol>
-</details>
-</ul>  
-</details>
-
-<details>
-    <summary>Example problem</summary>
-
-Let $A$ = {1, 2, 3, 4, ..., 18} and define a relation $R$ on $A$ as follows:
-
-<div align="center">
-
-For all $x$, $y$ $\in$ $A$, $x$ $R$ $y$ $\iff$ $4$ $|$ $($ $x$ $-$ $y$ $)$
-</div>
-
-
-<ul>  
-  <details>
-    <summary>Solution</summary>
-
-
-
-
 </details>
 </ul>  
 </details>
