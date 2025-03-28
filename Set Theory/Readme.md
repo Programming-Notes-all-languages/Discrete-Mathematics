@@ -32,7 +32,7 @@ If $A$ is a subset of $B$, but $A \cancel{=} B$, $A$ is called a <strong>proper 
 <details>
     <summary>Example problem</summary>
 
-Let the universal set be $\mathbb{R}$, the set of all real numbers, and let $A = $ { $x \in \mathbb{R} | -3 \leq x \leq 0$ } $, B = $ { $x \in \mathbb{R} | -1 < x < 2$ } , and $C =$ { $x \in \mathbb{R} | 6 < x \leq 8$ }. Find each of the following:
+Let the universal set be $\mathbb{R}$, the set of all real numbers, and let $A =$ { $x \in \mathbb{R} | -3 \leq x \leq 0$ } $, B =$ { $x \in \mathbb{R} | -1 < x < 2$ } , and $C =$ { $x \in \mathbb{R} | 6 < x \leq 8$ }. Find each of the following:
 
 <ol type="a">
   <li>
@@ -139,16 +139,16 @@ Find each of the following:
 <ol type="a">
   <li>
 
-  $A \cap B = $ {$ 1100 $ }</li>
+  $A \cap B =$ {$ 1100 $ }</li>
   <li>
 
-  $A \cup B = $ {$ 1000, 1101, 0101, 1100, 0110, 1001, 0011 $}</li>
+  $A \cup B =$ {$ 1000, 1101, 0101, 1100, 0110, 1001, 0011 $}</li>
   <li>
 
-  $A - B = $ {$ 1000 1101, 0101 $}</li>
+  $A - B =$ {$ 1000 1101, 0101 $}</li>
   <li>
 
-  $B - A = $ { $0110, 1001, 0011$ }</li>
+  $B - A =$ { $0110, 1001, 0011$ }</li>
 </ol>
 </details>
 </ul>  
@@ -178,17 +178,17 @@ Let $A =$ {a, b, c}, $B =$ {b, c, d}, $C =$ {b, c, e}
   <li>
 
   $A \cup (B \cap C) = A \cup$ { $b, c$ } = { $a, b, c$ }<br />
-  $A \cup (B \cap C) = $ { $a, b, c, d$ } $\cap C = $ { $b, c$ }<br />
-  $(A \cup B) \cap (A \cup C) = $ { $a, b, c, d$ } $ \cup $ { $a, b, c, e$ } = { $a, b, c$ }</li>
+  $A \cup (B \cap C) =$ { $a, b, c, d$ } $\cap C =$ { $b, c$ }<br />
+  $(A \cup B) \cap (A \cup C) =$ { $a, b, c, d$ } $ \cup$ { $a, b, c, e$ } = { $a, b, c$ }</li>
   <li>
 
   $A \cap (B \cup C) = A \cap$ { $b, c, d, e$ } = { $b, c$ }<br />
-  $(A \cap B) \cup C = $ { $b, c$ } $\cup C =$ { $b, c, e$ }<br />
-  $(A \cap B) \cup (A \cap C) = { $b, c$ } $\cup$ { $b, c$ } = { $b, c$ }</li>
+  $(A \cap B) \cup C =$ { $b, c$ } $\cup C =$ { $b, c, e$ }<br />
+  $(A \cap B) \cup (A \cap C) =$ { $b, c$ } $\cup$ { $b, c$ } = { $b, c$ }</li>
   <li>
 
-  $(A - B) - C = $ { $a$ } - { $b, c, e$ } = { $a$ }<br />
-  $A - (B - C) = $ { $a, b, c$ } - { $d$ } = { $a, b, c$ }</li>
+  $(A - B) - C =$ { $a$ } - { $b, c, e$ } = { $a$ }<br />
+  $A - (B - C) =$ { $a, b, c$ } - { $d$ } = { $a, b, c$ }</li>
 </ol>
 </details>
 </ul>  
@@ -197,7 +197,7 @@ Let $A =$ {a, b, c}, $B =$ {b, c, d}, $C =$ {b, c, e}
 <details>
     <summary>Example problem</summary>
 
-Let $B$<sub>i</sub> $ = $ { $x \in \mathbb{R} | 0 \leq x \leq i$ } for each integer $i = 1, 2, 3, 4$
+Let $B$<sub>i</sub> = { $x \in \mathbb{R} | 0 \leq x \leq i$ } for each integer $i = 1, 2, 3, 4$
 
 <ol type="a">
   <li>
@@ -217,18 +217,18 @@ Let $B$<sub>i</sub> $ = $ { $x \in \mathbb{R} | 0 \leq x \leq i$ } for each inte
 <ol type="a">
   <li>
 
-  $A \cup (B \cap C) = A \cup $ { $b, c$ } = { $a, b, c$ }<br />
-  $A \cup (B \cap C) = $ { $a, b, c, d$ } $\cap C = $ { $b, c$}<br />
+  $A \cup (B \cap C) = A \cup$ { $b, c$ } = { $a, b, c$ }<br />
+  $A \cup (B \cap C) =$ { $a, b, c, d$ } $\cap C = $ { $b, c$}<br />
   $(A \cup B) \cap (A \cup C) =$ { $a, b, c, d$ } $\cup $ { $a, b, c, e$ } = { $a, b, c$ }</li>
   <li>
 
-  $A \cap (B \cup C) = A \cap $ { $b, c, d, e$ } = { $b, c$ }<br />
-  $(A \cap B) \cup C = $ { $b, c$ } $\cup C =$ { $b, c, e$ }<br />
-  $(A \cap B) \cup (A \cap C) = $ { $b, c$ } $\cup$ { $b, c$ } = { $b, c$ }</li>
+  $A \cap (B \cup C) = A \cap$ { $b, c, d, e$ } = { $b, c$ }<br />
+  $(A \cap B) \cup C =$ { $b, c$ } $\cup C =$ { $b, c, e$ }<br />
+  $(A \cap B) \cup (A \cap C) =$ { $b, c$ } $\cup$ { $b, c$ } = { $b, c$ }</li>
   <li>
 
-  $(A - B) - C = $ { $a$ } - { $b, c, e$ } = { $a$ }<br />
-  $A - (B - C) = $ { $a, b, c$ } - { $d$ } = { $a, b, c$ }</li>
+  $(A - B) - C =$ { $a$ } - { $b, c, e$ } = { $a$ }<br />
+  $A - (B - C) =$ { $a, b, c$ } - { $d$ } = { $a, b, c$ }</li>
 </ol>
 </details>
 </ul>  
@@ -246,10 +246,10 @@ If $A \cancel{\subseteq} B$, then
 <details>
     <summary>Example problem</summary>
 
-$U = ${$a, b, c, d, e, f, g, h, i, j$}<br />
-$C = ${$d, e, g, i$}<br />
-$Y =${$b, c, d, g, h, i$}<br />
-$Z =${$a, b, e, h, i$}<br />
+$U =$ {$a, b, c, d, e, f, g, h, i, j$ }<br />
+$C =$ {$d, e, g, i$ }<br />
+$Y =$ {$b, c, d, g, h, i$ }<br />
+$Z =$ {$a, b, e, h, i$ }<br />
 
 where $U$ is the universal set containing $X$, $Y$, and $Z$<br />
 
@@ -331,7 +331,7 @@ The <strong>complement</strong> of $A$, denoted $A$<sup>c</sup>, is the set of a
 <details>
     <summary>Example problem</summary>
 
-Let $U = $ { $1, 2, 3, 4, 5, 6, 7$ } be the universal set containing $A = $ { $1, 3, 5, 7$ } and $B = $ { $4, 5, 6, 7$ }. Then find
+Let $U =$ { $1, 2, 3, 4, 5, 6, 7$ } be the universal set containing $A = $ { $1, 3, 5, 7$ } and $B =$ { $4, 5, 6, 7$ }. Then find
 
 <ol type="a">
   <li>
@@ -377,7 +377,7 @@ Let $U = $ { $1, 2, 3, 4, 5, 6, 7$ } be the universal set containing $A = $ { $1
 <details>
     <summary>Example problem</summary>
 
-Let $A = $ { $1, 3, 5, 7, 9$ }, $B = $ {$3, 6, 9$ }, and $C = $ { $2, 4, 6, 8$ }. Find each of the following
+Let $A =$ { $1, 3, 5, 7, 9$ }, $B =$ {$3, 6, 9$ }, and $C =$ { $2, 4, 6, 8$ }. Find each of the following
 
 <ol type="a">
   <li>
