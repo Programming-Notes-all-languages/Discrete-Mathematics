@@ -32,7 +32,7 @@ If $A$ is a subset of $B$, but $A \cancel{=} B$, $A$ is called a <strong>proper 
 <details>
     <summary>Example problem</summary>
 
-Let the universal set be $\mathbb{R}$, the set of all real numbers, and let $A = $ { $x \in \mathbb{R} | -3 \leq x \leq 0$ } $, B = $ { $x \in \mathbb{R} | -1 < x < 2$ } $, and C =$ { $x \in \mathbb{R} | 6 < x \leq 8$ }. Find each of the following:
+Let the universal set be $\mathbb{R}$, the set of all real numbers, and let $A = $ { $x \in \mathbb{R} | -3 \leq x \leq 0$ } $, B = $ { $x \in \mathbb{R} | -1 < x < 2$ } , and $C =$ { $x \in \mathbb{R} | 6 < x \leq 8$ }. Find each of the following:
 
 <ol type="a">
   <li>
@@ -157,7 +157,7 @@ Find each of the following:
 <details>
     <summary>Example problem</summary>
 
-Let $A = $ {a, b, c}, $B = $ {b, c, d}, $C =$ {b, c, e}
+Let $A =$ {a, b, c}, $B =$ {b, c, d}, $C =$ {b, c, e}
 
 <ol type="a">
   <li>
