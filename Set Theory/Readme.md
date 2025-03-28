@@ -32,7 +32,7 @@ If $A$ is a subset of $B$, but $A \cancel{=} B$, $A$ is called a <strong>proper 
 <details>
     <summary>Example problem</summary>
 
-Let the universal set be $\mathbb{R}$, the set of all real numbers, and let $A = \{x \in \mathbb{R} | -3 \leq x \leq 0\}, B = \{x \in \mathbb{R} | -1 < x < 2\}, and C = \{x \in \mathbb{R} | 6 < x \leq 8\}$. Find each of the following:
+Let the universal set be $\mathbb{R}$, the set of all real numbers, and let $A = $ { $x \in \mathbb{R} | -3 \leq x \leq 0$ } $, B = $ { $x \in \mathbb{R} | -1 < x < 2$ } $, and C =$ { $x \in \mathbb{R} | 6 < x \leq 8$ }. Find each of the following:
 
 <ol type="a">
   <li>
@@ -73,34 +73,34 @@ Let the universal set be $\mathbb{R}$, the set of all real numbers, and let $A =
 <ol type="a">
   <li>
 
-  $A \cup B$ = $\{ x \in \mathbb{R} | -3 \leq x < 2\}$</li>
+  $A \cup B$ = { $x \in \mathbb{R} | -3 \leq x < 2$ }</li>
   <li>
 
-  $A \cap B$ = $\{ x \in \mathbb{R} | -1 < x \leq 0\}$</li>
+  $A \cap B$ = { $x \in \mathbb{R} | -1 < x \leq 0$ }</li>
   <li>
 
-  $A$<sup>c</sup> = $\{ x \in \mathbb{R} | x < 3$ or $x > 0$</li>
+  $A$<sup>c</sup> = { $x \in \mathbb{R} | x < 3$ or $x > 0$ }</li>
   <li>
 
-  $A \cup C$ = $\{ x \in \mathbb{R} | -3 \leq x \leq 0$ or $6 < x \leq 8\}$</li>
+  $A \cup C$ = { $x \in \mathbb{R} | -3 \leq x \leq 0$ or $6 < x \leq 8$ }</li>
   <li>
 
   $A \cap C$ = $\emptyset$</li>
   <li>
 
-  $B$<sup>c</sup> = $\{ x \in \mathbb{R} | x \geq 2$ or $x \leq -1\}$</li>
+  $B$<sup>c</sup> = { $x \in \mathbb{R} | x \geq 2$ or $x \leq -1$ }</li>
   <li>
 
-  $A$<sup>c</sup> $\cap B$<sup>c</sup> = $\{ x \in \mathbb{R} | x < -3$ or $x \geq 2\}$</li>
+  $A$<sup>c</sup> $\cap B$<sup>c</sup> = { $x \in \mathbb{R} | x < -3$ or $x \geq 2$ }</li>
   <li>
 
-  $A$<sup>c</sup> $\cup B$<sup>c</sup> = $\{ x \in \mathbb{R} | -1 \geq x$ or $x > 0\}$</li>
+  $A$<sup>c</sup> $\cup B$<sup>c</sup> = { $x \in \mathbb{R} | -1 \geq x$ or $x > 0$ }</li>
   <li>
 
-  $(A \cap B)$<sup>c</sup> $\{ x \in \mathbb{R} | x \leq 1$ or $x > 0\}$</li>
+  $(A \cap B)$<sup>c</sup> { $x \in \mathbb{R} | x \leq 1$ or $x > 0$ }</li>
   <li>
 
-  $(A \cup B)$<sup>c</sup> $\{ x \in \mathbb{R} | -3 > x$ or $x \geq 2\}$</li>
+  $(A \cup B)$<sup>c</sup> { $x \in \mathbb{R} | -3 > x$ or $x \geq 2$ }</li>
 </ol>
 </details>
 </ul>  
@@ -113,7 +113,7 @@ Let $S$ be the set of all strings of 0's and 1's of length 4, and let $A$ and $B
 
 <div align="center">
 
-$A = \{$ 1000, 1101, 0101, 1100 $\}$ and $B = \{$ 0110, 1001, 1100, 0011 $\}$
+$A = $ {$ 1000, 1101, 0101, 1100 $ }$ and $B = $ b{$ 0110, 1001, 1100, 0011 $ }
 </div> 
 
 Find each of the following:
@@ -139,16 +139,16 @@ Find each of the following:
 <ol type="a">
   <li>
 
-  $A \cap B = \{$ 1100 $\}$</li>
+  $A \cap B = $ {$ 1100 $ }</li>
   <li>
 
-  $A \cup B = \{$ 1000, 1101, 0101, 1100, 0110, 1001, 0011 $\}$</li>
+  $A \cup B = $ {$ 1000, 1101, 0101, 1100, 0110, 1001, 0011 $}</li>
   <li>
 
-  $A - B = \{$ 1000 1101, 0101 $\}$</li>
+  $A - B = $ {$ 1000 1101, 0101 $}</li>
   <li>
 
-  $B - A = \{$ 0110, 1001, 0011 $\}$</li>
+  $B - A = $ { $0110, 1001, 0011$ }</li>
 </ol>
 </details>
 </ul>  
@@ -157,7 +157,7 @@ Find each of the following:
 <details>
     <summary>Example problem</summary>
 
-Let $A = \{a, b, c\}, B = \{b, c, d\}, C = \{b, c, e\}$
+Let $A = $ {a, b, c}, $B = $ {b, c, d}, $C =$ {b, c, e}
 
 <ol type="a">
   <li>
@@ -177,18 +177,18 @@ Let $A = \{a, b, c\}, B = \{b, c, d\}, C = \{b, c, e\}$
 <ol type="a">
   <li>
 
-  $A \cup (B \cap C) = A \cup \{b, c\} = \{a, b, c\}$<br />
-  $A \cup (B \cap C) = \{a, b, c, d\} \cap C = \{b, c\}$<br />
-  $(A \cup B) \cap (A \cup C) = \{a, b, c, d\} \cup \{a, b, c, e\} = \{a, b, c\}$</li>
+  $A \cup (B \cap C) = A \cup$ { $b, c$ } = { $a, b, c$ }<br />
+  $A \cup (B \cap C) = $ { $a, b, c, d$ } $\cap C = $ { $b, c$ }<br />
+  $(A \cup B) \cap (A \cup C) = $ { $a, b, c, d$ } $ \cup $ { $a, b, c, e$ } = { $a, b, c$ }</li>
   <li>
 
-  $A \cap (B \cup C) = A \cap \{b, c, d, e\} = \{b, c\}$<br />
-  $(A \cap B) \cup C = \{b, c\} \cup C = \{b, c, e\}$<br />
-  $(A \cap B) \cup (A \cap C) = \{b, c\} \cup \{b, c\} = \{b, c\}$</li>
+  $A \cap (B \cup C) = A \cap$ { $b, c, d, e$ } = { $b, c$ }<br />
+  $(A \cap B) \cup C = $ { $b, c$ } $\cup C =$ { $b, c, e$ }<br />
+  $(A \cap B) \cup (A \cap C) = { $b, c$ } $\cup$ { $b, c$ } = { $b, c$ }</li>
   <li>
 
-  $(A - B) - C = \{a\} - \{b, c, e\} = \{a\}$<br />
-  $A - (B - C) = \{a, b, c\} - \{d\} = \{a, b, c\}$</li>
+  $(A - B) - C = $ { $a$ } - { $b, c, e$ } = { $a$ }<br />
+  $A - (B - C) = $ { $a, b, c$ } - { $d$ } = { $a, b, c$ }</li>
 </ol>
 </details>
 </ul>  
@@ -197,7 +197,7 @@ Let $A = \{a, b, c\}, B = \{b, c, d\}, C = \{b, c, e\}$
 <details>
     <summary>Example problem</summary>
 
-Let $B$<sub>i</sub> $ = \{x \in \mathbb{R} | 0 \leq x \leq i\}$ for each integer $i = 1, 2, 3, 4$
+Let $B$<sub>i</sub> $ = $ { $x \in \mathbb{R} | 0 \leq x \leq i$ } for each integer $i = 1, 2, 3, 4$
 
 <ol type="a">
   <li>
@@ -217,18 +217,18 @@ Let $B$<sub>i</sub> $ = \{x \in \mathbb{R} | 0 \leq x \leq i\}$ for each integer
 <ol type="a">
   <li>
 
-  $A \cup (B \cap C) = A \cup \{b, c\} = \{a, b, c\}$<br />
-  $A \cup (B \cap C) = \{a, b, c, d\} \cap C = \{b, c\}$<br />
-  $(A \cup B) \cap (A \cup C) = \{a, b, c, d\} \cup \{a, b, c, e\} = \{a, b, c\}$</li>
+  $A \cup (B \cap C) = A \cup $ { $b, c$ } = { $a, b, c$ }<br />
+  $A \cup (B \cap C) = $ { $a, b, c, d$ } $\cap C = $ { $b, c$}<br />
+  $(A \cup B) \cap (A \cup C) =$ { $a, b, c, d$ } $\cup $ { $a, b, c, e$ } = { $a, b, c$ }</li>
   <li>
 
-  $A \cap (B \cup C) = A \cap \{b, c, d, e\} = \{b, c\}$<br />
-  $(A \cap B) \cup C = \{b, c\} \cup C = \{b, c, e\}$<br />
-  $(A \cap B) \cup (A \cap C) = \{b, c\} \cup \{b, c\} = \{b, c\}$</li>
+  $A \cap (B \cup C) = A \cap $ { $b, c, d, e$ } = { $b, c$ }<br />
+  $(A \cap B) \cup C = $ { $b, c$ } $\cup C =$ { $b, c, e$ }<br />
+  $(A \cap B) \cup (A \cap C) = $ { $b, c$ } $\cup$ { $b, c$ } = { $b, c$ }</li>
   <li>
 
-  $(A - B) - C = \{a\} - \{b, c, e\} = \{a\}$<br />
-  $A - (B - C) = \{a, b, c\} - \{d\} = \{a, b, c\}$</li>
+  $(A - B) - C = $ { $a$ } - { $b, c, e$ } = { $a$ }<br />
+  $A - (B - C) = $ { $a, b, c$ } - { $d$ } = { $a, b, c$ }</li>
 </ol>
 </details>
 </ul>  
@@ -331,7 +331,7 @@ The <strong>complement</strong> of $A$, denoted $A$<sup>c</sup>, is the set of a
 <details>
     <summary>Example problem</summary>
 
-Let $U = \{1, 2, 3, 4, 5, 6, 7\}$ be the universal set containing $A = \{1, 3, 5, 7\}$ and $B = \{4, 5, 6, 7\}$. Then find
+Let $U = $ { $1, 2, 3, 4, 5, 6, 7$ } be the universal set containing $A = $ { $1, 3, 5, 7$ } and $B = $ { $4, 5, 6, 7$ }. Then find
 
 <ol type="a">
   <li>
@@ -377,7 +377,7 @@ Let $U = \{1, 2, 3, 4, 5, 6, 7\}$ be the universal set containing $A = \{1, 3, 5
 <details>
     <summary>Example problem</summary>
 
-Let $A = \{1, 3, 5, 7, 9\}$, $B = \{3, 6, 9\}$, and $C = \{2, 4, 6, 8\}$. Find each of the following
+Let $A = $ { $1, 3, 5, 7, 9$ }, $B = $ {$3, 6, 9$ }, and $C = $ { $2, 4, 6, 8$ }. Find each of the following
 
 <ol type="a">
   <li>
@@ -463,7 +463,7 @@ Sets $A$<sub>1</sub>, $A$<sub>2</sub>, and $A$<sub>3</sub> are <strong>mutually 
 <details>
     <summary>Example problem</summary>
 
-Let $B$<sub>i</sub> $ = \{x \in \mathbb{R} | 0 \leq x \leq i\}$ for each integer $i = 1, 2, 3, 4$
+Let $B$<sub>i</sub> = { $x \in \mathbb{R} | 0 \leq x \leq i$ } for each integer $i = 1, 2, 3, 4$
 
 <ol type="a">
   <li>
@@ -493,7 +493,7 @@ None of the sets are disjoint because each set contains the real numbers ranging
 <details>
     <summary>Example problem</summary>
 
-Let $V$<sub>i</sub> $ = \{x \in \mathbb{R} | -1 / i \leq x \leq 1/i\} = [-1/i, 1/i]$ for each positive integer $i$. Find each of the following:
+Let $V$<sub>i</sub> = { $x \in \mathbb{R} | -1 / i \leq x \leq 1/i$ } = [ $-1/i, 1/i$ ] for each positive integer $i$. Find each of the following:
 
 <ol type="a">
   <li>
@@ -550,7 +550,7 @@ Let $V$<sub>i</sub> $ = \{x \in \mathbb{R} | -1 / i \leq x \leq 1/i\} = [-1/i, 1
 <details>
     <summary>Example problem</summary>
 
-Let $V$<sub>i</sub> $ = \{x \in \mathbb{R} | 1 \leq x \leq 1 + 1/i\} = [1, 1 + 1/i]$ for each positive integer $i$. Find each of the following:
+Let $V$<sub>i</sub> = { $x \in \mathbb{R} | 1 \leq x \leq 1 + 1/i$ } = [ $1, 1 + 1/i$ ] for each positive integer $i$. Find each of the following:
 
 <ol type="a">
   <li>
@@ -619,19 +619,19 @@ A finite or infinite collection of nonempty sets is a <strong>partition</strong>
 <ol type="a">
   <li>
 
-  Is $\{\{a, d, e\}, \{b, c\}, \{d, f\}\}$ a partition of $\{a, b, c, d, e, f\}$</li>
+  Is {{ $a, d, e$ }, { $b, c$ }, { $d, f$ }} a partition of { $a, b, c, d, e, f$ }</li>
   <li>
 
-  Is $\{\{w, x, v\}, \{u y q\}, \{p, z\}\}$ a partition of $\{p, q, u, v, w, x, y, z\}$</li>
+  Is {{ $w, x, v$ }, { $u y q$ }, { $p, z$ }} a partition of { $p, q, u, v, w, x, y, z$ }</li>
   <li>
 
-  Is $\{\{5, 4\}, \{7, 2\}, \{1, 3, 4\}, \{6, 8\}\}$ a partition of $\{\{1, 2, 3, 4, 5, 6, 7, 8\}\}$</li>
+  Is {{ $5, 4$ }, { $7, 2$ }, { $1, 3, 4$ }, { $6, 8$ }} a partition of {{ $1, 2, 3, 4, 5, 6, 7, 8$ }}</li>
   <li>
   
-  Is $\{\{3, 7, 8\}, \{2, 9\}, \{1, 4, 5\}\}$ a partition of $\{1, 2, 3, 4, 5, 6, 7, 8, 9\}$</li>
+  Is {{ $3, 7, 8$ }, { $2, 9$ }, { $1, 4, 5$ }} a partition of { $1, 2, 3, 4, 5, 6, 7, 8, 9$ }</li>
   <li>
 
-  is $\{\{1, 5\}, \{4, 7\}, \{2, 8, 6, 3\}\}$ a partition of $\{1, 2, 3, 4, 5, 6, 7, 8\}$</li>
+  is {{ $1, 5$ }, { $4, 7$ }, { $2, 8, 6, 3$ }} a partition of { $1, 2, 3, 4, 5, 6, 7, 8$ }</li>
   <li>
 
   $\bigcup_{i=1}^{\infty} R_i = \\$</li>
@@ -663,19 +663,19 @@ Given the set $A$, the power set of $A$ is denoted by $\mathcal{P}(A)$
 <details>
     <summary>Example problem</summary>
 
-Let $X = \{a, b, c\}$. Define a relation $J$ on $\mathcal{P}(X)$ as follows:<br /><br />
+Let $X = $ { $a, b, c$ }. Define a relation $J$ on $\mathcal{P}(X)$ as follows:<br /><br />
 For all sets $A$ and $B$ in $\mathcal{P}(X)$,<br />$A J B \iff A \cap B \cancel{=} \emptyset$
 
 <ol type="a">
   <li>
   
-  Is $\{a\} J \{c\}$</li>
+  Is { $a$ } $J$ { $c$ }</li>
   <li>
   
-  Is $\{a, b\} J \{b, c\}$</li>
+  Is { $a, b$ } $J$ { $b, c$ }</li>
   <li>
   
-  Is $\{a, b\} J \{a, b, c\}$</li>
+  Is { $a, b$ } $J$ { $a, b, c$ }</li>
 </ol>  
 <ul>  
   <details>
@@ -686,27 +686,6 @@ For all sets $A$ and $B$ in $\mathcal{P}(X)$,<br />$A J B \iff A \cap B \cancel{
   <li>Yes</li>
   <li>Yes</li> 
 </ol>
-</details>
-</ul>  
-</details>
-
-<details>
-    <summary>Example problem</summary>
-
-For the relations below on the given sets, indicate which property or properties that each has on the given sets. Note that for a set $X$, $\mathcal{P}(X)$ denotes the power set of $X$
-
-<ol type="a">
-  <li>
-
-  The relation $R$ on $\mathbb{R}$ where $x R Y$ when $X$<sup>2</sup> = $y$<sup>2</sup></li>
-  <li>
-
-  
-<ul>  
-  <details>
-    <summary>Solution</summary>
-
-
 </details>
 </ul>  
 </details>
