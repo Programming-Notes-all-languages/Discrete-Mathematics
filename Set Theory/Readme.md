@@ -113,7 +113,7 @@ Let $S$ be the set of all strings of 0's and 1's of length 4, and let $A$ and $B
 
 <div align="center">
 
-$A = $ {$ 1000, 1101, 0101, 1100 $ }$ and $B = $ b{$ 0110, 1001, 1100, 0011 $ }
+$A =$ { $1000, 1101, 0101, 1100$ } and $B =$ { $ 0110, 1001, 1100, 0011$ }
 </div> 
 
 Find each of the following:
@@ -139,13 +139,13 @@ Find each of the following:
 <ol type="a">
   <li>
 
-  $A \cap B =$ {$ 1100 $ }</li>
+  $A \cap B =$ { $1100$ }</li>
   <li>
 
-  $A \cup B =$ {$ 1000, 1101, 0101, 1100, 0110, 1001, 0011 $}</li>
+  $A \cup B =$ { $1000, 1101, 0101, 1100, 0110, 1001, 0011$ }</li>
   <li>
 
-  $A - B =$ {$ 1000 1101, 0101 $}</li>
+  $A - B =$ { $1000 1101, 0101$ }</li>
   <li>
 
   $B - A =$ { $0110, 1001, 0011$ }</li>
@@ -157,7 +157,7 @@ Find each of the following:
 <details>
     <summary>Example problem</summary>
 
-Let $A =$ {a, b, c}, $B =$ {b, c, d}, $C =$ {b, c, e}
+Let $A =$ { $a, b, c$ }, $B =$ { $b, c, d$ }, $C =$ { $b, c, e$ }
 
 <ol type="a">
   <li>
@@ -246,10 +246,10 @@ If $A \cancel{\subseteq} B$, then
 <details>
     <summary>Example problem</summary>
 
-$U =$ {$a, b, c, d, e, f, g, h, i, j$ }<br />
-$C =$ {$d, e, g, i$ }<br />
-$Y =$ {$b, c, d, g, h, i$ }<br />
-$Z =$ {$a, b, e, h, i$ }<br />
+$U =$ { $a, b, c, d, e, f, g, h, i, j$ }<br />
+$C =$ { $d, e, g, i$ }<br />
+$Y =$ { $b, c, d, g, h, i$ }<br />
+$Z =$ { $a, b, e, h, i$ }<br />
 
 where $U$ is the universal set containing $X$, $Y$, and $Z$<br />
 
