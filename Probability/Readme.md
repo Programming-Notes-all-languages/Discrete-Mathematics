@@ -22,11 +22,8 @@ A <strong>sample space</strong> is the set of all possible outcomes of a random 
 <div align="center">
 
 <strong>Equally Likely Probability Formula</strong><br />
-</div>
 
 If $S$ is a finite sample space in which all outcomes are equally likely and $E$ is an event in $S$, then the <strong>probability of E</strong>, denoted <strong>P(E)</strong>, is
-
-<div align="center">
 
 P( $E$ ) = the number of outcomes in $E$ / the total number of outcomes in $S$
 </div> 
@@ -264,7 +261,7 @@ An <strong>r-permutation</strong> of a set of $n$ elements is an ordered selecti
 
 <div align="center">
 
-$P$ $($ $n$ , $r$ $)$ $=$ $n$ $!$ $/$ $($ $n$ $-$ $r$ $)$ $!$ $)$
+$P$ $($ $n$ , $r$ $)$ $=$ $n$ $!$ $/$ $($ $n$ $-$ $r$ $)$ $!$
 </div>
 
 <details>
@@ -292,11 +289,11 @@ $P$ $($ $n$ , $r$ $)$ $=$ $n$ $!$ $/$ $($ $n$ $-$ $r$ $)$ $!$ $)$
 
 ## Counting Elements of Disjoint Sets
 ### The Addition Rule
-Suppose a finite set $A$ equals the union of $k$ distinct mutually disjoint subsets $A$<sub>1</sub>, $A$<sub>2</s$ub> ..., $A$<sub>k</sub>. Then
+Suppose a finite set $A$ equals the union of $k$ distinct mutually disjoint subsets $A$<sub>1</sub>, $A$<sub>2</sub> ..., $A$<sub>k</sub>. Then
 
 <div align="center">
 
-$N$ $($ $A$ $)$ $=$ $N$ $($$ $A$ <sub>1</sub> $)$ + $N$ $($ $A$ <sub>2</sub> $)$ + ... + $N$ $($ $A$ <sub>k</sub> $)$
+$N$ $($ $A$ $)$ $=$ $N$ $($ $A$ <sub>1</sub> $)$ + $N$ $($ $A$ <sub>2</sub> $)$ + ... + $N$ $($ $A$ <sub>k</sub> $)$
 </div>
 
 <details>
