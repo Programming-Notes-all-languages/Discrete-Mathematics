@@ -459,7 +459,7 @@ If $A$, $B$, and $C$ are any finite sets, then
 
 <div align="center">
 
-$N$ $($ $A$ $\vee$ $B$ $)$ $=$ $N$ $($ $A$ $)$ $+$ $N$ $($ $B$ $)$ $-$ $N$ $($ $A$ $\land$ $B$ $)$
+$N$ $($ $A$ $\cup$ $B$ $)$ $=$ $N$ $($ $A$ $)$ $+$ $N$ $($ $B$ $)$ $-$ $N$ $($ $A$ $\cap$ $B$ $)$
 </div>
 
 <details>
@@ -1121,7 +1121,7 @@ If $A$ is any event in a sample space $S$, then
 
 <div align="center">
 
-$P$ $($ $A$ <sup>c</sup> $=$ $1$ $-$ $P$ $($ $A$ $)$</div>
+$P$ $($ $A$ <sup>c</sup> $)$ $=$ $1$ $-$ $P$ $($ $A$ $)$</div>
 
 ### Probability of a General Union of Two Events
 If $S$ is any sample space and $A$ and $B$ are any events in $S$, then
@@ -1356,4 +1356,4 @@ If $A$ and $B$ are events in a sample space $S$, then $A$ and $B$ are <strong>in
 
 <div align="center">
 
-$P$ $($ $\cap$ $B$ $)$ $=$ $P$ $($ $A$ $)$ $*$ $P$ $($ $B$ $)$</div>
+$P$ $($ $A$ $\cap$ $B$ $)$ $=$ $P$ $($ $A$ $)$ $*$ $P$ $($ $B$ $)$</div>
