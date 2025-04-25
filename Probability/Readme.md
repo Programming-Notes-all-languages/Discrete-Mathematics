@@ -22,6 +22,12 @@
   <li>
     <a href='#pascals-formula-and-the-binomial-theorem'>Pascal's Formula and the Binomial Theorem</a>
   </li>
+  <li>
+    <a href='#probability-axioms-and-expected-value'>Probability Axioms and Expected Value</a>
+  </li>
+  <li>
+    <a href='#conditional-probability'>Conditional Probability</a>
+  </li>
 </ol>
 </details>
 
@@ -1029,8 +1035,325 @@ $\binom{18 + 3 - 1}{3 - 1} = \binom{20}{2} = 190$
 
 ## Pascal's Formula and the Binomial Theorem
 ### Pascal's Formula
+Let $n$ and $r$ be positive integers and suppose $r \leq n$. Pascal's Formula states that
+<div align="center">
+
+$\binom{n + 1}{r}$ $=$ $\binom{n}{r - 1}$ $+$ $\binom{n}{r}$
+</div>
+
+### Binomial Theorem
+Given any real numbers $a$ and $b$ any any nonnegative integer $n$, 
 
 <div align="center">
 
+$($ $a$ $+$ $b$ $)$ <sup>n</sup> $=$ <math>
+  <munderover>
+    <mo>&#x2211;</mo>  <!-- Σ symbol -->
+    <mrow><mi>k</mi><mi>=</mi><mn>0</mn></mrow>  <!-- Bottom: i = 1 -->
+    <mi>n</mi>                        <!-- Top: n -->
+  </munderover>
+</math>
+
+$\binom{n}{k}$ $a$ <sup>n - k</sup> $b$ <sup>k</sup> $=$ $a$ <sup>n</sup> $+$ $\binom{n}{1}$ $a$ <sup>n - 1</sup> $b$ <sup>1</sup> + $\binom{n}{2}$ $a$ <sup>n - 2</sup> $b$ <sup>2</sup> $+$ ... $+$ <sup>1</sup> + $\binom{n}{n - 1}$ $a$ <sup>1</sup> $b$ <sup>n - 1</sup> $+$ $b$ <sup>n</sup>
 
 </div>
+
+<details>
+    <summary>Example problem</summary>
+
+Use the binomial theorem to expand the following expression
+
+<div align="center">
+
+$($ $u$ $-$ $v$ $)$ <sup>5</sup>
+</div>
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$u$ <sup>5</sup> $+$ $\binom{5}{1}$ $u$ <sup>5 - 1</sup> $(-v)$ <sup>1</sup> $+$ $\binom{5}{2}$ $u$ <sup>5 - 2</sup> $(-v)$ <sup>2</sup> $+$ $\binom{5}{3}$ $u$ <sup>5 - 3</sup> $(-v)$ <sup>3</sup> $+$ $\binom{5}{1}$ $u$ <sup>5 - 4</sup> $(-v)$ <sup>4</sup> + $(-v)$ <sup>5</sup> = $u$ <sup>5</sup> - 5 $u$ <sup>4</sup> $v$ + 10 $u$ <sup>3</sup> $v$ <sup>2</sup> - 10 $u$ <sup>2</sup> $v$ <sup>3</sup> + 5 $uv$ <sup>4</sup> - $v$ <sup>5</sup>    
+</details>
+</ul>  
+</details> 
+
+<details>
+    <summary>Example problem</summary>
+
+Use the binomial theorem to expand the following expression
+
+<div align="center">
+
+$($ $u$ $-$ $3$ $v$ $)$ <sup>4</sup>
+</div>
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$u$ <sup>4</sup> $+$ $\binom{4}{1}$ $u$ <sup>4 - 1</sup> $(-3v)$ <sup>1</sup> $+$ $\binom{4}{2}$ $u$ <sup>4 - 2</sup> $(-3v)$ <sup>2</sup> $+$ $\binom{4}{3}$ $u$ <sup>4 - 3</sup> $(-3v)$ <sup>3</sup> + $(-3v)$ <sup>4</sup> = $u$ <sup>4</sup> - 12 $u$ <sup>3</sup> $v$ + 54 $u$ <sup>2</sup> $v$ <sup>2</sup> - 108 $u$ <sup></sup> $v$ <sup>3</sup> + 81 $v$ <sup>4</sup>    
+</details>
+</ul>  
+</details> 
+
+## Probability Axioms and Expected Value
+### Probability Axioms
+Let $S$ be a sample space. A <strong>probability function</strong> $P$ from the set of all events in $S$ to the set of real numbers satisfies the following three axioms: For all events $A$ and $B$ in $S$
+
+<ol type="a">
+  <li>
+
+  $0 \leq P(A) \leq 1$</li>
+  <li>
+
+  $P(\empty)$ and $P(S) = 1$</li>
+  <li>
+
+  If $A$ and $B$ are disjoint, then the probability of the union of $A$ and $B$ is</li>
+</ol>
+
+<div align="center">
+
+$P$ $($ $A$ $\cup$ $B$ $)$ $=$ $P$ $($ $A$ $)$ $+$ $P$ $($ $B$ $)$</div>
+
+### Probability of the Complement of an Even
+If $A$ is any event in a sample space $S$, then
+
+<div align="center">
+
+$P$ $($ $A$ <sup>c</sup> $=$ $1$ $-$ $P$ $($ $A$ $)$</div>
+
+### Probability of a General Union of Two Events
+If $S$ is any sample space and $A$ and $B$ are any events in $S$, then
+
+<div align="center">
+
+$P$ $($ $A$ $\cup$ $B$ $)$ $=$ $P$ $($ $A$ $)$ $+$ $P$ $($ $B$ $)$ $-$ $P$ $($ $A$ $\cap$ $B$ $)$</div>
+
+<details>
+    <summary>Example problem</summary>
+
+Suppose $A$ and $B$ are events in a sample space $S$ and suppose that $P(A) = 0.7, P(B$ <sup>c</sup> $) = 0.1$, and $P(A \cap B) = 0.6$. What is $P(A \cup B)$?
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>
+  
+  $P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0.4 + 0.5 - 0.3 = 0.6$</li>
+  <li>
+
+  $P(C) = S - 0.6 = 0.4$</li>
+</ol>
+</details>
+</ul>  
+</details> 
+
+<details>
+    <summary>Example problem</summary>
+
+Let $A$ and $B$ be events in a sample space $S$, and let $C = S - (A \cup B)$. Suppose $P(A) = 0.4, P(B) = 0.5,$ and $P(A \cap B) = 0.3$. Find each of the following: 
+
+<ol type="a">
+  <li>
+  
+  $P(A \cup B)$</li>
+  <li>
+
+  $P(C)$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $)$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $\cap$ $B$ <sup>c</sup> $)$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $\cup$ $B$ <sup>c</sup> $)$</li>
+  <li>
+
+  $P(B$ <sup>c</sup> $\cap C)$</li>
+</ol>
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>
+  
+  $P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0.4 + 0.5 - 0.3 = 0.6$</li>
+  <li>
+
+  $P(C) = S - 0.6 = 0.4$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $) = 1 - P(A) = 1 - 0.4 = 0.6$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $\cap$ $B$ <sup>c</sup> $) = P(A$ <sup>c</sup> $\cap$ $B$ <sup>c</sup> $)$ <sup>c</sup> = $1 - P(A \cup B) = 1 - 0.6 = 0.4$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $\cup$ $B$ <sup>c</sup> $) = P(A$ <sup>c</sup> $\cup$ $B$ <sup>c</sup> $)$ <sup>c</sup> = $1 - P(A \cap B) = 1 - 0.3 = 0.7$</li>
+  <li>
+
+  $P(B$ <sup>c</sup> $\cap C) = 0.4$</li>
+</ol>
+</details>
+</ul>  
+</details> 
+
+<details>
+    <summary>Example problem</summary>
+
+Let $A$ and $B$ be events in a sample space $S$, and let $C = S - (A \cup B)$. Suppose $P(A) = 0.8, P(B) = 0.2,$ and $P(A \cap B) = 0.1$. Find each of the following: 
+
+<ol type="a">
+  <li>
+  
+  $P(A \cup B)$</li>
+  <li>
+
+  $P(C)$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $)$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $\cap$ $B$ <sup>c</sup> $)$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $\cup$ $B$ <sup>c</sup> $)$</li>
+  <li>
+
+  $P(B$ <sup>c</sup> $\cap C)$</li>
+</ol>
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>
+  
+  $P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0.8 + 0.2 - 0.1 = 0.9$</li>
+  <li>
+
+  $P(C) = S - 0.9 = 0.1$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $) = 1 - P(A) = 1 - 0.8 = 0.2$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $\cap$ $B$ <sup>c</sup> $) = P(A$ <sup>c</sup> $\cap$ $B$ <sup>c</sup> $)$ <sup>c</sup> = $1 - P(A \cup B) = 1 - 0.9 = 0.1$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $\cup$ $B$ <sup>c</sup> $) = P(A$ <sup>c</sup> $\cup$ $B$ <sup>c</sup> $)$ <sup>c</sup> = $1 - P(A \cap B) = 1 - 0.1 = 0.9$</li>
+  <li>
+
+  $P(B$ <sup>c</sup> $\cap C) = 0.1$</li>
+</ol>
+</details>
+</ul>  
+</details> 
+
+<details>
+    <summary>Example problem</summary>
+
+Let $A$ and $B$ be events in a sample space $S$, and let $C = S - (A \cup B)$. Suppose $P(A) = 0.4, P(B) = 0.5,$ and $P(A \cap B) = 0.3$. Find each of the following: 
+
+<ol type="a">
+  <li>
+  
+  $P(A \cup B)$</li>
+  <li>
+
+  $P(C)$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $)$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $\cap$ $B$ <sup>c</sup> $)$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $\cup$ $B$ <sup>c</sup> $)$</li>
+  <li>
+
+  $P(B$ <sup>c</sup> $\cap C)$</li>
+</ol>
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>
+  
+  $P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0.4 + 0.5 - 0.3 = 0.6$</li>
+  <li>
+
+  $P(C) = S - 0.6 = 0.4$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $) = 1 - P(A) = 1 - 0.4 = 0.6$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $\cap$ $B$ <sup>c</sup> $) = P(A$ <sup>c</sup> $\cap$ $B$ <sup>c</sup> $)$ <sup>c</sup> = $1 - P(A \cup B) = 1 - 0.6 = 0.4$</li>
+  <li>
+
+  $P(A$ <sup>c</sup> $\cup$ $B$ <sup>c</sup> $) = P(A$ <sup>c</sup> $\cup$ $B$ <sup>c</sup> $)$ <sup>c</sup> = $1 - P(A \cap B) = 1 - 0.3 = 0.7$</li>
+  <li>
+
+  $P(B$ <sup>c</sup> $\cap C) = 0.4$</li>
+</ol>
+</details>
+</ul>  
+</details> 
+
+<details>
+    <summary>Example problem</summary>
+
+A lottery game offers $3 million to the grand prize winner, $20 to each of 10,000 second prize winners, and $5 to each of 50,000 third prize winners. The cost of the lottery is $2 per ticket. Suppose that 2.5 million tickets are sold. What is the expected value of a ticket?
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+Total expected value of a ticket = $3000000 * (1 / 2500000) + 20 * (1/ 10000) + 5 * (1 / 50000) = 1.38$<br />
+Total expected value of a ticket minus the cost of the ticket = $1.38 - 2 = -0.62$
+</details>
+</ul>  
+</details> 
+
+<details>
+    <summary>Example problem</summary>
+
+A company offers a rattle whose grand prize is a $45,000 new car. Additional prizes are a $1,100 television and a $600 computer. Tickets cost $22 each. Ticket income over the cost of the prizes will be donated to charity. If 3,000 tickets are sold, what is the expected gain or loss of each ticket?
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+Total expected value of a ticket = $45000 * (1 / 3000) + 1100 * (1/ 3000) + 600 * (1 / 3000) = 1.38 = 15 + 0.37 + 0.2 = 15.57$<br />
+Total expected value of a ticket minus the cost of the ticket = $15.57 - 22 = -6.43$
+</details>
+</ul>  
+</details> 
+
+## Conditional Probability
+Let $A$ and $B$ be events in a sample space $S$. If $P(A) \neq 0$, then the <strong>conditional probability of B given A</strong>, denoted $P(B|A)$, is
+
+<div align="center">
+
+$P$ $($ $B$ $|$ $A$ $)$ $=$ $P$ $($ $A$ $\cap$ $B$ $)$ $/$ $P$ $($ $A$ $)$
+</div>
+
+### Independent Events
+If $A$ and $B$ are events in a sample space $S$, then $A$ and $B$ are <strong>independent</strong> if, and only if,
+
+<div align="center">
+
+$P$ $($ $\cap$ $B$ $)$ $=$ $P$ $($ $A$ $)$ $*$ $P$ $($ $B$ $)$</div>
