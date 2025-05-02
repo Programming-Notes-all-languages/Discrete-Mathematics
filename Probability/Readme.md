@@ -48,6 +48,34 @@ For any finite set $A$, $N(A)$ denotes the number of elements in $A$
 <details>
     <summary>Example problem</summary>
 
+A class of 233 students meets twice a week for lecture, after which they separate into eight breakout groups for discussion. What si the smallest number of students that can be in the largest breakout group? 
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+233 / 8 = 29.125. So we have seven groups of 29 and one group of 30. The answer is 30
+</details>
+</ul>  
+</details>  
+
+<details>
+    <summary>Example problem</summary>
+
+An urn contains 2 red balls and 2 blue balls. Balls are drawn randomly until all balls of one color have been removed and then we stop drawing. On average, how many balls will be remaining in the urn once we stop?
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+Outcomes: RR, BB, BRR, RBR, BRB, RBB<br />
+Average number of balls pulled: 1/6 * (2 + 2 + 3 + 3 + 3 + 3) = 16/6 = 8/3<br />
+Number of balls left: 12/3 - 8/3 = 1.67
+</details>
+</ul>  
+</details>  
+
+<details>
+    <summary>Example problem</summary>
+
 An ordinary deck of cards contains 52 cards divided into four suits. The red suits are diamonds and hearts, and the black suits are clubs and spades. Each suit contains 13 cards of the following denominations: 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, and A. The cards J, Q, and K are called face cards<br />
 
 Consider the event that the chosen card is black and has an even number on it. Which of the following expresses this event as a set?
@@ -88,6 +116,19 @@ Set = {RRR, RRB, RBR, RBB, BRR, BRB, BBR, RRY, RYR, RYY, YRR, YRY, YYR, YYY, YYB
 <details>
     <summary>Example problem</summary>
 
+A coin is weighted so that heads comes up twice as often as tails. What is the expected number of heads in 72 tosses? 
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+72 * 2/3 = 48 heads
+</details>
+</ul>  
+</details>  
+
+<details>
+    <summary>Example problem</summary>
+
 An urn contains two blue balls and three white balls. One ball is drawn from the urn, its color recorded, and is replaced. Another ball is then drawn and its color recorded
 
 <ol type="a">
@@ -104,6 +145,22 @@ Set = {B1B2, B1B1, B2B1, B2B2, B1W1, B1W2, B1W3, B2W1, B2W2, B2W3, W1B1, W1B2, W
   <li>10</li>
   <li>10/25</li>
 </ol>
+</details>
+</ul>  
+</details>  
+
+<details>
+    <summary>Example problem</summary>
+
+You have a fourteen eight-sided dice which are red and eleven six-sided dice which are blue. The dice are all far. You roll all the dice and then take the sum of the red dice an then subtract the sum of the blue dice. What is the expected average result? 
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+Expected value = $(1 + n) / 2$<br />
+Expected value (red) = $(1 + 8) / 2 = 4.5$<br />
+Expected value (blue) = $(1 + 6) / 2 = 3.5$<br />
+Average = $14 * 4.5 - 11 * 3.5 = 24.5$
 </details>
 </ul>  
 </details>  
@@ -207,7 +264,7 @@ An <strong>r-permutation</strong> of a set of $n$ elements is an ordered selecti
 
 <div align="center">
 
-$P$ $($ $n$ , $r$ $)$ $=$ $n$ $!$ $/$ $($ $n$ $-$ $r$ $)$ $!$ $)$
+$P$ $($ $n$ , $r$ $)$ $=$ $n$ $!$ $/$ $($ $n$ $-$ $r$ $)$ $!$
 </div>
 
 <details>
@@ -270,14 +327,6 @@ Evaluate the following quantities
 </details>
 </ul>  
 </details> 
-
-### R-Permutation
-An <strong>r-permutation</strong> of a set of $n$ elements is an ordered selection of $r$ elements taken from the set of $n$ elements
-
-<div align="center">
-
-$P$ $($ $n$ , $r$ $)$ $=$ $n$ $!$ $/$ $($ $n$ $-$ $r$ $)$ $!$
-</div>
 
 <details>
     <summary>Example problem</summary>
@@ -483,6 +532,67 @@ $N$ $($ $A$ $\cup$ $B$ $)$ $=$ $N$ $($ $A$ $)$ $+$ $N$ $($ $B$ $)$ $-$ $N$ $($ $
   $N(A \cup B) = N(A) + N(B) + N(A \cap B)$ = 200 + 142 - 28 = 314</li>
   <li>Probability = 314 / 1000 = 31.4%</li>
   <li>Number of integers from 1 through 1,000 are neither multiples of 5 nor multiples of 7 = 1000 - 314 = 686</li>
+</ol>
+</details>
+</ul>  
+</details> 
+
+<details>
+    <summary>Example problem</summary>
+
+A random number from 1 to and including 33,333 is chosen, where each number is as likely to be chosen as any other number. Determine the exact probability, a fraction, that the randomly chosen number is a multiple of 5, 7, or 11. The fact that there are $[b/d]$ integers from 1 to $b$ that are multiples of by $d$ will be helpful
+<ol type="a">
+  <li>
+  
+  $|M$ <sub>5</sub> $|$</li>
+  <li>
+  
+  $ + |M$ <sub>7</sub> $|$</li>
+  <li>
+  
+  $ + |M$ <sub>11</sub> $|$</li>
+  <li>
+  
+  $ - |M$ <sub>5</sub> $ \land M$ <sub>7</sub> $|$</li>
+  <li>
+  
+  $ - |M$ <sub>5</sub> $ \land M$ <sub>11</sub> $|$</li>
+  <li>
+  
+  $ - |M$ <sub>7</sub> $ \land M$ <sub>11</sub> $|$</li>
+  <li>
+  
+  $ + |M$ <sub>5</sub> $ \land M$ <sub>7</sub> $ \land M$ <sub>11</sub> $|$</li>
+</ol>
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>
+  
+  $|M$ <sub>5</sub> $| = 33333 / 5 = 6666.6 = 6666$</li>
+  <li>
+  
+  $ + |M$ <sub>7</sub> $| = 33333 / 7 = 4761.8 = 4761$</li>
+  <li>
+  
+  $ + |M$ <sub>11</sub> $| = 33333 / 11 = 3030.3 = 3030$</li>
+  <li>
+  
+  $ - |M$ <sub>5</sub> $ \land M$ <sub>7</sub> $| = |M$ <sub>35</sub> $| = 33333 / 35 = 952.4 = 952$</li>
+  <li>
+  
+  $ - |M$ <sub>5</sub> $ \land M$ <sub>11</sub> $|= |M$ <sub>55</sub> $| = 33333 / 55 = 606.1 = 606$</li>
+  <li>
+  
+  $ - |M$ <sub>7</sub> $ \land M$ <sub>11</sub> $= |M$ <sub>77</sub> $| = 33333 / 77 = 432.9 = 432$</li>
+  <li>
+  
+  $ + |M$ <sub>5</sub> $ \land M$ <sub>7</sub> $ \land M$ <sub>11</sub> $| = |M$ <sub>385</sub> $| = 33333 / 385 = 86.5 = 86$</li>
+  <li>
+
+  $|M$ <sub>5</sub> $ \vee M$ <sub>7</sub> $ \vee M$ <sub>11</sub> $| = 6666 + 4761 + 3030 - 952 - 606 - 432 + 86 = 12553$</li>
 </ol>
 </details>
 </ul>  
@@ -778,6 +888,35 @@ An instructor gives an exam with fifteen questions. Students are allowed to choo
 <details>
     <summary>Example problem</summary>
 
+Martian Poker is a game played where each player receives four cards from a deck of 119 cards, where there are 7 suits and 17 cards from each suit. The order in which the cards are received does not matter
+
+<ol type="a">
+  <li>How many possible four card Martian Poker hands are there?</li>
+  <li>A flush in Martian Poker is any hand where all cards are the same suit. How many possible flushes are there in Martian Poker?</li>
+  <li>What is the probability of being dealt a flush in Martian Poker, expressed as a percentage?</li>
+</ol>  
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol type="a">
+  <li>
+  
+  $\binom{119}{4}$</li>
+  <li>
+
+  $\binom{17}{4} * 7$</li>
+  <li>
+
+  $(\binom{17}{4} * 7) / \binom{119}{4}$</li>
+</ol>
+</details>
+</ul>  
+</details>  
+
+<details>
+    <summary>Example problem</summary>
+
 Two new drugs are to be tested using a group of 50 laboratory mice, each tagged with a number for identification purposes. Drug $A$ is to be given to 17 mice, drug $B$ is to be given to another 17 mice, and the remaining 16 mice are to be used as controls. How many ways can the assignment of treatments to mice be made?
 <ul>  
   <details>
@@ -879,6 +1018,37 @@ Ten points labeled $A, B, C, D, E, F, G, H, I, J$ are arranged in a plane in suc
 
   $\binom{9}{3} = 120$</li>
 </ol>
+</details>
+</ul>  
+</details> 
+
+<details>
+    <summary>Example problem</summary>
+
+Five women (W) and five men (M) line up at a checkout counter. What is the exact probability, expressed as a fraction, that they are arranged from first to last as W, M, W, M, W, M, W, M, W, M?
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$\binom{10}{5} = 252$<br />
+Probability: 1/252
+</details>
+</ul>  
+</details>
+
+<details>
+    <summary>Example problem</summary>
+
+A fair coin is flipped ten times. What is the exact probability, expressed as a fraction, that the coin comes up tails exactly five times?
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+Probability of heads 5 times: (1/2) <sup>5</sup><br />
+Probability of tails 5 times: (1/2) <sup>5</sup><br />
+Probability: (1/2) <sup>5</sup> * (1/2) <sup>5</sup> = (1/2) <sup>10</sup><br />
+Now, there are $\binom{10}{5}$ arrangements of 5 tails.<br />
+Total probability: 252/1024
 </details>
 </ul>  
 </details> 
@@ -1033,6 +1203,35 @@ $\binom{18 + 3 - 1}{3 - 1} = \binom{20}{2} = 190$
 </ul>  
 </details> 
 
+<details>
+<summary>Example problem</summary>
+
+How many integer solutions are there to $a + b + c + d + e \leq 38$ where each variable must be nonnegative?
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$a + b + c + d + e + f = 38$<br />
+$\binom{38 + 6}{6} = \binom{44}{6}$
+</details>
+</ul>  
+</details> 
+
+<details>
+<summary>Example problem</summary>
+
+How many integer solutions are there to $a + b + c + d + e = 38$ where each variable must be nonnegative, and at least one of the variables is odd?
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+A = 2a, B = 2b, C = 2c, D = 2d, E = 2e<br />
+$A + B + C + D + E = 19$<br />
+$\binom{19 + 5 - 1}{5 - 1} = \binom{23}{4}$
+</details>
+</ul>  
+</details> 
+
 ## Pascal's Formula and the Binomial Theorem
 ### Pascal's Formula
 Let $n$ and $r$ be positive integers and suppose $r \leq n$. Pascal's Formula states that
@@ -1073,6 +1272,34 @@ $($ $u$ $-$ $v$ $)$ <sup>5</sup>
     <summary>Solution</summary>
 
 $u$ <sup>5</sup> $+$ $\binom{5}{1}$ $u$ <sup>5 - 1</sup> $(-v)$ <sup>1</sup> $+$ $\binom{5}{2}$ $u$ <sup>5 - 2</sup> $(-v)$ <sup>2</sup> $+$ $\binom{5}{3}$ $u$ <sup>5 - 3</sup> $(-v)$ <sup>3</sup> $+$ $\binom{5}{1}$ $u$ <sup>5 - 4</sup> $(-v)$ <sup>4</sup> + $(-v)$ <sup>5</sup> = $u$ <sup>5</sup> - 5 $u$ <sup>4</sup> $v$ + 10 $u$ <sup>3</sup> $v$ <sup>2</sup> - 10 $u$ <sup>2</sup> $v$ <sup>3</sup> + 5 $uv$ <sup>4</sup> - $v$ <sup>5</sup>    
+</details>
+</ul>  
+</details> 
+
+<details>
+    <summary>Example problem</summary>
+
+What is the constant term in the expansion of $(2x + 3/x^2)$ <sup>9</sup> ?
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$\binom{9}{3} * (2x)$ <sup>6</sup> $ * (3 / x^2)$ <sup>3</sup> = 145152
+</details>
+</ul>  
+</details> 
+
+<details>
+    <summary>Example problem</summary>
+
+A coin is weighted so that on each coin flip, heads comes up with probability $p$ = 0.63. What is the probability that heads comes up exactly $k$ = 10 times on $n$ = 21 flips of the coin?
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+$\binom{21}{10} * (0.63)$ <sup>10</sup> $ * (0.37)$ <sup>11</sup>
 </details>
 </ul>  
 </details> 
@@ -1147,6 +1374,33 @@ Suppose $A$ and $B$ are events in a sample space $S$ and suppose that $P(A) = 0.
 
   $P(C) = S - 0.6 = 0.4$</li>
 </ol>
+</details>
+</ul>  
+</details> 
+
+<details>
+    <summary>Example problem</summary>
+
+You are considering the following lottery game: three balls are drawn at random from among 11 balls numbered 1 through 11. Players win the following prize amounts for guessing which balls are drawn:
+<ul>
+  <li>$220 for correctly guessing all three numbers</li>
+  <li>$22 for correctly guessing exactly two of the three numbers</li>
+  <li>$14 for correctly guessing exactly one of the three numbers</li>
+</ul>
+
+If the game costs $20, what is the expected (average) amount lost per play. Round the final answer to the nearest cent
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+Total possible combinations: $\binom{11}{3} = 11! / ((3!)(11 - 3)!) = 165$<br />
+Number of ways to get all three numbers: $\binom{3}{3} * \binom{8}{0} = 1$<br />
+Number of ways to get two numbers: $\binom{3}{2} * \binom{8}{1} = 3 * 8 = 24$<br />
+Number of ways to get one number: $\binom{3}{1} * \binom{8}{2} = 3 * 28 = 84$<br />
+Number of ways to get zero numbers: $\binom{3}{0} * \binom{8}{3} = 56$<br />
+Average amount won: $(1 * (220 / 165)) * (24 * (22 / 165)) * (84 (14 / 165)) = 11.66$<br />
+Average amount: $20 - 11.66 = 8.34$ lost per ticket sold
 </details>
 </ul>  
 </details> 
@@ -1357,3 +1611,78 @@ If $A$ and $B$ are events in a sample space $S$, then $A$ and $B$ are <strong>in
 <div align="center">
 
 $P$ $($ $A$ $\cap$ $B$ $)$ $=$ $P$ $($ $A$ $)$ $*$ $P$ $($ $B$ $)$</div>
+
+<details>
+    <summary>Example problem</summary>
+
+Let $A$ and $B$ be any events in some general sample space $S$. Write equivalent expressions  for which the equalities always hold
+
+<ol>
+  <li>
+
+  $P(A \cap B)$</li>
+  <li>
+
+  $P(A \cup B)$</li>
+  <li>
+
+  $P(S)$</li>
+</ol>
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol>
+  <li>
+
+  $P(A \cap B) = P(A) + P(B) - P(A \cup B)$<br />
+  $P(A \cap B) = P(B) * P(A | B)$<br />
+  $P(A \cap B) = P(A) * P(B | A)$<br /></li>
+  <li>
+
+  $P(A \cup B) = P(A) + P(B) - P(A \cap B)$<br />
+  </li>
+  <li>
+
+  $P(S) = P(A) + P(A$ <sup>c</sup> $)$<br />
+  $P(S) = P(B) + P(B$ <sup>c</sup> $)$<br />
+  $P(S) = 1$</li>
+</ol>
+</details>
+</ul>  
+</details> 
+
+<details>
+    <summary>Example problem</summary>
+
+<ol>
+  <li>
+
+  Count the number of ways in which a coin can be flipped 10 times and land on heads exactly 5 times</li>
+  <li>
+
+  The number of 5-element subsets of a 10-element set</li>
+  <li>
+
+  The number of arrangements of ABABABABAB</li>
+</ol>
+
+<ul>  
+  <details>
+    <summary>Solution</summary>
+
+<ol>
+  <li>
+
+  $\binom{10}{5} = 252$</li>
+  <li>
+
+  $\binom{10}{5} = 252$</li>
+  <li>
+
+  $\binom{10}{5} = 252$</li>
+</ol>
+</details>
+</ul>  
+</details> 
