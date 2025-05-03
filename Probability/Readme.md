@@ -1212,7 +1212,7 @@ How many integer solutions are there to $a + b + c + d + e \leq 38$ where each v
     <summary>Solution</summary>
 
 $a + b + c + d + e + f = 38$<br />
-$\binom{38 + 6}{6} = \binom{44}{6}$
+$\binom{38 + 6 - 1}{6 - 1} = \binom{43}{5}$
 </details>
 </ul>  
 </details> 
@@ -1333,7 +1333,7 @@ Let $S$ be a sample space. A <strong>probability function</strong> $P$ from the 
   $0 \leq P(A) \leq 1$</li>
   <li>
 
-  $P(\empty)$ and $P(S) = 1$</li>
+  $P( \empty )$ and $P(S) = 1$</li>
   <li>
 
   If $A$ and $B$ are disjoint, then the probability of the union of $A$ and $B$ is</li>
